@@ -1,0 +1,3 @@
+The speed of light in a vacuum is exactly **$299,792.458$ kilometres per second**.
+
+For most general calculations and scientific approximations, it is commonly rounded to **$300,000$ kilometres per second**.

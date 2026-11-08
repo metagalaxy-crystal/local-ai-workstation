@@ -1,0 +1,64 @@
+Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Request:**
+    *   Problem: Classic "Chicken and Rabbit in the Same Cage" (鸡兔同笼).
+    *   Given: Total heads = 35, Total legs = 94.
+    *   Goal: Find the number of chickens ($x$) and rabbits ($y$).
+    *   Requirement: Show the calculation process.
+
+2.  **Identify Key Variables:**
+    *   Chicken legs: 2 per chicken.
+    *   Rabbit legs: 4 per rabbit.
+    *   Total heads equation: $x + y = 35$.
+    *   Total legs equation: $2x + 4y = 94$.
+
+3.  **Choose a Method:**
+    *   *Method 1: Algebraic Equations (System of Equations).* This is the most rigorous and clear way to show the process.
+    *   *Method 2: Assumption Method (假设法).* This is the classic Chinese math teaching method.
+    *   *Method 3: Listing/Table.* Too tedious for numbers this large.
+
+    I will use the Assumption Method (假设法) as it's intuitive, and then verify with the Algebraic Method to ensure accuracy and show thoroughness. I'll present the Assumption Method as the primary explanation because it's the standard expectation for this riddle, but I'll write it out clearly. Actually, providing both is usually best for a complete answer. Let's stick to a clear, step-by-step derivation.
+
+4.  **Drafting the Solution (Mental or Scratchpad):**
+
+    *   *Approach: Assumption Method*
+        1.  Assume all 35 are chickens.
+        2.  Legs = $35 \times 2 = 70$.
+        3.  Difference between actual legs and assumed legs = $94 - 70 = 24$.
+        4.  Each rabbit has 2 more legs than a chicken.
+        5.  Number of rabbits = $24 / 2 = 12$.
+        6.  Number of chickens = $35 - 12 = 23$.
+
+    *   *Approach: Algebraic*
+        1.  $x + y = 35$
+        2.  $2x + 4y = 94$
+        3.  From (1), $x = 35 - y$.
+        4.  Substitute into (2): $2(35-y) + 4y = 94$.
+        5.  $70 - 2y + 4y = 94$.
+        6.  $2y = 24$.
+        7.  $y = 12$.
+        8.  $x = 23$.
+
+5.  **Refining the Output:**
+    *   Start with a clear conclusion (Answer).
+    *   Then show the process.
+    *   I'll use the "假设法" (Assumption Method) as it's the most common way this is taught and understood in Chinese context, but I can also show the equation method for completeness. I'll combine them or just pick the clearest one. Let's provide the equation method first as it's universally understood, then mention the assumption logic. Actually, for a general audience, the assumption method is often preferred. Let's do the Assumption Method as the primary explanation because it's elegant.
+
+    *   *Self-Correction:* The user asked for "calculation process" (计算过程). I will provide the standard algebraic or assumption method clearly. Let's provide the Assumption Method (假设法) as it's the most "classic" for this specific problem type.
+
+    *   *Step-by-step for the final output:*
+        1.  Assume all are chickens.
+        2.  Calculate total legs if all chickens.
+        3.  Find the difference.
+        4.  Divide by leg difference per animal.
+        5.  Calculate chickens.
+
+6.  **Final Polish (formatting):**
+    *   Use clear headings or bold text.
+    *   Ensure the math is easy to follow.
+    *   Verify: $23 \times 2 + 12 \times 4 = 46 + 48 = 94$. Correct.
+
+7.  **Constructing the response:** (Matches the provided good response).
+    *   Heading: 鸡兔同笼问题
+    *   Method: 假设法 (Assumption Method)
+    *   Steps...

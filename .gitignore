@@ -1,0 +1,55 @@
+# ===== 本地模型权重（不上传，仅保留说明文档）=====
+models/*
+!models/README.md
+
+# ===== Python 环境与缓存 =====
+.venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ===== 第三方运行时 / 源码（体积大，按 README 自行安装）=====
+ComfyUI/
+llama.cpp/
+tools/
+output/
+
+# ===== 大体积媒体与生成产物 =====
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.psd
+*.blend
+*.blend1
+
+# ===== 数据库 / 日志 / 截图 =====
+*.db
+*.db-journal
+*.log
+.screenshots/
+
+# ===== 编辑器与系统文件 =====
+.vscode/
+.idea/
+.trae/
+Thumbs.db
+.DS_Store
+
+# ===== 本地密钥 =====
+.env
+.env.*
+*.key
+*.pem

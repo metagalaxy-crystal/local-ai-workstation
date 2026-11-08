@@ -1,0 +1,75 @@
+Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Request:**
+    *   **Problem:** Classic "Chicken and Rabbit in the Same Cage" (鸡兔同笼) problem.
+    *   **Given:**
+        *   Total heads = 35
+        *   Total legs = 94
+    *   **Required:** Find the number of chickens and the number of rabbits.
+    *   **Requirement:** Show the calculation process.
+
+2.  **Recall/Identify Key Facts:**
+    *   A chicken has 1 head and 2 legs.
+    *   A rabbit has 1 head and 4 legs.
+    *   Total heads = Total animals (chickens + rabbits).
+
+3.  **Choose a Method:**
+    There are several ways to solve this:
+    *   *Method 1: Arithmetic (Assumption/Lifting method)* - Good for mental math.
+    *   *Method 2: Algebra (Equation system)* - Most rigorous and easy to follow.
+    *   *Method 3: Table/List* - Good for visualization.
+
+    I will provide the Algebraic method as the primary solution because it's the clearest for "showing calculation," but I can also briefly mention the assumption method for completeness. Let's stick to the algebraic method for clarity, maybe supplemented by the assumption method.
+
+4.  **Drafting the Solution (Algebraic Method):**
+    *   Let $x$ be the number of chickens.
+    *   Let $y$ be the number of rabbits.
+    *   Equation 1 (Heads): $x + y = 35$
+    *   Equation 2 (Legs): $2x + 4y = 94$
+    *   Simplify Equation 2: $x + 2y = 47$
+    *   Subtract Equation 1 from Simplified Equation 2: $(x + 2y) - (x + y) = 47 - 35$
+    *   $y = 12$
+    *   Substitute $y$ back into Equation 1: $x + 12 = 35$
+    *   $x = 23$
+    *   Answer: 23 chickens, 12 rabbits.
+
+5.  **Drafting the Solution (Assumption Method):**
+    *   Assume all 35 animals are chickens.
+    *   Legs = $35 \times 2 = 70$.
+    *   Difference = $94 - 70 = 24$ legs.
+    *   Each rabbit has 2 extra legs compared to a chicken.
+    *   Rabbits = $24 / 2 = 12$.
+    *   Chickens = $35 - 12 = 23$.
+
+6.  **Finalizing the Output:**
+    *   Structure the response clearly.
+    *   State the knowns.
+    *   Show the steps.
+    *   State the final answer.
+    *   Verify the answer ($23 \times 2 + 12 \times 4 = 46 + 48 = 94$. Correct.)
+
+7.  **Constructing the Final Response (in Chinese as requested):**
+    *   Introduction.
+    *   Method 1: Equation method (列方程法).
+    *   Method 2: Assumption method (假设法).
+    *   Conclusion/Check.
+
+    *Self-Correction during drafting:* I'll present the solution clearly. I will use the assumption method as it's the classic "Chinese math" way, but I'll also show the equation method since the user asked for "calculation process" which usually implies showing work. I'll provide the equation method first as it's more formal. Actually, providing both is better for a comprehensive answer. Let's write it out.
+
+    *Refining the text:*
+    "鸡和兔同笼" is a standard problem.
+    Let $x$ = chickens, $y$ = rabbits.
+    $x+y=35$
+    $2x+4y=94$
+    ... solve ...
+    Result: Chickens = 23, Rabbits = 12.
+
+    Let's write the response.
+
+    (Drafting response)
+    这是一道经典的“鸡兔同笼”问题。我们可以通过**假设法**或**列方程法**来求解。
+
+    **方法一：假设法**
+    假设全是鸡。
+    腿数 = 35 * 2 = 70
+    差值 = 94 - 70 =

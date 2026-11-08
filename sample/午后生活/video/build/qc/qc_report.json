@@ -1,0 +1,50 @@
+[
+ {
+  "id": "S01",
+  "exists": true,
+  "dur": 5.184,
+  "rms": 0.044,
+  "peak": 0.2198,
+  "tile": "d:\\models\\sample\\午后生活\\video\\build\\qc\\s01_tiles.png"
+ },
+ {
+  "id": "S02",
+  "exists": true,
+  "dur": 5.184,
+  "rms": 0.0026,
+  "peak": 0.029,
+  "tile": "d:\\models\\sample\\午后生活\\video\\build\\qc\\s02_tiles.png"
+ },
+ {
+  "id": "S03",
+  "exists": true,
+  "dur": 5.184,
+  "rms": 0.0127,
+  "peak": 0.1682,
+  "tile": "d:\\models\\sample\\午后生活\\video\\build\\qc\\s03_tiles.png"
+ },
+ {
+  "id": "S04",
+  "exists": true,
+  "dur": 5.184,
+  "rms": 0.0067,
+  "peak": 0.2899,
+  "tile": "d:\\models\\sample\\午后生活\\video\\build\\qc\\s04_tiles.png"
+ },
+ {
+  "id": "S05",
+  "exists": true,
+  "dur": 5.184,
+  "rms": 0.0055,
+  "peak": 0.1209,
+  "tile": "d:\\models\\sample\\午后生活\\video\\build\\qc\\s05_tiles.png"
+ },
+ {
+  "id": "S06",
+  "exists": true,
+  "dur": 5.184,
+  "rms": 0.0061,
+  "peak": 0.0648,
+  "tile": "d:\\models\\sample\\午后生活\\video\\build\\qc\\s06_tiles.png"
+ }
+]

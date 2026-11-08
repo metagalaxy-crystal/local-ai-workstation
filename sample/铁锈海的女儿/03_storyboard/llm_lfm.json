@@ -1,0 +1,79 @@
+{
+  "style": "steampunk_realistic",
+  "characters": [
+    {
+      "name": "玛莲·艾德斯坦",
+      "age": 29,
+      "appearance": "long black hair, bright brown eyes, slender, wearing a worn leather satchel, standing tall",
+      "outfit": "lightweight linen dress, copper buckles, simple leather boots",
+      "tags": [
+        "childhood memory",
+        "resilience",
+        "steampunk aesthetic"
+      ]
+    },
+    {
+      "name": "铁锈海",
+      "age": "unknown",
+      "appearance": "weathered face with a scar across cheek, short cropped gray hair, oil‑stained leather coat, brass goggles",
+      "outfit": "oil‑stained leather coat, leather boots, copper pocket watch",
+      "tags": [
+        "mentor",
+        "guardian",
+        "industrial"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "location": "Cliffside at dawn, overlooking the iron‑colored sea",
+      "lighting": "soft golden sunrise, warm amber glow",
+      "mood": [
+        "nostalgic",
+        "hopeful",
+        "gentle"
+      ]
+    },
+    {
+      "location": "Same cliff, present day, twilight",
+      "lighting": "cool blue moonlight mixed with warm amber, chiaroscuro",
+      "mood": [
+        "reflective",
+        "bittersweet",
+        "serene"
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "description": "Wide establishing shot of the cliff, showing the vast ocean and the horizon, with a small figure on the edge, father and daughter facing the sea.",
+      "camera_move": "static wide-angle",
+      "duration": 5
+    },
+    {
+      "shot_id": "shot_002",
+      "description": "Medium close‑up of 7‑year‑old玛莲, her hair fluttering, eyes bright, clutching a brass compass, father's hand on her back.",
+      "camera_move": "push_in",
+      "duration": 4
+    },
+    {
+      "shot_id": "shot_003",
+      "description": "Overhead view of the father teaching the child to read the sky, steam rising from a nearby rusted furnace, highlighting industrial background.",
+      "camera_move": "pan_left then tilt_up",
+      "duration": 6
+    },
+    {
+      "shot_id": "shot_004",
+      "description": "Close‑up of the daughter's face, tears glistening, as she looks at the sea, with a faint memory of the father's voice echoing.",
+      "camera_move": "tilt_up",
+      "duration": 3
+    },
+    {
+      "shot_id": "shot_005",
+      "description": "Wide shot of the same cliff at dusk, sky painted with cold blue moonlight and warm amber, daughter standing alone with a pocket watch.",
+      "camera_move": "static",
+      "duration": 5
+    }
+  ]
+}

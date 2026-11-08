@@ -1,0 +1,13 @@
+{
+  "total_wall_sec": 11.62,
+  "first_byte_sec": 11.62,
+  "tokens_used": 3167,
+  "prompt_tokens": 831,
+  "completion_tokens": 2336,
+  "finish_reason": "stop",
+  "content_source": "content",
+  "reasoning_tokens": 1433,
+  "name": "lfm",
+  "port": 8091,
+  "json_ok": true
+}

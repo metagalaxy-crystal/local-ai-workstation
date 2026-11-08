@@ -1,0 +1,12 @@
+
+The user asks: "Please describe in detail the main goods and cultural exchanges that circulated along the Silk Road, in Chinese." So they want a detailed Chinese description of main items and cultural exchanges.
+
+We need to produce a comprehensive answer, in Chinese, covering the main goods (silk, spices, precious stones, ceramics, tea, paper, gunpowder, horses, etc.) and cultural exchanges (Buddhism, Islam, Christianity, art, technology, languages, etc.) Provide context, maybe timeline, routes, impact.
+
+We must not add extra commentary. No markdown unless requested. The instruction says no formatting unless explicitly asked. So plain text paragraphs.
+
+We should ensure we cover:
+
+- Overview of Silk Road: land and maritime routes, time period (Han dynasty to medieval period, later Ottoman etc.)
+
+- Main goods: Chinese silk, porcelain, tea, paper, gunpowder, lacquerware, jade, spices (cinnamon, pepper), precious stones (lapis lazuli, jade, turquoise), horses (Ferghana), glassware, metal goods, ceramics, textiles, etc. Also mention Indian goods: spices, gems, ivory, etc. And Western goods: glass, gold, silver

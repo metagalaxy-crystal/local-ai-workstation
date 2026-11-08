@@ -1,0 +1,12 @@
+```python
+def min_coins(coins, amount):
+    if amount == 0:
+        return 0
+    if amount < 0:
+        return -1
+    min_coins = float('inf')
+    for coin in coins:
+        if amount - coin >= 0:
+            min_coins = min(min_coins, min_coins(coins, amount - coin) + 1)
+    return min_coins if min_coins != float('inf') else -1
+```

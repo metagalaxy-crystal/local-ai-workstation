@@ -1,0 +1,40 @@
+
+The user wants an essay of about 300 words, titled "The First Rain of Autumn", output the essay text only. No extra commentary. No markdown unless requested. So we should produce plain text, about 300 words (maybe 290-310). Title line? The essay title should be included. Probably start with the title line, then the essay. The instruction: "Output the essay text only." So we should not add any extra notes. So we can write:
+
+The First Rain of Autumn
+
+[essay paragraphs]
+
+Make sure about 300 words. Let's aim for ~300 words. Count roughly. Write about the first rain of autumn, sensory details, metaphor, etc. Let's produce about 300 words. Let's count: maybe 3-4 paragraphs, each ~70-80 words, total ~300.
+
+Write plain text.
+
+Let's draft ~300 words.
+
+Paragraph 1: description of season, atmosphere, the first rain.
+
+Paragraph 2: sensory details: sound, smell, light.
+
+Paragraph 3: emotional reflection, change, anticipation.
+
+Paragraph 4: concluding thought.
+
+Now count words. Let's write and then count.
+
+Draft:
+
+The First Rain of Autumn
+
+When the summer heat finally yields, the world prepares for a quieter, more reflective hush. The first rain of autumn arrives on a pale, amber sky, its droplets falling with a gentle insistence that seems to coax the last lingering warmth from the earth. A soft patter begins at the edges of the garden, spreading across leaves and grass until the entire landscape shivers under a muted veil. This rain is not a sudden assault but a whispered promise, signaling the transition from the exuberance of summer to the introspective calm of fall.
+
+Each drop carries the scent of damp soil and distant pine, a perfume that awakens memories of harvest fields and distant campfires. The air grows cooler, tinged with a faint metallic note as the atmosphere holds the moisture of the coming storm. Sunlight, filtered through thinning clouds, glints off the wet surface of puddles, turning them into tiny mirrors that reflect the muted colors of turning leaves. The rhythm of the rain creates a steady percussion, a lullaby that eases the restless energy of the day, encouraging the world to slow its pace.
+
+In this moment, the ordinary becomes extraordinary. Children pause their play to watch the rhythm of droplets on a leaf, while elders breathe deeply, feeling the crispness that promises change. The rain acts as a catalyst, coaxing buds to swell and grasses to rejuvenate, reminding us that endings are also beginnings. It invites contemplation of cycles — growth, decay, renewal — all woven together in a single, silver thread.
+
+As the storm subsides, the earth retains a lingering freshness, a promise that the season will continue its slow, inevitable transformation. The first rain of autumn, therefore, is more than a weather event; it is a gentle reminder that every conclusion holds within it the seed of new possibilities, and that the world, though altered, remains connected to the timeless rhythm of nature.
+
+Now count words. Let's count manually: 
+
+"The(1) First(2) Rain(3) of(4) Autumn(5)
+
+When(6) the(7) summer(8) heat(9) finally(10) yields,(11) the(12) world(13) prepares(14) for(15) a(16) quieter,(17) more(18) reflective(19) hush.(20) The(21) first(22) rain(23) of(24) autumn(25) arrives(26) on(27) a(28) pale,(29) amber(30) sky,(31) its(32) droplets(33) falling(34) with(35) a(36) gentle(37) insistence(38) that(39) seems(40) to(41) coax(42) the(43) last(44) lingering(45) warmth(46) from(47) the(48) earth.(49) A(50) soft(51) patter(52) begins(53) at(54) the(55) edges(56) of(57)

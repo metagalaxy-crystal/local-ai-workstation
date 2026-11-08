@@ -1,0 +1,20 @@
+{
+ "bgm_main": {
+  "file": "d:\\models\\sample\\天地源\\天地源_电影版\\music\\bgm_main.flac",
+  "tags": "cinematic, ambient, piano, strings pad, slow, melancholic, atmospheric, film score, reverb, minimal",
+  "duration": 76,
+  "bpm": 66,
+  "keyscale": "D minor",
+  "seed": 901,
+  "steps": 30
+ },
+ "bgm_climax": {
+  "file": "d:\\models\\sample\\天地源\\天地源_电影版\\music\\bgm_climax.flac",
+  "tags": "cinematic, strings, intense, emotional, slow build, film score, epic, drums, swelling",
+  "duration": 40,
+  "bpm": 66,
+  "keyscale": "D minor",
+  "seed": 902,
+  "steps": 30
+ }
+}

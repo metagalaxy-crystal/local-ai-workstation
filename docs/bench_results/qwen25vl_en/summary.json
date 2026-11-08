@@ -1,0 +1,67 @@
+{
+  "label": "qwen25vl",
+  "endpoint": "127.0.0.1:8094",
+  "extra": {},
+  "time": "2026-10-20 09:43:32",
+  "results": [
+    {
+      "test": "t0_probe",
+      "tok_per_sec_median": 65.5
+    },
+    {
+      "test": "t1_writing",
+      "wall_sec": 6.7,
+      "prompt_tokens": 43,
+      "completion_tokens": 449,
+      "tok_per_sec": 67.3
+    },
+    {
+      "test": "t2_math",
+      "wall_sec": 7.3,
+      "prompt_tokens": 54,
+      "completion_tokens": 491,
+      "tok_per_sec": 67.3,
+      "auto_correct": true
+    },
+    {
+      "test": "t3_code",
+      "wall_sec": 0.8,
+      "prompt_tokens": 65,
+      "completion_tokens": 51,
+      "tok_per_sec": 63.1,
+      "auto_correct": true
+    },
+    {
+      "test": "t4_summary",
+      "wall_sec": 4.2,
+      "prompt_tokens": 612,
+      "completion_tokens": 263,
+      "tok_per_sec": 63.2
+    },
+    {
+      "test": "t5_qa",
+      "correct": "3/3"
+    },
+    {
+      "test": "t6_vision",
+      "wall_sec": 7.5,
+      "prompt_tokens": 900,
+      "completion_tokens": 443,
+      "tok_per_sec": 59.4
+    },
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 1.5,
+      "prompt_tokens": 66,
+      "completion_tokens": 93,
+      "tok_per_sec": 63.0
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 0.4,
+      "prompt_tokens": 51,
+      "completion_tokens": 24,
+      "tok_per_sec": 64.0
+    }
+  ]
+}

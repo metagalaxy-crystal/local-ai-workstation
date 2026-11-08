@@ -1,0 +1,13 @@
+{
+  "total_wall_sec": 18.46,
+  "first_byte_sec": 18.42,
+  "tokens_used": 1815,
+  "prompt_tokens": 718,
+  "completion_tokens": 1097,
+  "finish_reason": "stop",
+  "content_source": "content",
+  "reasoning_tokens": 150,
+  "name": "deepseek",
+  "port": 8092,
+  "json_ok": true
+}

@@ -1,0 +1,76 @@
+
+We are going to count the frequency of each number in the list `nums`.
+ Then, we will sort the numbers by frequency (descending) and then by the number itself (ascending) if frequencies are the same.
+ However, note: the requirement is to return the top k frequent numbers, and if frequency is the same, sort by the number in ascending order.
+
+ Steps:
+ 1. Count the frequency of each number.
+ 2. Create a list of tuples (count, number) for each distinct number.
+ 3. Sort this list by: 
+    - Primary: count (descending)
+    - Secondary: number (ascending)
+ 4. Then, take the first k numbers (the top k by frequency) and return the list of numbers (without the counts, but note: if k is larger than distinct numbers, then we return all distinct numbers? Actually, the problem says "top k" but doesn't specify if k can be larger than distinct numbers. We assume k is at most the distinct numbers.)
+
+ But note: the problem says "按频率从高到低排序（频率相同按数值升序）", meaning we first sort by frequency descending, then by number ascending.
+
+ Then we return the list of the numbers (without the counts) for the top k.
+
+ However, we must return the list of numbers, not tuples.
+
+ We can use:
+    from collections import Counter
+
+ Then, we have a list of (count, num) for each num. Then sort by key that uses both.
+
+ Example:
+    Input: nums = [1,1,1,2,2,3], k = 2
+    Output: [1,2] (since 1 appears 3 times, 2 appears 2 times, 3 appears 1 time)
+
+ But note: the requirement is to return the numbers, and if two numbers have the same frequency, then we sort by the number in ascending order.
+
+ Let's break down:
+    Step 1: Count frequencies -> Counter({1:3, 2:2, 3:1})
+    Step 2: We want to sort by frequency descending and then by number ascending.
+
+    We can do: 
+        sorted_nums = sorted(freq_dict.items(), key=lambda x: (-x[1], x[0]))
+
+    Then we take the first k numbers and extract the numbers.
+
+    But note: if k is 0, we return empty list.
+
+    However, the problem says: "return the top k frequent numbers", so we can assume k is positive and at most the distinct numbers.
+
+ Implementation:
+
+    def top_k_frequent(nums, k):
+        if k == 0:
+            return []
+        # Count the frequency
+        from collections import Counter
+        count = Counter(nums)
+        # Get a list of (frequency, number) for each number, but we want to sort by frequency descending and then by number ascending.
+        # So we can use: 
+        #   sorted_list = sorted([(num, cnt) for num, cnt in count.items()], key=lambda x: (-x[1], x[0]))
+        # Then take the first k and then extract the numbers.
+
+        # But note: we don't need the counts in the output, just the numbers.
+
+        # Alternatively, we can sort by two keys: first by frequency descending, then by number ascending.
+        # We can do: 
+        #   sorted_list = sorted(count.items(), key=lambda x: (x[1], x[0]), reverse=True) 
+        # But wait, reverse=True would reverse both keys. We want descending by frequency and ascending by number, so we can't do reverse on the whole tuple.
+
+        # So better to do: 
+        #   sorted_list = sorted(count.items(), key=lambda x: (-x[1], x[0]))
+
+        # Then we take the first k and then map to the number.
+
+        # However, note: we are sorting a list of tuples (number, frequency) by the frequency in descending and then the number in ascending.
+
+        # Let's do:
+        sorted_list = sorted([(num, cnt) for num, cnt in count.items()], key=lambda x: (-x[1], x[0]))
+        # Then we take the first k and extract the numbers.
+        return [x[0] for x in sorted_list[:k]]
+
+ But wait

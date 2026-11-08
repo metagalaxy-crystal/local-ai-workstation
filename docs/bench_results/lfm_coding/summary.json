@@ -1,0 +1,58 @@
+{
+  "label": "lfm",
+  "endpoint": "127.0.0.1:8091",
+  "temperature": 0.3,
+  "max_tokens": 2000,
+  "score": "4/5",
+  "extract_fail": 0,
+  "total_sec": 12.7,
+  "time": "2026-10-20 20:52:44",
+  "results": [
+    {
+      "t": "t1",
+      "domain": "算法实现",
+      "ok": true,
+      "extract": "def_line",
+      "wall_sec": 1.8,
+      "completion_tokens": 378,
+      "tok_per_sec": 212.3
+    },
+    {
+      "t": "t2",
+      "domain": "类设计",
+      "ok": false,
+      "extract": "code_block",
+      "wall_sec": 4.1,
+      "completion_tokens": 928,
+      "tok_per_sec": 226.7,
+      "error": "t call last):\n  File \"C:\\Users\\junsheng\\AppData\\Local\\Temp\\tmpuwbfys6b.py\", line 61, in <module>\n    c.put(3, 3)\n  File \"C:\\Users\\junsheng\\AppData\\Local\\Temp\\tmpuwbfys6b.py\", line 51, in put\n    del self.cache[key]\n        ~~~~~~~~~~^^^^^\nKeyError: 3"
+    },
+    {
+      "t": "t3",
+      "domain": "调试纠错",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 2.7,
+      "completion_tokens": 603,
+      "tok_per_sec": 220.4
+    },
+    {
+      "t": "t4",
+      "domain": "解析转换",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 1.4,
+      "completion_tokens": 324,
+      "tok_per_sec": 223.8
+    },
+    {
+      "t": "t5",
+      "domain": "动态规划",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 2.4,
+      "completion_tokens": 520,
+      "tok_per_sec": 221.1
+    }
+  ]
+}

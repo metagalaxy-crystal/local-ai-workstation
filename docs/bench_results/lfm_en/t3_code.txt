@@ -1,0 +1,6 @@
+
+def top_k_frequent(nums, k):
+    from collections import Counter
+    count = Counter(nums)
+    sorted_items = sorted(count.items(), key=lambda x: (-x[1], x[0]))
+    return [item[0] for item in sorted_items[:k]]

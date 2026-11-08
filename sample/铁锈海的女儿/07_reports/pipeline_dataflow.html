@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全链路数据流 · 铁锈海的女儿</title>
+<style>
+body { margin: 0; padding: 24px; background: #F7F7F8; }
+@media (prefers-color-scheme: dark) { body { background: #171717; } }
+:root {
+  color-scheme: light;
+  --surface: #F7F7F8;
+  --surface-muted: #EFEFF2;
+  --text: #171717;
+  --text-muted: #52525B;
+  --border: rgba(23,23,23,0.12);
+  --brand: #0FDC78;
+  --brand-soft: #E5FFF2;
+  --brand-text: #004D26;
+  --brand-on: #004D26;
+  --radius: 8px;
+  --radius-card: 12px;
+  --radius-full: 999px;
+  --spacer-4: 4px;
+  --spacer-8: 8px;
+  --spacer-12: 12px;
+  --spacer-16: 16px;
+  --spacer-20: 20px;
+  --spacer-24: 24px;
+  --font-sans: "SF Pro Text","PingFang SC",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono: "JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-strong: 600;
+  --text-caption: 12px/18px;
+  --text-body: 14px/20px;
+  --text-title: 16px/24px;
+  --text-code: 13px/20px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --surface: #1E1E20;
+    --surface-muted: #262626;
+    --text: #E5E5E5;
+    --text-muted: #A1A1AA;
+    --border: rgba(229,229,229,0.14);
+    --brand: #32F08C;
+    --brand-soft: #004D26;
+    --brand-text: #E5FFF2;
+    --brand-on: #004D26;
+  }
+}
+.df { color: var(--text); font: var(--weight-regular) var(--text-body) var(--font-sans); max-width: 980px; margin: 0 auto; }
+.df-title { font: var(--weight-strong) var(--text-title) var(--font-sans); margin: 0 0 var(--spacer-4); }
+.df-note { font: var(--weight-regular) var(--text-caption) var(--font-sans); color: var(--text-muted); margin: 0 0 var(--spacer-16); }
+.df-note code { font-family: var(--font-mono); }
+
+.stage { display: grid; grid-template-columns: 28px 1fr; gap: var(--spacer-12); align-items: start; }
+.badge { width: 24px; height: 24px; border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;
+  background: var(--surface); border: 1.5px solid var(--border); margin-top: 10px;
+  font: var(--weight-strong) var(--text-code) var(--font-mono); color: var(--text-muted); }
+.stage-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: var(--spacer-12) var(--spacer-16); }
+.stage.focal .badge { background: var(--brand); border-color: var(--brand); color: var(--brand-on); }
+.stage.focal .stage-card { border-color: var(--brand); }
+
+.s-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--spacer-8); flex-wrap: wrap; margin-bottom: var(--spacer-4); }
+.s-name { font: var(--weight-medium) var(--text-body) var(--font-sans); }
+.s-way { font: var(--weight-regular) var(--text-caption) var(--font-sans); color: var(--text-muted); }
+.cmd { font: var(--weight-medium) var(--text-code) var(--font-mono); color: var(--text); display: flex; gap: var(--spacer-8);
+  background: var(--surface-muted); border-radius: var(--radius); padding: var(--spacer-4) var(--spacer-8); margin: var(--spacer-4) 0 var(--spacer-8); overflow-wrap: anywhere; }
+.cmd .prompt { color: var(--text-muted); user-select: none; }
+.io { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacer-8); }
+.io-col { display: flex; flex-direction: column; gap: var(--spacer-4); min-width: 0; }
+.io-k { font: var(--weight-medium) var(--text-caption) var(--font-sans); color: var(--text-muted); letter-spacing: .04em; }
+.fitem { display: flex; gap: var(--spacer-4); align-items: baseline; min-width: 0;
+  font: var(--weight-regular) var(--text-caption) var(--font-mono); color: var(--text); overflow-wrap: anywhere; }
+.fitem .arrow { color: var(--text-muted); font-family: var(--font-sans); flex: none; }
+.fitem.out-final { background: var(--brand-soft); color: var(--brand-text); border-radius: var(--radius); padding: var(--spacer-4) var(--spacer-8); }
+.fitem.muted { color: var(--text-muted); }
+
+.sep { display: flex; justify-content: center; margin: var(--spacer-4) 0; }
+.sep svg { color: var(--text-muted); }
+.fork-tag { display: flex; align-items: center; gap: var(--spacer-8); margin: var(--spacer-4) 0; }
+.fork-tag .line { flex: 1; height: 1px; background: var(--border); }
+.fork-tag .pill { font: var(--weight-medium) var(--text-caption) var(--font-sans); color: var(--text-muted);
+  border: 1px dashed var(--border); border-radius: var(--radius-full); padding: 2px var(--spacer-12); white-space: nowrap; }
+
+.fork { display: grid; grid-template-columns: 1fr 1fr 1.15fr; gap: var(--spacer-12); margin-left: 40px; }
+.lane { background: var(--surface-muted); border: 1px solid var(--border); border-radius: var(--radius-card); padding: var(--spacer-12); display: flex; flex-direction: column; gap: var(--spacer-8); min-width: 0; }
+.lane-title { font: var(--weight-medium) var(--text-body) var(--font-sans); }
+.lane-sub { font: var(--weight-regular) var(--text-caption) var(--font-sans); color: var(--text-muted); margin-top: -4px; }
+.lane-div { height: 1px; background: var(--border); }
+.lane-block { display: flex; flex-direction: column; gap: var(--spacer-4); min-width: 0; }
+.lane-b-name { font: var(--weight-medium) var(--text-caption) var(--font-sans); color: var(--text); }
+.spec { font: var(--weight-regular) var(--text-caption) var(--font-sans); color: var(--text-muted); margin-top: var(--spacer-8); }
+.spec code { font-family: var(--font-mono); color: var(--brand-text); }
+
+@media (max-width: 640px) {
+  .io { grid-template-columns: 1fr; }
+  .fork { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="df">
+  <h3 class="df-title">全链路数据流：文件 · 运行方式 · 输入输出</h3>
+  <p class="df-note">项目内路径为相对路径，根 <code>ROOT = D:\models\铁锈海的女儿\</code>；外部路径写绝对路径。9 步顺序执行，④之后三路并行，⑧汇流。保存时间：2026-10-08。</p>
+
+  <div class="stage">
+    <div class="badge">1</div>
+    <div class="stage-card">
+      <div class="s-head"><span class="s-name">节段提取</span><span class="s-way">一次性脚本</span></div>
+      <div class="cmd"><span class="prompt">$</span>python 01_story_text/extract_section.py</div>
+      <div class="io">
+        <div class="io-col"><span class="io-k">输入</span>
+          <span class="fitem">D:\models\故事\番外小说 铁锈海的女儿.docx</span></div>
+        <div class="io-col"><span class="io-k">输出</span>
+          <span class="fitem">01_story_text\section1.txt（第一节 7 段）</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sep"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></div>
+
+  <div class="stage">
+    <div class="badge">2</div>
+    <div class="stage-card">
+      <div class="s-head"><span class="s-name">形象 / 场景设计</span><span class="s-way">人工 + LLM 协作</span></div>
+      <div class="cmd"><span class="prompt">$</span>读 section1.txt → 编写角色/场景/画风卡</div>
+      <div class="io">
+        <div class="io-col"><span class="io-k">输入</span>
+          <span class="fitem">01_story_text\section1.txt</span></div>
+        <div class="io-col"><span class="io-k">输出</span>
+          <span class="fitem">02_design\design.md（3角色×2年龄、3场景、画风定档）</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sep"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></div>
+
+  <div class="stage">
+    <div class="badge">3</div>
+    <div class="stage-card">
+      <div class="s-head"><span class="s-name">分镜生成（5 路 LLM）</span><span class="s-way">llama.cpp / 在线，逐路调用</span></div>
+      <div class="cmd"><span class="prompt">$</span>python 03_storyboard/llm_runner.py --name nanbeige|lfm|deepseek|qwen35b|trae_glm5</div>
+      <div class="io">
+        <div class="io-col"><span class="io-k">输入</span>
+          <span class="fitem">section1.txt + design.md 约束</span></div>
+        <div class="io-col"><span class="io-k">输出</span>
+          <span class="fitem">llm_{5家}.json + .time.json</span>
+          <span class="fitem"><span class="arrow">→</span>人工综合 final_storyboard.json</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sep"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></div>
+
+  <div class="stage">
+    <div class="badge">4</div>
+    <div class="stage-card">
+      <div class="s-head"><span class="s-name">批量提交（分叉点）</span><span class="s-way">HTTP POST，非阻塞排队</span></div>
+      <div class="cmd"><span class="prompt">$</span>python scripts/batch_submit.py --model wan22|minimax_h3 [--unet_name ... --prefix minimax_int8]</div>
+      <div class="io">
+        <div class="io-col"><span class="io-k">输入</span>
+          <span class="fitem">03_storyboard\final_storyboard.json</span>
+          <span class="fitem muted"><span class="arrow">→</span>POST 127.0.0.1:8188/prompt</span></div>
+        <div class="io-col"><span class="io-k">输出</span>
+          <span class="fitem">04_wan22\_batch_submit_*.json</span>
+          <span class="fitem">05_minimax_h3\_batch_submit_*.json（含 prompt_id）</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fork-tag"><span class="line"></span><span class="pill">④ 之后 · 三路并行</span><span class="line"></span></div>
+
+  <div class="fork">
+    <div class="lane">
+      <span class="lane-title">⑤ Wan2.2 渲染</span>
+      <span class="lane-sub">运行方式：ComfyUI 队列自动执行，模型加载在 ComfyUI 进程内</span>
+      <div class="lane-block">
+        <span class="io-k">输入</span>
+        <span class="fitem">工作流 JSON + Wan2.2-5B GGUF + UMT5/VAE</span>
+      </div>
+      <div class="lane-block">
+        <span class="io-k">输出（静音）</span>
+        <span class="fitem">D:\models\ComfyUI\output\story_video\wan22_shot_001~006.mp4</span>
+        <span class="fitem muted">73 帧/镜，shot1 1088×608，余 832×480</span>
+      </div>
+    </div>
+
+    <div class="lane">
+      <span class="lane-title">⑤′ MiniMax H3 渲染</span>
+      <span class="lane-sub">运行方式：ComfyUI 队列自动执行，w6a8 与 int8 两批</span>
+      <div class="lane-block">
+        <span class="io-k">输入</span>
+        <span class="fitem">工作流 JSON + H3 w6a8 或 int8 + Qwen3-VL/VAE</span>
+      </div>
+      <div class="lane-block">
+        <span class="io-k">输出（含原生音效）</span>
+        <span class="fitem">...\story_video\minimax_h3_shot_001~006.mp4</span>
+        <span class="fitem">...\story_video\minimax_int8_shot_001~006.mp4</span>
+      </div>
+    </div>
+
+    <div class="lane">
+      <div class="lane-block">
+        <span class="lane-b-name">⑥ BGM 生成</span>
+        <div class="cmd"><span class="prompt">$</span>python scripts/submit_bgm.py</div>
+        <span class="fitem muted">ACE-Step-1.5（ComfyUI 节点）</span>
+        <span class="io-k" style="margin-top:4px">输出</span>
+        <span class="fitem">D:\models\ComfyUI\output\story_audio\bgm_steampunk_00001.flac（19s）</span>
+      </div>
+      <div class="lane-div"></div>
+      <div class="lane-block">
+        <span class="lane-b-name">⑦ 对白合成（分男女）</span>
+        <div class="cmd"><span class="prompt">$</span>python scripts/make_voice_refs.py &amp;&amp; python scripts/gen_speech.py</div>
+        <span class="io-k">输出</span>
+        <span class="fitem">06_compare\speech\ref_father.wav · ref_girl.wav</span>
+        <span class="fitem">06_compare\speech\line1_father / line2_girl / line3_father.wav</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fork-tag"><span class="line"></span><span class="pill">三路素材汇合 → 拼接</span><span class="line"></span></div>
+
+  <div class="stage focal">
+    <div class="badge">8</div>
+    <div class="stage-card">
+      <div class="s-head"><span class="s-name">拼接混音（汇流 · 关键步）</span><span class="s-way">PyAV，无 ffmpeg CLI</span></div>
+      <div class="cmd"><span class="prompt">$</span>python scripts/concat_mix.py all</div>
+      <div class="io">
+        <div class="io-col"><span class="io-k">输入（三类素材拉回项目根）</span>
+          <span class="fitem">单镜头 mp4（wan22 / h3 / int8）</span>
+          <span class="fitem">bgm_steampunk_00001.flac</span>
+          <span class="fitem">line1~3_*.wav 对白</span></div>
+        <div class="io-col"><span class="io-k">输出 · 最终成片</span>
+          <span class="fitem out-final">04_wan22\final_wan22_silent.mp4</span>
+          <span class="fitem out-final">04_wan22\final_wan22_bgm.mp4</span>
+          <span class="fitem out-final">05_minimax_h3\final_minimax_native.mp4</span>
+          <span class="fitem out-final">05_minimax_h3\final_minimax_int8_native.mp4</span></div>
+      </div>
+      <div class="spec">规格统一：<code>832×480 @24fps · 438 帧 · 18.25s</code></div>
+    </div>
+  </div>
+
+  <div class="sep"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></div>
+
+  <div class="stage">
+    <div class="badge">9</div>
+    <div class="stage-card">
+      <div class="s-head"><span class="s-name">数据采集与报告</span><span class="s-way">HTTP GET，人工汇总</span></div>
+      <div class="cmd"><span class="prompt">$</span>python scripts/collect_timebook.py</div>
+      <div class="io">
+        <div class="io-col"><span class="io-k">输入</span>
+          <span class="fitem">ComfyUI /history 接口（timestamp 差值）</span></div>
+        <div class="io-col"><span class="io-k">输出</span>
+          <span class="fitem">06_compare\timebook_all.md</span>
+          <span class="fitem">07_reports\summary.md</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

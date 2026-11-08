@@ -1,0 +1,262 @@
+{
+ "engine": "MOSS-TTS-Realtime(v2)",
+ "voices": {
+  "narrator": "d:\\models\\sample\\天地源\\天地源_进阶版\\tts_test\\zh-CN-YunxiNeural.wav",
+  "father": "d:\\models\\sample\\天地源\\天地源_进阶版\\tts_test\\zh-CN-YunjianNeural.wav",
+  "girl": "d:\\models\\sample\\天地源\\天地源_进阶版\\tts_test\\zh-CN-XiaoxiaoNeural.wav"
+ },
+ "voice_char": {
+  "narrator": [
+   0.92,
+   3.0,
+   5.0,
+   3800,
+   0.18,
+   0.0,
+   0.11
+  ],
+  "father": [
+   0.88,
+   4.0,
+   4.5,
+   3000,
+   0.12,
+   0.08,
+   0.1
+  ],
+  "girl": [
+   1.06,
+   0.0,
+   -2.0,
+   8000,
+   0.05,
+   0.0,
+   0.1
+  ]
+ },
+ "gen_params": {
+  "temperature": 0.55,
+  "top_p": 0.8,
+  "top_k": 25,
+  "repetition_penalty": 1.05,
+  "repetition_window": 50
+ },
+ "lines": [
+  {
+   "line": 1,
+   "mood": "calm",
+   "text": "玛莲·艾德斯坦记得……铁锈海还叫蓝海的那一天。",
+   "clauses": [
+    "玛莲·艾德斯坦记得……铁锈海还叫蓝海的那一天。"
+   ],
+   "voices": [
+    "narrator"
+   ],
+   "fx": [
+    ""
+   ],
+   "seconds": 5.671,
+   "gen_seconds": 10.8
+  },
+  {
+   "line": 2,
+   "mood": "calm",
+   "text": "那年她七岁，父亲把她扛在肩头，站在灰炉镇外的悬崖上。这是她第一次离开家旅行。",
+   "clauses": [
+    "那年她七岁，",
+    "父亲把她扛在肩头，",
+    "站在灰炉镇外的悬崖上。",
+    "这是她第一次离开家旅行。"
+   ],
+   "voices": [
+    "narrator",
+    "narrator",
+    "narrator",
+    "narrator"
+   ],
+   "fx": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "seconds": 8.224,
+   "gen_seconds": 18.9
+  },
+  {
+   "line": 3,
+   "mood": "lift",
+   "text": "海风灌进她的领口，咸腥里夹着一种她说不上来的清冽。海是蓝的，像玻璃一样的蓝。",
+   "clauses": [
+    "海风灌进她的领口，",
+    "咸腥里夹着一种她说不上来的清冽。",
+    "海是蓝的，",
+    "像玻璃一样的蓝。"
+   ],
+   "voices": [
+    "narrator",
+    "narrator",
+    "narrator",
+    "narrator"
+   ],
+   "fx": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "seconds": 8.659,
+   "gen_seconds": 19.8
+  },
+  {
+   "line": 4,
+   "mood": "lift",
+   "text": "阳光碎在海面上，碎成千万片银子，晃得她眯起眼睛。",
+   "clauses": [
+    "阳光碎在海面上，",
+    "碎成千万片银子，",
+    "晃得她眯起眼睛。"
+   ],
+   "voices": [
+    "narrator",
+    "narrator",
+    "narrator"
+   ],
+   "fx": [
+    "",
+    "",
+    ""
+   ],
+   "seconds": 6.031,
+   "gen_seconds": 11.4
+  },
+  {
+   "line": 5,
+   "mood": "calm",
+   "text": "好看吗？父亲问。好看。她说。",
+   "clauses": [
+    "好看吗？",
+    "父亲问。",
+    "好看。",
+    "她说。"
+   ],
+   "voices": [
+    "father",
+    "narrator",
+    "girl",
+    "narrator"
+   ],
+   "fx": [
+    "cloth",
+    "",
+    "bright",
+    ""
+   ],
+   "seconds": 4.894,
+   "gen_seconds": 14.5
+  },
+  {
+   "line": 6,
+   "mood": "low",
+   "text": "记住这个颜色。父亲的声音从她头顶传下来，闷闷的，像隔着一层布。以后就……见不到了。",
+   "clauses": [
+    "记住这个颜色。",
+    "父亲的声音从她头顶传下来，",
+    "闷闷的，",
+    "像隔着一层布。",
+    "以后就……见不到了。"
+   ],
+   "voices": [
+    "father",
+    "narrator",
+    "narrator",
+    "narrator",
+    "father"
+   ],
+   "fx": [
+    "cloth",
+    "",
+    "",
+    "",
+    "cloth"
+   ],
+   "seconds": 10.882,
+   "gen_seconds": 24.3
+  },
+  {
+   "line": 7,
+   "mood": "low",
+   "text": "她当时不懂。她觉得，海就是深蓝色的。这是常识。",
+   "clauses": [
+    "她当时不懂。",
+    "她觉得，",
+    "海就是深蓝色的。",
+    "这是常识。"
+   ],
+   "voices": [
+    "narrator",
+    "narrator",
+    "narrator",
+    "narrator"
+   ],
+   "fx": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "seconds": 7.333,
+   "gen_seconds": 17.8
+  },
+  {
+   "line": 8,
+   "mood": "low",
+   "text": "二十九岁的玛莲，站在同一块悬崖上。脚下是锈红色的海水，赤潮像一张巨大的腐烂的毯子，一直铺到天际线。",
+   "clauses": [
+    "二十九岁的玛莲，",
+    "站在同一块悬崖上。",
+    "脚下是锈红色的海水，",
+    "赤潮像一张巨大的腐烂的毯子，",
+    "一直铺到天际线。"
+   ],
+   "voices": [
+    "narrator",
+    "narrator",
+    "narrator",
+    "narrator",
+    "narrator"
+   ],
+   "fx": [
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "seconds": 10.952,
+   "gen_seconds": 26.4
+  },
+  {
+   "line": 9,
+   "mood": "void",
+   "text": "她记不清小时候的味道，也记不清当时的颜色。唯一记得的……是父亲说的那句话。",
+   "clauses": [
+    "她记不清小时候的味道，",
+    "也记不清当时的颜色。",
+    "唯一记得的……是父亲说的那句话。"
+   ],
+   "voices": [
+    "narrator",
+    "narrator",
+    "narrator"
+   ],
+   "fx": [
+    "",
+    "",
+    ""
+   ],
+   "seconds": 7.957,
+   "gen_seconds": 13.5
+  }
+ ]
+}

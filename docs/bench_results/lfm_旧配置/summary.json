@@ -1,0 +1,22 @@
+{
+  "label": "lfm",
+  "endpoint": "127.0.0.1:8091",
+  "extra": {},
+  "time": "2026-10-19 16:34:04",
+  "results": [
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 4.9,
+      "prompt_tokens": 52,
+      "completion_tokens": 1002,
+      "tok_per_sec": 202.5
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 2.0,
+      "prompt_tokens": 43,
+      "completion_tokens": 432,
+      "tok_per_sec": 212.9
+    }
+  ]
+}

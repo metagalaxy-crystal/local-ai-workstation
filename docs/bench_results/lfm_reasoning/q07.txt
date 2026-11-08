@@ -1,0 +1,15 @@
+
+1. Determine the number of days from January 1 to October 19 2026.  
+   - Days in the months before October:  
+     Jan 31 + Feb 28 + Mar 31 + Apr 30 + May 31 + Jun 30 + Jul 31 + Aug 31 + Sep 30 = 273 days.  
+   - Add the 19 days of October: 273 + 19 = 292 days after January 1.
+
+2. Find the remainder of 292 mod 7 (the number of days in a week):  
+   - 7 × 41 = 287, remainder = 292 − 287 = 5.
+
+3. Starting from the known day (January 1 is a Thursday), add the 5‑day offset:  
+   - Thursday → Friday (1) → Saturday (2) → Sunday (3) → Monday (4) → **Tuesday (5)**.
+
+Thus, October 19 2026 falls on a Tuesday.
+
+Tuesday

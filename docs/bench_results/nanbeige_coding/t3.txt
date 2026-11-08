@@ -1,0 +1,20 @@
+```python
+def binary_search(arr, target):
+    lo, hi = 0, len(arr) - 1
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            lo = mid + 1
+        else:
+            hi = mid - 1
+    return -1
+```
+
+**修复说明：**
+1. **死循环问题**：原循环条件为 `while lo < hi`，当 `arr[mid] < target` 时将 `lo = mid`（未加1），导致搜索区间缩小不充分，可能使 `lo` 与 `mid` 相等，循环无法终止。修复为 `while lo <= hi`，并在 `arr[mid] < target` 时将 `lo = mid + 1`，确保每次迭代至少排除一个元素。
+2. **错误结果问题**：原逻辑在 `arr[mid] < target` 时保留 `mid`（`lo = mid`），可能使后续搜索包含已检查位置，导致漏检或错误返回。修复后严格将搜索范围缩小至 `(mid+1, hi)` 或 `(lo, mid-1)`，保证正确查找目标值。
+3. **边界安全**：循环条件 `lo <= hi` 覆盖 `lo == hi` 的单元素情况，确保能检查最后一个元素；循环结束后未找到目标则返回 `-1`，符合预期。
+
+（注：假设输入 `arr` 为**已排序数组**，这是二分搜索的前提。函数签名与返回值逻辑保持不变。）

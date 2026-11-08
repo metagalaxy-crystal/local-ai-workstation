@@ -1,0 +1,22 @@
+```python
+def merge(intervals):
+    if not intervals:
+        return []
+    
+    # 按起点排序
+    intervals.sort(key=lambda x: x[0])
+    
+    merged = [intervals[0]]
+    for current in intervals[1:]:
+        last_end = merged[-1][1]
+        current_start = current[0]
+        
+        if current_start <= last_end:
+            # 重叠，合并
+            merged[-1][1] = max(last_end, current[1])
+        else:
+            # 不重叠，添加新区间
+            merged.append(current)
+    
+    return merged
+```

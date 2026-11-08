@@ -1,0 +1,57 @@
+{
+  "label": "ornith",
+  "endpoint": "127.0.0.1:8096",
+  "temperature": 0.3,
+  "max_tokens": 2000,
+  "score": "5/5",
+  "extract_fail": 0,
+  "total_sec": 54.3,
+  "time": "2026-10-20 21:02:47",
+  "results": [
+    {
+      "t": "t1",
+      "domain": "算法实现",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 2.2,
+      "completion_tokens": 185,
+      "tok_per_sec": 85.0
+    },
+    {
+      "t": "t2",
+      "domain": "类设计",
+      "ok": true,
+      "extract": "code_block(多个取最后)",
+      "wall_sec": 20.5,
+      "completion_tokens": 2000,
+      "tok_per_sec": 97.5
+    },
+    {
+      "t": "t3",
+      "domain": "调试纠错",
+      "ok": true,
+      "extract": "code_block(多个取最后)",
+      "wall_sec": 20.4,
+      "completion_tokens": 2000,
+      "tok_per_sec": 98.1
+    },
+    {
+      "t": "t4",
+      "domain": "解析转换",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.7,
+      "completion_tokens": 434,
+      "tok_per_sec": 92.6
+    },
+    {
+      "t": "t5",
+      "domain": "动态规划",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 6.2,
+      "completion_tokens": 590,
+      "tok_per_sec": 95.0
+    }
+  ]
+}

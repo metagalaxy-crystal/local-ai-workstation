@@ -1,0 +1,46 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Topic: HTTP protocol (HTTP 协议).
+    *   Specific subject: Status code 404 (404 状态码).
+    *   Question: What does it represent? (表示什么？).
+    *   Language: Chinese.
+
+2.  **Retrieve Knowledge:**
+    *   What is 404 in HTTP?
+    *   It's a response status code.
+    *   The full name is "Not Found".
+    *   It means the server cannot find the requested resource (URL).
+    *   It doesn't necessarily mean the server is down; it usually means the specific page/file doesn't exist.
+
+3.  **Draft the Answer (Internal Monologue/Draft):**
+    *   404 表示 Not Found.
+    *   中文意思是"未找到"或"找不到页面".
+    *   说明服务器无法找到请求的网页.
+    *   通常是因为 URL 写错了，或者页面被删除了.
+    *   这是一个常见的 HTTP 状态码.
+
+4.  **Refine and Format (Chinese):**
+    *   Start with a direct answer.
+    *   Provide the English name.
+    *   Explain the meaning clearly.
+    *   Maybe give an example or common scenario (like 404 page).
+
+    *Draft:* HTTP 协议中，404 状态码表示 **"Not Found"（未找到）**。它意味着服务器无法找到客户端请求的资源（通常是网页、图片、API 接口等）。
+
+5.  **Final Polish:**
+    *   Make it concise and accurate.
+    *   Structure: Definition -> Explanation -> Common cause.
+
+    *Revised Draft:*
+    HTTP 协议中，404 状态码表示 **"Not Found"（未找到）**。
+
+    具体含义是：服务器无法找到客户端请求的资源（如网页、文件、API 接口等）。通常是因为 URL 地址错误、页面被删除或路径不存在。
+
+6.  **Final Output Generation** (matching the thought process).
+    *   Keep it simple and direct.
+
+    *Final Chinese Response:*
+    HTTP 协议中，404 状态码表示 **"Not Found"（未找到）**。
+
+    它意味着服务器无法找到客户端请求的资源

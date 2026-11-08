@@ -1,0 +1,52 @@
+Let's solve the problem step-by-step.
+
+**Let:**
+- \( C \) = number of chickens
+- \( R \) = number of rabbits
+
+**Given:**
+1. Each chicken and each rabbit has **1 head**.
+   \[
+   C + R = 35 \quad \text{(Equation 1)}
+   \]
+2. Chickens have **2 legs**, and rabbits have **4 legs**.
+   \[
+   2C + 4R = 94 \quad \text{(Equation 2)}
+   \]
+
+**Step 1: Simplify Equation 2**
+Divide the entire equation by 2 to simplify:
+\[
+C + 2R = 47 \quad \text{(Equation 2a)}
+\]
+
+**Step 2: Subtract Equation 1 from Equation 2a**
+\[
+(C + 2R) - (C + R) = 47 - 35
+\]
+\[
+C + 2R - C - R = 12
+\]
+\[
+R = 12
+\]
+
+**Step 3: Find \( C \) using Equation 1**
+\[
+C + 12 = 35
+\]
+\[
+C = 35 - 12
+\]
+\[
+C = 23
+\]
+
+**Final Answer:**
+\[
+\boxed{23 \text{ chickens and } 12 \text{ rabbits}}
+\]
+
+**Verification:**
+- **Heads:** \( 23 + 12 = 35 \) ✔️
+- **Legs:** \( 2 \times 23 + 4 \times 12 = 46 + 48 = 94 \) ✔️

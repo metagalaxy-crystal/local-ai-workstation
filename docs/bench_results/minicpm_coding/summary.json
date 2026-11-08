@@ -1,0 +1,60 @@
+{
+  "label": "minicpm",
+  "endpoint": "127.0.0.1:8095",
+  "temperature": 0.3,
+  "max_tokens": 2000,
+  "score": "2/5",
+  "extract_fail": 0,
+  "total_sec": 11.7,
+  "time": "2026-10-20 21:01:38",
+  "results": [
+    {
+      "t": "t1",
+      "domain": "算法实现",
+      "ok": false,
+      "extract": "code_block",
+      "wall_sec": 0.5,
+      "completion_tokens": 106,
+      "tok_per_sec": 217.1,
+      "error": "recent call last):\n  File \"C:\\Users\\junsheng\\AppData\\Local\\Temp\\tmp75nxnp7g.py\", line 19, in <module>\n    assert merge([[1,10],[2,3],[4,5],[11,12]]) == [[1,10],[11,12]]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError"
+    },
+    {
+      "t": "t2",
+      "domain": "类设计",
+      "ok": false,
+      "extract": "code_block",
+      "wall_sec": 1.4,
+      "completion_tokens": 343,
+      "tok_per_sec": 239.9,
+      "error": "c = LRUCache(2)\n        ^^^^^^^^^^^\n  File \"C:\\Users\\junsheng\\AppData\\Local\\Temp\\tmpp1v0bvk7.py\", line 5, in __init__\n    self.link = {key: [self, self]}  # (next, prev) for doubly linked list\n                 ^^^\nNameError: name 'key' is not defined"
+    },
+    {
+      "t": "t3",
+      "domain": "调试纠错",
+      "ok": false,
+      "extract": "code_block",
+      "wall_sec": 7.8,
+      "completion_tokens": 1952,
+      "tok_per_sec": 251.0,
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\junsheng\\AppData\\Local\\Temp\\tmpkmbm1pvr.py\", line 14, in <module>\n    assert binary_search([1,3,5,7,9], 5) == 2\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError"
+    },
+    {
+      "t": "t4",
+      "domain": "解析转换",
+      "ok": true,
+      "extract": "def_line",
+      "wall_sec": 1.3,
+      "completion_tokens": 308,
+      "tok_per_sec": 242.1
+    },
+    {
+      "t": "t5",
+      "domain": "动态规划",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 0.5,
+      "completion_tokens": 107,
+      "tok_per_sec": 227.0
+    }
+  ]
+}

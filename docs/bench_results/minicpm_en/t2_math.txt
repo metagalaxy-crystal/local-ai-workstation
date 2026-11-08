@@ -1,0 +1,37 @@
+Let \( c \) be the number of chickens and \( r \) be the number of rabbits.
+
+From the problem, we know:
+- The total number of heads is 35, so \( c + r = 35 \).
+- The total number of legs is 94, so \( 2c + 4r = 94 \) (since chickens have 2 legs and rabbits have 4 legs).
+
+Now solve the system of equations.
+
+From the first equation, express \( c \) in terms of \( r \):
+\[ c = 35 - r \]
+
+Substitute into the second equation:
+\[
+2(35 - r) + 4r = 94
+\]
+Simplify:
+\[
+70 - 2r + 4r = 94
+\]
+\[
+70 + 2r = 94
+\]
+Subtract 70 from both sides:
+\[
+2r = 24
+\]
+Divide by 2:
+\[
+r = 12
+\]
+
+Now substitute \( r = 12 \) back into \( c = 35 - r \):
+\[
+c = 35 - 12 = 23
+\]
+
+Thus, there are \(\boxed{23}\) chickens and \(\boxed{12}\) rabbits.

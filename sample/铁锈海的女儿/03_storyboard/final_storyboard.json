@@ -1,0 +1,101 @@
+{
+  "style": "steampunk_realistic",
+  "synthesis_note": "综合 Nanbeige3B/DeepSeek-R1/GLM-5.2 三家之长定稿。LFM2.5 因人物理解偏差(把'铁锈海'当成人)仅作对比参考。Qwen35B 因 8GB VRAM 下 CPU offload 过慢超时，标注为 impractical。最终取 6 镜头平衡叙事完整度与生成时长。",
+  "characters": [
+    {
+      "name": "玛莲·艾德斯坦（幼年 7 岁）",
+      "age": 7,
+      "appearance": "浅金色卷发及肩，琥珀褐瞳孔大而好奇，脸蛋圆润带雀斑",
+      "outfit": "深棕色粗呢短斗篷，米白亚麻内衬裙，腰系铜扣皮带，脖挂黄铜怀表，小皮靴",
+      "tags": ["童真", "好奇", "蒸汽朋克童装"]
+    },
+    {
+      "name": "玛莲·艾德斯坦（成年 29 岁）",
+      "age": 29,
+      "appearance": "浅金色长发束低马尾，琥珀褐瞳，下颌线利落，颧骨略高，眉间浅疤，神情疲惫坚定",
+      "outfit": "深灰绿工程风衣，皮革护肩带铆钉，颈挂铜管呼吸面罩，腰挂工具袋与生锈斧头，高筒铜扣皮靴",
+      "tags": ["沧桑", "工业幸存者", "蒸汽朋克工程师装"]
+    },
+    {
+      "name": "父亲（艾德斯坦）",
+      "age": 35,
+      "appearance": "深褐色短发微卷，络腮胡修剪整齐，宽肩厚胸，手部油污与旧烫痕",
+      "outfit": "灰蓝锅炉工帆布背心，外罩油渍皮革围裙，铜质护目镜推于额头，腰挂扳手与压力阀",
+      "tags": ["锅炉工", "慈父", "工业蓝领"]
+    }
+  ],
+  "scenes": [
+    {
+      "location": "灰炉镇外悬崖——幼年回忆段",
+      "lighting": "侧逆光，午后金色阳光从海面反射，色温 5200K 偏暖，海面银光碎点",
+      "mood": ["温暖", "怀旧", "纯净", "即将消逝"]
+    },
+    {
+      "location": "灰炉镇外悬崖——成年现实段",
+      "lighting": "顶光偏冷，铅灰天空，海面反射锈红暗橙，色温 6500K 偏冷，雾气低垂",
+      "mood": ["压抑", "腐朽", "失落", "工业污染"]
+    },
+    {
+      "location": "灰炉镇远景",
+      "lighting": "黄昏余晖，烟囱黑烟与晚霞交织，琥珀暖光",
+      "mood": ["苍凉", "蒸汽朋克工业城镇", "末日感"]
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "description": "远景建立镜头：灰炉镇依山而建，铜质管道与齿轮驱动的蒸汽机械林立，烟囱吐黑烟。镜头从镇外悬崖缓缓向海面下降，远处海平面黄昏下泛着未污染的蓝。前景有生锈铁栏杆与废弃锅炉虫外壳。steampunk realistic, wide establishing shot, cinematic.",
+      "camera_move": "tilt_down",
+      "duration": 6,
+      "wan_prompt": "Steampunk realistic wide establishing shot, a cliffside industrial town named Huilu with brass pipes and gear-driven steam machinery, chimneys billowing black smoke, dusk light amber and warm, distant ocean horizon glinting unpolluted blue, rusty iron railings and discarded boiler-bug shells in foreground, cinematic, volumetric haze, photorealistic, 8k detail",
+      "minimax_prompt": "蒸汽朋克写实远景，灰炉镇依山而建，铜质管道与齿轮蒸汽机械林立，烟囱吐黑烟，黄昏琥珀暖光，远处海平面泛蓝，前景生锈铁栏杆与废弃锅炉虫外壳，电影感体积雾，照片级真实"
+    },
+    {
+      "shot_id": "shot_002",
+      "description": "幼年玛莲坐在父亲肩头，父亲背对镜头面朝蓝色大海。海风掀起女孩浅金色卷发与斗篷下摆，她睁大琥珀褐瞳孔，瞳孔倒映整片蓝海与碎银阳光。父亲粗糙油污的大手扶着她的小腿。",
+      "camera_move": "push_in",
+      "duration": 5,
+      "wan_prompt": "Steampunk realistic, 7-year-old girl with light golden curly shoulder-length hair sitting on her father's shoulders, father seen from behind facing vast deep blue glassy sea, sea wind blowing girl's hair and brown cloak, amber-brown eyes wide reflecting blue sea and silver sunlight, father's oil-stained rough hands gripping her legs, warm afternoon side-backlight, nostalgic, cinematic, photorealistic",
+      "minimax_prompt": "蒸汽朋克写实，7岁浅金色卷发女孩坐在父亲肩头，父亲背对镜头面朝蓝色玻璃般大海，海风掀起女孩头发与棕色斗篷，琥珀褐瞳孔倒映蓝海与碎银阳光，父亲油污大手扶着她的小腿，午后侧逆光，怀旧电影感，照片级真实"
+    },
+    {
+      "shot_id": "shot_003",
+      "description": "特写蓝色海面：玻璃般透明的蓝，阳光碎成千万片银子在浪尖跳动。镜头缓慢横移，前景悬崖边野草与一只铜壳机械蜻蜓停在草尖。",
+      "camera_move": "pan_right",
+      "duration": 4,
+      "wan_prompt": "Steampunk realistic close-up of pristine deep blue sea surface, glassy transparent blue water, sunlight shattering into millions of silver shards dancing on wave crests, slow pan right, foreground cliff edge wild grass with a brass-shelled mechanical dragonfly perched on a grass tip, warm golden sunlight, photorealistic, cinematic",
+      "minimax_prompt": "蒸汽朋克写实特写蓝色海面，玻璃般透明的蓝，阳光碎成千万片银子在浪尖跳动，缓慢横移，前景悬崖边野草与铜壳机械蜻蜓停在草尖，温暖金色阳光，照片级真实电影感"
+    },
+    {
+      "shot_id": "shot_004",
+      "description": "父亲低头侧脸特写，络腮胡与铜质护目镜推在额头，嘴唇微张低语。背景虚化的蓝海在阳光下晃动。温暖琥珀色调。",
+      "camera_move": "static",
+      "duration": 5,
+      "wan_prompt": "Steampunk realistic close-up side profile of father, trimmed beard and brass goggles pushed up on forehead, lips parting as he speaks softly, background bokeh of blue sea shimmering in sunlight, warm amber tone, nostalgic, shallow depth of field, photorealistic, cinematic portrait",
+      "minimax_prompt": "蒸汽朋克写实父亲侧脸特写，络腮胡与铜质护目镜推在额头，嘴唇微张低语，背景虚化蓝海在阳光下晃动，温暖琥珀色调，浅景深，照片级真实电影人像"
+    },
+    {
+      "shot_id": "shot_005",
+      "description": "转场：时间在悬崖上流逝。同一机位季节与光线快速切换，铜质栏杆锈迹加深，野草枯荣轮转，海面蓝色一点点被锈红吞没，烟囱数量增多。最终定格在铅灰天空与赤潮海面。",
+      "camera_move": "static",
+      "duration": 6,
+      "wan_prompt": "Steampunk realistic time-lapse transition, same cliffside shot, seasons and light rapidly shifting, brass railings rusting deeper, wild grass withering and regrowing, blue sea gradually swallowed by rust-red, number of chimneys increasing, final freeze on leaden gray sky and red tide sea surface, industrial pollution spreading, photorealistic, cinematic time-lapse",
+      "minimax_prompt": "蒸汽朋克写实延时转场，同一悬崖机位，季节与光线快速切换，铜质栏杆锈迹加深，野草枯荣轮转，海面蓝色被锈红吞没，烟囱增多，定格在铅灰天空与赤潮海面，工业污染蔓延，照片级真实电影延时"
+    },
+    {
+      "shot_id": "shot_006",
+      "description": "成年玛莲独自站在悬崖边，深灰绿工程风衣被海风吹得猎猎作响，铜管呼吸面罩挂在颈侧。脚下锈红赤潮海面腐烂毯子般铺到天际线。她琥珀褐瞳孔倒映赤潮，神情疲惫。风卷来鱼腥与铁锈硫磺味。",
+      "camera_move": "pull_out",
+      "duration": 6,
+      "wan_prompt": "Steampunk realistic, 29-year-old woman with light golden low ponytail standing alone on cliff edge, dark gray-green engineer trench coat blowing in sea wind, brass-tube respirator mask hanging at neck, rust-red red tide sea surface spreading like a rotting blanket to horizon at her feet, amber-brown eyes reflecting red tide, weary resolute expression, leaden gray sky, cold light, volumetric industrial haze, photorealistic, cinematic, pull out shot",
+      "minimax_prompt": "蒸汽朋克写实，29岁浅金色低马尾女性独自站在悬崖边，深灰绿工程风衣被海风吹动，铜管呼吸面罩挂颈侧，脚下锈红赤潮海面如腐烂毯子铺到天际线，琥珀褐瞳孔倒映赤潮，神情疲惫坚定，铅灰天空，冷光，体积工业雾，照片级真实电影感，拉远镜头"
+    }
+  ],
+  "total_duration_sec": 32,
+  "video_spec": {
+    "resolution": "1088x608",
+    "fps": 24,
+    "frames_per_shot": 73,
+    "fallback_resolution": "832x480"
+  }
+}

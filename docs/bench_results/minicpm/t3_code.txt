@@ -1,0 +1,4 @@
+def top_k_frequent(nums, k):
+    count = Counter(nums)
+    sorted_elements = sorted(count.keys(), key=lambda x: (-count[x], x))
+    return sorted_elements[:k]

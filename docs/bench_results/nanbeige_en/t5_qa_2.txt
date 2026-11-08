@@ -1,0 +1,13 @@
+The speed of light in a vacuum is **299,792.458 kilometres per second** (km/s). This value is defined as exactly **299,792.458 km/s** by international convention (based on the fixed speed of light in physics and metrology).
+
+### Key Details:
+- **Exact Definition**: Since 1983, the second is defined using this constant. The speed of light in vacuum (\(c\)) is a fixed physical constant:  
+  \( c = 299\,792.458  \text{km/s} \) exactly.
+- **Why This Value?** It is derived from the definition of the meter (1 meter = 1/299,792.458 million of the distance light travels in one second).
+- **Common Approximation**: For many practical purposes, it is rounded to **300,000 km/s**, but precision-critical fields (e.g., astronomy, particle physics, GPS) use the exact value.
+
+### Note on Units:
+- The speed of light is also expressed in meters per second (m/s): **299,792,458 m/s**.
+- In km/s, multiplying m/s by 0.001 gives the km/s value above.
+
+If you need context (e.g., speed in other media, historical significance, or unit conversions), feel free to ask! 😊

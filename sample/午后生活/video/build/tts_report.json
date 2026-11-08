@@ -1,0 +1,25 @@
+{
+ "engine": "MOSS-TTS-Realtime",
+ "lines": [
+  {
+   "id": "kid",
+   "text": "姐姐！踢一脚！",
+   "voice": "kid",
+   "ref": "d:\\models\\sample\\天地源\\天地源_进阶版\\tts_test\\zh-CN-XiaoyiNeural.wav",
+   "dur": 2.138,
+   "peak": 0.674,
+   "gen_seconds": 61.7,
+   "out": "d:\\models\\sample\\午后生活\\video\\audio\\lines\\kid.wav"
+  },
+  {
+   "id": "girl",
+   "text": "玩得开心！",
+   "voice": "woman",
+   "ref": "d:\\models\\sample\\天地源\\天地源_进阶版\\tts_test\\zh-CN-XiaoxiaoNeural.wav",
+   "dur": 1.12,
+   "peak": 0.72,
+   "gen_seconds": 31.0,
+   "out": "d:\\models\\sample\\午后生活\\video\\audio\\lines\\girl.wav"
+  }
+ ]
+}

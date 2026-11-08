@@ -1,0 +1,73 @@
+To solve this problem, we'll set up a system of equations based on the given information.
+
+---
+
+### **Step 1: Define Variables**
+- Let **$C$** = number of chickens  
+- Let **$R$** = number of rabbits  
+
+---
+
+### **Step 2: Establish Equations**
+
+#### **Equation 1: Heads**
+Each chicken and rabbit has **1 head**, so total heads = $C + R$:
+$$
+C + R = 35 \quad \text{(Equation 1)}
+$$
+
+#### **Equation 2: Legs**
+- Chickens have **2 legs** each → $2C$ legs  
+- Rabbits have **4 legs** each → $4R$ legs  
+Total legs = $2C + 4R = 94$:
+$$
+2C + 4R = 94 \quad \text{(Equation 2)}
+$$
+
+---
+
+### **Step 3: Solve the System**
+
+#### **Method: Substitution**
+From Equation 1:
+$$
+R = 35 - C
+$$
+
+Substitute into Equation 2:
+$$
+2C + 4(35 - C) = 94
+$$
+$$
+2C + 140 - 4C = 94
+$$
+$$
+-2C + 140 = 94
+$$
+$$
+-2C = -46
+$$
+$$
+C = 23
+$$
+
+Now find $R$:
+$$
+R = 35 - 23 = 12
+$$
+
+---
+
+### **Step 4: Verification**
+- **Heads**: $23 + 12 = 35$ ✅  
+- **Legs**: $23 \times 2 + 12 \times 4 = 46 + 48 = 94$ ✅  
+
+Both conditions are satisfied.
+
+---
+
+### **Final Answer**
+- **Chickens**: **23**  
+- **Rabbits**: **12**
+
+✅ The solution is consistent with all given constraints. No other integer solutions exist within biologically valid counts (non-negative whole numbers). This confirms the unique solution.

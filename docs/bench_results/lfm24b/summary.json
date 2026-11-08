@@ -1,0 +1,60 @@
+{
+  "label": "lfm24b",
+  "endpoint": "127.0.0.1:8097",
+  "extra": {},
+  "time": "2026-10-20 03:11:17",
+  "results": [
+    {
+      "test": "t0_probe",
+      "tok_per_sec_median": 37.9
+    },
+    {
+      "test": "t1_writing",
+      "wall_sec": 13.4,
+      "prompt_tokens": 38,
+      "completion_tokens": 485,
+      "tok_per_sec": 36.3
+    },
+    {
+      "test": "t2_math",
+      "wall_sec": 12.8,
+      "prompt_tokens": 47,
+      "completion_tokens": 461,
+      "tok_per_sec": 35.9,
+      "auto_correct": true
+    },
+    {
+      "test": "t3_code",
+      "wall_sec": 2.9,
+      "prompt_tokens": 77,
+      "completion_tokens": 70,
+      "tok_per_sec": 23.8,
+      "auto_correct": true
+    },
+    {
+      "test": "t4_summary",
+      "wall_sec": 13.1,
+      "prompt_tokens": 705,
+      "completion_tokens": 252,
+      "tok_per_sec": 19.2
+    },
+    {
+      "test": "t5_qa",
+      "correct": "2/3"
+    },
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 5.9,
+      "prompt_tokens": 56,
+      "completion_tokens": 197,
+      "tok_per_sec": 33.6
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 3.9,
+      "prompt_tokens": 49,
+      "completion_tokens": 123,
+      "tok_per_sec": 31.2
+    }
+  ]
+}

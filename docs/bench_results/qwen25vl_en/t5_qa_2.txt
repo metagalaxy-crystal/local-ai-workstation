@@ -1,0 +1,5 @@
+The speed of light in a vacuum is a fundamental constant in physics, denoted by the letter \( c \). The exact value is approximately \( 299,792,458 \) meters per second. To convert this speed into kilometers per second, we need to recognize that there are 1,000 meters in a kilometer. Therefore, we can perform the following conversion:
+
+\[ 299,792,458 \, \text{m/s} = \frac{299,792,458 \, \text{m/s}}{1,000} = 299,792.458 \, \text{km/s} \]
+
+So, the speed of light in a vacuum is approximately \( 299,792.458 \) kilometers per second.

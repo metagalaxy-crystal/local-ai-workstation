@@ -1,0 +1,22 @@
+The HTTP **404 Not Found** status code indicates that the server cannot find the requested resource.
+
+### Key Details:
+- **Meaning**: The server was able to communicate with the client, but the specific page, file, or endpoint the client is asking for does not exist on the server.
+- **Client Error**: It is a **4xx class** status code, meaning the error is caused by the client (e.g., a typo in the URL, a broken link, or a deleted page).
+- **Common Causes**:
+  - The URL was typed incorrectly.
+  - The page has been moved or deleted.
+  - The link pointing to the resource is outdated or broken.
+  - The server is misconfigured (e.g., incorrect routing).
+
+### Example:
+If you try to access `https://example.com/page-that-does-not-exist.html`, the server responds with:
+```
+HTTP/1.1 404 Not Found
+```
+
+### How to Fix It:
+- Check the URL for typos.
+- Verify that the resource still exists.
+- Use a **301 Redirect** if the resource has moved to a new URL.
+- Create a custom 404 page to improve user experience.

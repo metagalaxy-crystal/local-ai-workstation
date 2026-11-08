@@ -1,0 +1,319 @@
+{
+  "llm": {
+    "base_url": "http://127.0.0.1:8080/v1",
+    "api_key": "local",
+    "model": "qwen36",
+    "preload": true,
+    "temperature": 0.7,
+    "max_tokens": 4096,
+    "timeout": 300,
+    "enable_thinking": true,
+    "context_size": 0,
+    "_comment_context": "0=按 models.json 里当前模型的 -c 自动推断（qwen36/lfm=16384，nanbeige=32768，VL=8192）；填正数则强制固定窗口"
+  },
+  "loop": {
+    "max_rounds": 30,
+    "max_history_chars": 24000,
+    "tool_result_max_chars": 3000,
+    "max_wall_time_sec": 1800,
+    "max_total_tokens": 200000
+  },
+  "router": {
+    "switch_cooldown_sec": 1800
+  },
+  "mcp": {
+    "schema_budget_chars": 6000
+  },
+  "verify": {
+    "enabled": true,
+    "max_retry": 1,
+    "model": "qwen36",
+    "_comment": "任务结束后用独立模型验收；qwen36 注册表定位为质检/评测（实测全能旗舰）。验收前真切模型、验完切回执行模型；留空=沿用当前模型（同模型自检，不推荐）"
+  },
+  "scheduler": {
+    "reorder": true,
+    "_comment_reorder": "true=按 depends_on 做同资源聚合调度（减少 LLM/ComfyUI 反复切换）；false=严格按规划顺序执行",
+    "guard": true,
+    "comfy_vram_mb": 6400,
+    "comfy_ram_mb": 12000,
+    "_comment_guard": "启动 ComfyUI 前按 nvidia-smi 显存 + psutil 可用内存做准入检查；指标读不到时放行。6400 是“没有别的进程霸占显存”的下限，不是 ComfyUI 的真实峰值"
+  },
+  "tools": {
+    "enabled": [
+      "files",
+      "shell",
+      "sandbox",
+      "search",
+      "browser",
+      "rag",
+      "comfy",
+      "voice",
+      "schedule"
+    ],
+    "tool_timeout": 60,
+    "retry": 1,
+    "allowed_roots": [
+      "d:/models"
+    ],
+    "scripts_dir": "d:/models/scripts",
+    "shell_whitelist": [
+      "python",
+      "python.exe",
+      "git",
+      "dir",
+      "type",
+      "findstr",
+      "where",
+      "echo",
+      "cd",
+      "copy",
+      "move",
+      "mkdir",
+      "tree"
+    ],
+    "blocked_patterns": [
+      "rm -rf",
+      "del /s",
+      "del /f",
+      "rd /s",
+      "rmdir /s",
+      "format ",
+      "shutdown",
+      "reg delete",
+      "Remove-Item -Recurse",
+      "Stop-Process",
+      "taskkill",
+      "> C:\\Windows",
+      "> %WINDIR%"
+    ],
+    "search": {
+      "provider": "bing",
+      "bocha_api_key": "",
+      "max_results": 8
+    },
+    "browser": {
+      "headless": true,
+      "live_port": 9223
+    },
+    "comfy": {
+      "host": "http://127.0.0.1:8188",
+      "image_timeout": 900,
+      "video_timeout": 3600,
+      "music_timeout": 1200
+    },
+    "voice": {
+      "tts_timeout": 600,
+      "asr_timeout": 900
+    }
+  },
+  "rag": {
+    "embed_url": "http://127.0.0.1:8081/v1",
+    "rerank_url": "http://127.0.0.1:8082/rerank",
+    "chunk_size": 500,
+    "chunk_overlap": 100,
+    "top_k": 5,
+    "recall_candidates": 20,
+    "memory": true,
+    "recall_top_k": 3,
+    "recall_min_score": 0.35
+  },
+  "mcp_servers": [
+    {
+      "name": "playwright",
+      "command": "node",
+      "cwd": "d:/models/tools/mcp-servers/playwright-mcp/output",
+      "args": [
+        "d:/models/tools/mcp-servers/playwright-mcp/node_modules/@playwright/mcp/cli.js",
+        "--browser",
+        "msedge",
+        "--headless",
+        "--isolated",
+        "--viewport-size",
+        "1280x900",
+        "--output-dir",
+        "d:/models/tools/mcp-servers/playwright-mcp/output"
+      ],
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 120
+    },
+    {
+      "name": "cadcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/cadcraft/cadcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/cadcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "deckcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/deckcraft/deckcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/deckcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "designcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/designcraft/designcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/designcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "effectcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/effectcraft/effectcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/effectcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "figcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/figcraft/figcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/figcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "filmcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/filmcraft/filmcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/filmcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "gridcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/gridcraft/gridcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/gridcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "lightcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/lightcraft/lightcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/lightcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "pdfcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/pdfcraft/pdfcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/pdfcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "photocraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/photocraft/photocraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/photocraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "soundcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/soundcraft/soundcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/soundcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "vectorcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/vectorcraft/vectorcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/vectorcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "wordcraft",
+      "command": "d:/models/tools/storytold-ArtCraft/apps/wordcraft/wordcraft-cli.exe",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "d:/models/tools/storytold-ArtCraft/apps/wordcraft",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    },
+    {
+      "name": "blender",
+      "command": "d:/models/tools/mcp-servers/blender_mcp_lab/mcp/.venv/Scripts/blender-mcp.exe",
+      "args": [],
+      "cwd": "d:/models/tools/mcp-servers/blender_mcp_lab/mcp",
+      "enabled": false,
+      "persistent": true,
+      "timeout": 180,
+      "startup_timeout": 60
+    }
+  ],
+  "monitor": {
+    "port": 8090
+  },
+  "paths": {
+    "workspace": "d:/models/agent/memory/workspace",
+    "db": "d:/models/agent/memory/session.db",
+    "vectors_db": "d:/models/agent/memory/vectors.db",
+    "output_root": "d:/models/output/agent",
+    "preview": "d:/models/output/agent/preview",
+    "trace": "d:/models/output/agent/trace.jsonl"
+  }
+}

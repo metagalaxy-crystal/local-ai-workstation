@@ -1,0 +1,18 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Task: Read the article and write a summary.
+    *   Constraint 1: Summary must be no more than 100 words.
+    *   Constraint 2: Followed by 3 key points.
+    *   Input: An article about the Silk Road.
+
+2.  **Analyze the Article:**
+    *   *Paragraph 1:* Definition, origin of the name (Richthofen), narrow sense (overland route opened by Zhang Qian during Han dynasty), route description (Chang'an to Roman Empire).
+    *   *Paragraph 2:* Significance beyond goods. Westward: paper, printing, gunpowder, compass. Eastward: grapes, alfalfa, pomegranates, sesame, walnuts, Buddhism, etc. Tang dynasty heyday (Sogdian merchants in Chang'an).
+    *   *Paragraph 3:* Maritime Silk Road (Tang/Song onward). Ports: Guangzhou, Quanzhou, Mingzhou. Goods: porcelain, tea. "Porcelain Road". Ibn Battuta praise.
+    *   *Paragraph 4:* Decline after Ming (maritime ban, Ottoman blocking). Heritage: Dunhuang murals, Samarkand workshops, Venice porcelain. 2014 UNESCO World Heritage inscription.
+
+3.  **Draft the Summary (aiming for <100 words):**
+    *   *Draft 1:* The Silk Road was a network of trade routes connecting China to Central Asia, Western Asia, and the Mediterranean. Named by Ferdinand von Richthofen, it primarily refers to the Han-dynasty overland route. Beyond goods, it facilitated the westward spread of technology like papermaking and gunpowder, while bringing crops and religions eastward. The Tang dynasty marked its peak. A maritime variant also thrived from the Song dynasty, exporting porcelain. After the Ming, the route declined due to political and geopolitical shifts. Today, its cultural heritage is recognized by UNESCO.
+    *   *Word Count Check:* 96 words. (Let's count carefully: The(1) Silk(2) Road(3) was(4) a(5) network(6) of(7) trade(8) routes(9) connecting(10) China(11) to(12) Central(13) Asia,(14) Western(15) Asia,(16) and(17) the(18) Mediterranean.(19) Named(20) by(21) Ferdinand(22) von(23) Richthofen,(24) it(25) primarily(26) refers(27) to(28) the(29) Han-dynasty(30) overland(31) route.(32) Beyond(33) goods,(34) it(35) facilitated(36) the(37) westward(38) spread(39) of(40) technology(41) like(42) papermaking(43) and(44) gunpowder,(45) while(46) bringing(47) crops(48) and(49) religions(50) eastward.(51) The(52) Tang(53) dynasty(54) marked(55) its(56) peak.(57) A(58) maritime(59) variant(60) also(61) thrived(62) from(63) the(64) Song(65) dynasty,(66) exporting(67) porcelain.(68) After(69) the(70) Ming,(71) the(72) route(73) declined(74) due(75) to(76) political(77) and(78) geopolitical(79) shifts.(80) Today,(81) its(82) cultural(83) heritage(84) is(85) recognized(86) by(87) UNESCO.(88))
+    *  

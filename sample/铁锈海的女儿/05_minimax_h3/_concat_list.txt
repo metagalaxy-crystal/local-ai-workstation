@@ -1,0 +1,6 @@
+file 'D:/models/ComfyUI/output/story_video/minimax_h3_shot_001_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/minimax_h3_shot_002_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/minimax_h3_shot_003_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/minimax_h3_shot_004_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/minimax_h3_shot_005_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/minimax_h3_shot_006_00001_.mp4'

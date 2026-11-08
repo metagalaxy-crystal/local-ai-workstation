@@ -1,0 +1,13 @@
+{
+  "prompt": "蒸汽朋克风格：一位十七岁少女站在锈迹斑斑的船头，海风吹动她的短发，背景是铁锈色的海洋与巨型齿轮城市天际线，黄昏橙光，电影感构图，细节丰富",
+  "seed": 710958193,
+  "steps": 8,
+  "cfg": 1.0,
+  "width": 1088,
+  "height": 608,
+  "elapsed_sec": 19.26,
+  "vram_peak_mb": 6711,
+  "images": [
+    "d:\\models\\铁锈海的女儿\\08_image_pipeline\\outputs\\e2e_minicpm_710958193_e2e_minicpm_00001_.png"
+  ]
+}

@@ -1,0 +1,8 @@
+```python
+def top_k_frequent(nums, k):
+    from collections import Counter
+    freq = Counter(nums)
+    # 按频率降序，频率相同按数值升序排序
+    sorted_items = sorted(freq.items(), key=lambda x: (-x[1], x[0]))
+    return [num for num, count in sorted_items[:k]]
+```

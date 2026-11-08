@@ -1,0 +1,20 @@
+{
+ "bgm_main": {
+  "file": "d:\\models\\sample\\铁锈海的女儿\\09_cinematic\\music\\bgm_main.flac",
+  "tags": "cinematic film score, nostalgic, warm piano, gentle strings pad, soft ocean pads, melancholic but tender, slow, reverb, emotional, memory",
+  "duration": 90,
+  "bpm": 62,
+  "keyscale": "G major",
+  "seed": 701,
+  "steps": 30
+ },
+ "bgm_rust": {
+  "file": "d:\\models\\sample\\铁锈海的女儿\\09_cinematic\\music\\bgm_rust.flac",
+  "tags": "dark cinematic ambient, low drone, distorted cello, industrial textures, haunting, sorrowful strings swell, slow build, ominous, film score",
+  "duration": 42,
+  "bpm": 60,
+  "keyscale": "D minor",
+  "seed": 702,
+  "steps": 30
+ }
+}

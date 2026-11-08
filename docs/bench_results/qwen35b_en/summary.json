@@ -1,0 +1,71 @@
+{
+  "label": "qwen35b",
+  "endpoint": "127.0.0.1:8093",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "time": "2026-10-20 09:42:33",
+  "results": [
+    {
+      "test": "t0_probe",
+      "tok_per_sec_median": 39.7
+    },
+    {
+      "test": "t1_writing",
+      "wall_sec": 13.3,
+      "prompt_tokens": 36,
+      "completion_tokens": 431,
+      "tok_per_sec": 32.3
+    },
+    {
+      "test": "t2_math",
+      "wall_sec": 15.1,
+      "prompt_tokens": 47,
+      "completion_tokens": 505,
+      "tok_per_sec": 33.5,
+      "auto_correct": true
+    },
+    {
+      "test": "t3_code",
+      "wall_sec": 2.8,
+      "prompt_tokens": 58,
+      "completion_tokens": 66,
+      "tok_per_sec": 23.8,
+      "auto_correct": true
+    },
+    {
+      "test": "t4_summary",
+      "wall_sec": 8.4,
+      "prompt_tokens": 608,
+      "completion_tokens": 214,
+      "tok_per_sec": 25.6
+    },
+    {
+      "test": "t5_qa",
+      "correct": "3/3"
+    },
+    {
+      "test": "t6_vision",
+      "wall_sec": 23.3,
+      "prompt_tokens": 681,
+      "completion_tokens": 685,
+      "tok_per_sec": 29.4
+    },
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 6.7,
+      "prompt_tokens": 59,
+      "completion_tokens": 198,
+      "tok_per_sec": 29.4
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 3.0,
+      "prompt_tokens": 44,
+      "completion_tokens": 77,
+      "tok_per_sec": 25.9
+    }
+  ]
+}

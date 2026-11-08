@@ -1,0 +1,34 @@
+
+The farmer, wolf, and sheep start on the left bank, and the white cabbage is also on the left. The only allowed one‑way moves are trips that carry the farmer together with exactly one item, and after each crossing the two animals left on either bank must not contain a forbidden pair (wolf + sheep or sheep + cabbage).
+
+1. Farmer + sheep cross to the right.  
+   Left: wolf, cabbage | Right: farmer, sheep.  
+   (Sheep and cabbage are together on the right, but the farmer is there, so no forbidden pair.)
+
+2. Farmer returns alone to the left.  
+   Left: farmer, wolf, cabbage | Right: sheep.  
+   (All are safe; the sheep is alone on the right.)
+
+3. Farmer takes the wolf to the right.  
+   Left: cabbage | Right: farmer, wolf, sheep.  
+   (Wolf and sheep are together on the right, but the farmer is present.)
+
+4. Farmer brings the sheep back to the left.  
+   Left: farmer, sheep | Right: wolf.  
+   (Now the sheep is with the farmer on the left; the wolf is alone on the right.)
+
+5. Farmer takes the cabbage to the right.  
+   Left: sheep | Right: farmer, wolf, cabbage.  
+   (Cabbage is alone on the right.)
+
+6. Farmer returns alone to the left.  
+   Left: farmer, sheep | Right: wolf, cabbage.  
+   (All items are safe on both banks.)
+
+7. Farmer takes the sheep to the right.  
+   Left: none | Right: farmer, wolf, sheep, cabbage.  
+
+All four items are now safely on the right bank. No sequence of fewer than seven one‑way trips can satisfy the constraints, because after each crossing the farmer must be present on the bank where the forbidden pair would otherwise appear, and the only way to move the wolf and cabbage without leaving the sheep alone with either is to bring the sheep back and forth twice.
+
+Thus, the minimum number of one‑way trips required is 7.  
+The minimum number of one‑way trips required is 7.

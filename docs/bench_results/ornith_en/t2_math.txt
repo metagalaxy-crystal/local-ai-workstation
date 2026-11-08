@@ -1,0 +1,88 @@
+Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Request:**
+    *   **Given:** A farmer has chickens and rabbits.
+    *   **Total heads:** 35
+    *   **Total legs:** 94
+    *   **Goal:** Find the number of chickens and rabbits.
+    *   **Requirement:** Show the calculation.
+
+2.  **Identify Key Facts:**
+    *   Chickens have 1 head and 2 legs.
+    *   Rabbits have 1 head and 4 legs.
+    *   Total heads = $C + R = 35$ (where $C$ is chickens, $R$ is rabbits).
+    *   Total legs = $2C + 4R = 94$.
+
+3.  **Choose a Method:**
+    *   *Method 1: Algebra (System of Equations).*
+    *   *Method 2: Assumption/Substitution (Mental Math).*
+    *   *Method 3: Elimination.*
+
+    I'll use Algebra as it's the most rigorous and easy to follow step-by-step. I can also briefly mention the assumption method for intuition.
+
+4.  **Execute the Calculation (Algebraic Method):**
+
+    *   *Equation 1 (Heads):* $C + R = 35$
+    *   *Equation 2 (Legs):* $2C + 4R = 94$
+
+    *   *Simplify Equation 2:* Divide by 2.
+        $C + 2R = 47$
+
+    *   *Subtract Equation 1 from Simplified Equation 2:*
+        $(C + 2R) - (C + R) = 47 - 35$
+        $R = 12$
+
+    *   *Substitute $R$ back into Equation 1:*
+        $C + 12 = 35$
+        $C = 23$
+
+5.  **Execute the Calculation (Assumption Method - for verification/intuition):**
+    *   Assume all animals are chickens.
+    *   35 chickens $\times$ 2 legs = 70 legs.
+    *   Difference: $94 - 70 = 24$ legs.
+    *   Each rabbit adds 2 extra legs ($4 - 2 = 2$).
+    *   Number of rabbits = $24 / 2 = 12$.
+    *   Number of chickens = $35 - 12 = 23$.
+    *   Matches.
+
+6.  **Verify the Answer:**
+    *   Chickens: 23 heads + 46 legs.
+    *   Rabbits: 12 heads + 48 legs.
+    *   Total heads: $23 + 12 = 35$. (Correct)
+    *   Total legs: $46 + 48 = 94$. (Correct)
+
+7.  **Format the Output:**
+    *   State the variables.
+    *   Set up equations clearly.
+    *   Solve step-by-step.
+    *   State the final answer clearly.
+    *   Show the check.
+
+8.  **Drafting the Response:** (Self-Correction/Refinement)
+    *   Make sure to label equations clearly.
+    *   Use bold text for the final result.
+    *   Keep it simple and readable.
+
+    *Structure:*
+    1. Define variables ($C$, $R$).
+    2. Set up equations based on heads and legs.
+    3. Solve for one variable.
+    4. Solve for the other.
+    5. Check work.
+
+    *Let's write it out:*
+    Let $C$ = number of chickens.
+    Let $R$ = number of rabbits.
+    $C + R = 35$
+    $2C + 4R = 94$
+    From first eq: $C = 35 - R$
+    Substitute: $2(35 - R) + 4R = 94$
+    $70 - 2R + 4R = 94$
+    $70 + 2R = 94$
+    $2R = 24$
+    $R = 12$
+    $C = 35 - 12 = 23$
+
+    *Alternative:* Assume method.
+    Assume all chickens: $35 \times 2 = 70$ legs.
+    Remaining legs: $94 - 7

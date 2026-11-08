@@ -1,0 +1,65 @@
+{
+  "label": "deepseek",
+  "endpoint": "127.0.0.1:8092",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "time": "2026-10-19 17:07:23",
+  "results": [
+    {
+      "test": "t0_probe",
+      "tok_per_sec_median": 60.8
+    },
+    {
+      "test": "t1_writing",
+      "wall_sec": 13.8,
+      "prompt_tokens": 27,
+      "completion_tokens": 867,
+      "tok_per_sec": 62.9
+    },
+    {
+      "test": "t2_math",
+      "wall_sec": 16.4,
+      "prompt_tokens": 35,
+      "completion_tokens": 1024,
+      "tok_per_sec": 62.4,
+      "auto_correct": true
+    },
+    {
+      "test": "t3_code",
+      "wall_sec": 14.5,
+      "prompt_tokens": 53,
+      "completion_tokens": 900,
+      "tok_per_sec": 62.2,
+      "auto_correct": false,
+      "error": "                                                                                                                                                                                                                                            ^\nSyntaxError: unterminated string literal (detected at line 12)"
+    },
+    {
+      "test": "t4_summary",
+      "wall_sec": 11.4,
+      "prompt_tokens": 488,
+      "completion_tokens": 688,
+      "tok_per_sec": 60.6
+    },
+    {
+      "test": "t5_qa",
+      "correct": "2/3"
+    },
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 9.5,
+      "prompt_tokens": 41,
+      "completion_tokens": 598,
+      "tok_per_sec": 62.7
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 7.9,
+      "prompt_tokens": 32,
+      "completion_tokens": 497,
+      "tok_per_sec": 62.7
+    }
+  ]
+}

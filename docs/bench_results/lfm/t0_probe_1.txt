@@ -1,0 +1,6 @@
+
+The user asks: "请用中文详细介绍丝绸之路上流通的主要商品与文化交流。" So we need to produce a detailed Chinese description of the main goods and cultural exchanges that passed along the Silk Road. No extra formatting unless requested. Should be thorough, likely covering goods (silk, spices, precious stones, ceramics, glass, paper, etc.) and cultural exchanges (religion, art, technology, ideas, etc.). Provide a detailed answer in Chinese, no markdown. No extra commentary. Must follow instruction: no bold/italic unless asked. So plain text.
+
+We should ensure we cover: goods: silk, cotton, tea, spices (cinnamon, pepper, ginger), precious metals (gold, silver), jade, glassware, ceramics (porcelain), paper, gunpowder, etc. Also cultural exchange: Buddhism, Christianity, Islam, art styles, music, language, technology (paper making, printing, compass, etc.), diplomatic envoys, etc.
+
+We need to produce a cohesive, detailed narrative. Possibly organized into sections: 1. 主要商品; 2. 文化交流. Use Chinese language, proper terms. No markdown. Provide bullet points

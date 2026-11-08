@@ -1,0 +1,21 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Task: Read the provided article.
+    *   Output 1: A summary within 100 Chinese characters.
+    *   Output 2: 3 key points.
+    *   Language: Chinese.
+
+2.  **Analyze the Article:**
+    *   **Paragraph 1:** Defines the Silk Road (general concept, named after von Richthofen, narrow sense = Zhang Qian's land route from Chang'an to Rome).
+    *   **Paragraph 2:** Significance beyond trade (technology transfer east->west: paper, printing, gunpowder, compass; crops/religion/art west->east). Mentions Tang dynasty as the peak.
+    *   **Paragraph 3:** Maritime Silk Road (唐宋起，ports like Guangzhou, Quanzhou, trade with SE Asia, India, Arabia, East Africa; ceramics/tea replace silk).
+    *   **Paragraph 4:** Decline after Ming dynasty (sea bans, Ottoman Empire). Legacy (Dunhuang, Samarkand, Venice). 2014 UNESCO World Heritage.
+
+3.  **Draft the Summary (aiming for ≤ 100 characters):**
+    *   *Draft 1:* 丝绸之路是连接中国与中亚、西亚及欧洲的重要通道，始于西汉张骞通西域。它促进了东西方商品、技术和文化的交流，包括造纸术西传和佛教东渐。唐宋时期海上丝路同样繁荣，出口瓷器茶叶。明代后逐渐衰落，但其遗产于2014年被列入世界遗产。
+    *   *Count:* 123 characters (too long).
+    *   *Draft 2:* 丝绸之路是连接欧亚的古代贸易文化交流通道，始于西汉张骞通西域。它促进了东西方商品、技术和宗教艺术的双向交流，唐宋时海上丝路亦繁荣。明代后衰落，其遗产于2014年被列入世界遗产。
+    *   *Count:* 107 characters (still slightly long).
+    *   *Draft 3:* 丝绸之路是连接欧亚的古代贸易文化交流通道，始于西汉张骞通西域。它促进了东西方商品、技术和宗教艺术的双向交流，唐宋时海上丝路亦繁荣。明代后衰落，其遗产于2014年被列入世界遗产。
+    *   *Wait, let me recount Draft 3:* 丝(1)绸(2)之(3)路(4)是(5)连(6)接(7)欧(8)亚(9)的(10)古(11)代(12)贸(13)易(14)文(15)化(16)交(17)流(18)通(19)道(20)，(21)始(22)于(23)西(24)汉(25)张(26)骞(27)通(28)西(29)域(30)。(31)它(32)促(33)进(34)了(35)东(36)西(37)方(38)商(39)品(40)、(41)技(42)术(43)和(44)宗(45)教(46)艺(47)术(48)的(49)双(50)向(51)交(52)流(53)，(54)唐(55)宋(56)时(57)海(58)上(59)丝(60)路(61)亦(62)繁(63)荣(64)。(65)明(66)代(67)后(68)衰(69)落(70)，(71)其(72)遗(73)产(74)于(75)2(76)0(77)1(78)4(79)

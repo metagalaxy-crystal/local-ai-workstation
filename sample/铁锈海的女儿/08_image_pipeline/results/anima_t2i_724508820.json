@@ -1,0 +1,15 @@
+{
+  "workflow": "workflow_anima_t2i_api.json",
+  "prompt": "masterpiece, best quality, 1girl, solo, teenage girl, short hair, goggles on headhat, leather jacket, standing on deck of rusty steampunk ship, rust-colored sea, gear city skyline, dusk, orange light, cinematic composition, anime style",
+  "negative": "lowres, jpeg artifacts, worst quality, low quality, bad anatomy, bad hands, watermark, signature, extra digits",
+  "seed": 724508820,
+  "steps": 30,
+  "cfg": 4.5,
+  "width": 832,
+  "height": 1216,
+  "elapsed_sec": 41.4,
+  "vram_peak_mb": 6092,
+  "images": [
+    "d:\\models\\铁锈海的女儿\\08_image_pipeline\\outputs\\anima_t2i_724508820_anima_t2i_00001_.png"
+  ]
+}

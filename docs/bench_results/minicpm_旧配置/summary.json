@@ -1,0 +1,22 @@
+{
+  "label": "minicpm",
+  "endpoint": "127.0.0.1:8095",
+  "extra": {},
+  "time": "2026-10-19 16:35:22",
+  "results": [
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 1.1,
+      "prompt_tokens": 46,
+      "completion_tokens": 213,
+      "tok_per_sec": 195.3
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 1.2,
+      "prompt_tokens": 38,
+      "completion_tokens": 289,
+      "tok_per_sec": 239.1
+    }
+  ]
+}

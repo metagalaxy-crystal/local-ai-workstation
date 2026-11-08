@@ -1,0 +1,14 @@
+{
+  "name": "trae_glm5",
+  "model": "Trae GLM-5.2 (在线对照组)",
+  "total_wall_sec": 28,
+  "first_byte_sec": 0,
+  "tokens_used": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "finish_reason": "stop",
+  "content_source": "direct_generation",
+  "reasoning_tokens": 0,
+  "json_ok": true,
+  "notes": "在线模型直接产出，无 API 调用；时间为模型生成该 JSON 的端到端耗时估算"
+}

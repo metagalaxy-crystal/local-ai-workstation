@@ -1,0 +1,11 @@
+{
+  "1": {"class_type": "UnetLoaderGGUF", "inputs": {"unet_name": "z-image-turbo-Q4_K_M.gguf"}},
+  "2": {"class_type": "CLIPLoaderGGUF", "inputs": {"clip_name": "text_encoders/Qwen_3_4b-Q6_K.gguf", "type": "stable_diffusion"}},
+  "3": {"class_type": "TextEncodeZImageOmni", "inputs": {"clip": ["2", 0], "prompt": "蒸汽朋克风格：一位十七岁少女站在锈迹斑斑的船头，背景是铁锈色的海洋与齿轮城市天际线，黄昏橙光，电影感构图，细节丰富", "auto_resize_images": true}},
+  "4": {"class_type": "TextEncodeZImageOmni", "inputs": {"clip": ["2", 0], "prompt": "", "auto_resize_images": true}},
+  "5": {"class_type": "VAELoader", "inputs": {"vae_name": "vae/ae.safetensors"}},
+  "6": {"class_type": "EmptySD3LatentImage", "inputs": {"width": 1088, "height": 608, "batch_size": 1}},
+  "7": {"class_type": "KSampler", "inputs": {"model": ["1", 0], "positive": ["3", 0], "negative": ["4", 0], "latent_image": ["6", 0], "seed": 42, "steps": 8, "cfg": 1.0, "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0}},
+  "8": {"class_type": "VAEDecode", "inputs": {"samples": ["7", 0], "vae": ["5", 0]}},
+  "9": {"class_type": "SaveImage", "inputs": {"images": ["8", 0], "filename_prefix": "zimage_t2i"}}
+}

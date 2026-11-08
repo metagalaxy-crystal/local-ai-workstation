@@ -1,0 +1,12 @@
+{
+  "_meta": {"positive": "3", "negative": "4", "sampler": "7", "latent": "6"},
+  "1": {"class_type": "UNETLoader", "inputs": {"unet_name": "anima-base-v1.0.safetensors", "weight_dtype": "default"}},
+  "2": {"class_type": "CLIPLoader", "inputs": {"clip_name": "qwen_3_06b_base.safetensors", "type": "stable_diffusion"}},
+  "3": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 0], "text": "masterpiece, best quality, 1girl, solo, teenage girl, short hair, goggles on headhat, leather jacket, standing on deck of rusty steampunk ship, rust-colored sea, gear city skyline, dusk, orange light, cinematic composition, anime style"}},
+  "4": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 0], "text": "lowres, jpeg artifacts, worst quality, low quality, bad anatomy, bad hands, watermark, signature, extra digits"}},
+  "5": {"class_type": "VAELoader", "inputs": {"vae_name": "qwen_image_vae.safetensors"}},
+  "6": {"class_type": "EmptySD3LatentImage", "inputs": {"width": 832, "height": 1216, "batch_size": 1}},
+  "7": {"class_type": "KSampler", "inputs": {"model": ["1", 0], "positive": ["3", 0], "negative": ["4", 0], "latent_image": ["6", 0], "seed": 42, "steps": 30, "cfg": 4.5, "sampler_name": "er_sde", "scheduler": "normal", "denoise": 1.0}},
+  "8": {"class_type": "VAEDecode", "inputs": {"samples": ["7", 0], "vae": ["5", 0]}},
+  "9": {"class_type": "SaveImage", "inputs": {"images": ["8", 0], "filename_prefix": "anima_t2i"}}
+}

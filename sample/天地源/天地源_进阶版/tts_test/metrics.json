@@ -1,0 +1,42 @@
+{
+ "zh-CN-YunxiNeural": {
+  "f0_std": 5.48,
+  "f0_med": 156.9,
+  "rms_dyn": 20.1,
+  "pause": 0.345,
+  "dur": 3.74,
+  "rate": 5.34
+ },
+ "zh-CN-XiaoxiaoNeural": {
+  "f0_std": 3.99,
+  "f0_med": 228.6,
+  "rms_dyn": 14.2,
+  "pause": 0.263,
+  "dur": 4.08,
+  "rate": 4.9
+ },
+ "zh-CN-YunjianNeural": {
+  "f0_std": 4.9,
+  "f0_med": 117.5,
+  "rms_dyn": 17.0,
+  "pause": 0.31,
+  "dur": 4.15,
+  "rate": 4.82
+ },
+ "zh-CN-YunyangNeural": {
+  "f0_std": 6.18,
+  "f0_med": 127.0,
+  "rms_dyn": 20.3,
+  "pause": 0.405,
+  "dur": 3.69,
+  "rate": 5.43
+ },
+ "zh-CN-XiaoyiNeural": {
+  "f0_std": 3.65,
+  "f0_med": 269.7,
+  "rms_dyn": 15.2,
+  "pause": 0.291,
+  "dur": 3.8,
+  "rate": 5.27
+ }
+}

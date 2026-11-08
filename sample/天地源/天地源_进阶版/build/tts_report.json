@@ -1,0 +1,379 @@
+{
+ "voice": "zh-CN-YunxiNeural",
+ "mood": {
+  "calm": [
+   -6,
+   -3,
+   0
+  ],
+  "lift": [
+   -2,
+   2,
+   2
+  ],
+  "low": [
+   -12,
+   -6,
+   -2
+  ],
+  "void": [
+   -17,
+   -9,
+   -6
+  ]
+ },
+ "lines": [
+  {
+   "line": 1,
+   "mood": "calm",
+   "text": "天色渐暗，天地园缩在街角，一边热闹，一边冷清。",
+   "dur": 5.206,
+   "clauses": [
+    {
+     "text": "天色渐暗，",
+     "start": 0.0,
+     "dur": 0.949,
+     "rate": -5,
+     "pitch": -4,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "天地园缩在街角，",
+     "start": 1.189,
+     "dur": 1.475,
+     "rate": -6,
+     "pitch": -4,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "一边热闹，",
+     "start": 2.904,
+     "dur": 0.8,
+     "rate": -7,
+     "pitch": -5,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "一边冷清。",
+     "start": 3.944,
+     "dur": 0.862,
+     "rate": -9,
+     "pitch": -5,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "mood": "lift",
+   "text": "枯藤缠绕的小道，通向园中唯一的白花岗岩圆亭。",
+   "dur": 4.247,
+   "clauses": [
+    {
+     "text": "枯藤缠绕的小道，",
+     "start": 0.0,
+     "dur": 1.249,
+     "rate": -2,
+     "pitch": 2,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "通向园中唯一的白花岗岩圆亭。",
+     "start": 1.489,
+     "dur": 2.358,
+     "rate": -3,
+     "pitch": 0,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "mood": "calm",
+   "text": "我迈步进入，没有人注意到我。",
+   "dur": 2.554,
+   "clauses": [
+    {
+     "text": "我迈步进入，",
+     "start": 0.0,
+     "dur": 0.865,
+     "rate": -7,
+     "pitch": -4,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "没有人注意到我。",
+     "start": 1.105,
+     "dur": 1.049,
+     "rate": -7,
+     "pitch": -4,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 4,
+   "mood": "low",
+   "text": "石子隐约铺出岔路，像循着某种规律，好似阵法。",
+   "dur": 5.209,
+   "clauses": [
+    {
+     "text": "石子隐约铺出岔路，",
+     "start": 0.0,
+     "dur": 1.863,
+     "rate": -13,
+     "pitch": -6,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "像循着某种规律，",
+     "start": 2.103,
+     "dur": 1.524,
+     "rate": -13,
+     "pitch": -6,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "好似阵法。",
+     "start": 3.867,
+     "dur": 0.943,
+     "rate": -14,
+     "pitch": -7,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 5,
+   "mood": "calm",
+   "text": "抬头，圆形的玻璃顶，铁支架上满是精细的花纹。",
+   "dur": 4.971,
+   "clauses": [
+    {
+     "text": "抬头，",
+     "start": 0.0,
+     "dur": 0.628,
+     "rate": -6,
+     "pitch": -3,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "圆形的玻璃顶，",
+     "start": 0.868,
+     "dur": 1.019,
+     "rate": -8,
+     "pitch": -4,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "铁支架上满是精细的花纹。",
+     "start": 2.127,
+     "dur": 2.444,
+     "rate": -7,
+     "pitch": -4,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 6,
+   "mood": "void",
+   "text": "玻璃好似并不存在。“虚无”跳进我的脑海。",
+   "dur": 4.533,
+   "clauses": [
+    {
+     "text": "玻璃好似并不存在。",
+     "start": 0.0,
+     "dur": 1.667,
+     "rate": -18,
+     "pitch": -8,
+     "clause_pause": 0.4
+    },
+    {
+     "text": "“虚无”跳进我的脑海。",
+     "start": 2.067,
+     "dur": 2.067,
+     "rate": -20,
+     "pitch": -11,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 7,
+   "mood": "low",
+   "text": "天地园，链接天地，直通人间：亭上是天界，树墙后是地狱，另一头是人间。",
+   "dur": 8.63,
+   "clauses": [
+    {
+     "text": "天地园，",
+     "start": 0.0,
+     "dur": 0.893,
+     "rate": -13,
+     "pitch": -7,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "链接天地，",
+     "start": 1.133,
+     "dur": 1.099,
+     "rate": -12,
+     "pitch": -6,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "直通人间：",
+     "start": 2.472,
+     "dur": 1.033,
+     "rate": -13,
+     "pitch": -7,
+     "clause_pause": 0.32
+    },
+    {
+     "text": "亭上是天界，",
+     "start": 3.825,
+     "dur": 1.143,
+     "rate": -12,
+     "pitch": -6,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "树墙后是地狱，",
+     "start": 5.208,
+     "dur": 1.434,
+     "rate": -12,
+     "pitch": -7,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "另一头是人间。",
+     "start": 6.881,
+     "dur": 1.349,
+     "rate": -14,
+     "pitch": -7,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 8,
+   "mood": "calm",
+   "text": "人间水晶般完美，安静到一声啼哭，是唯一的声音。",
+   "dur": 4.634,
+   "clauses": [
+    {
+     "text": "人间水晶般完美，",
+     "start": 0.0,
+     "dur": 1.394,
+     "rate": -5,
+     "pitch": -2,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "安静到一声啼哭，",
+     "start": 1.634,
+     "dur": 1.305,
+     "rate": -7,
+     "pitch": -3,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "是唯一的声音。",
+     "start": 3.18,
+     "dur": 1.055,
+     "rate": -9,
+     "pitch": -4,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 9,
+   "mood": "low",
+   "text": "地狱并不可怕，它就是我们的生活：求而不得。",
+   "dur": 4.293,
+   "clauses": [
+    {
+     "text": "地狱并不可怕，",
+     "start": 0.0,
+     "dur": 1.22,
+     "rate": -12,
+     "pitch": -7,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "它就是我们的生活：",
+     "start": 1.46,
+     "dur": 1.346,
+     "rate": -12,
+     "pitch": -7,
+     "clause_pause": 0.32
+    },
+    {
+     "text": "求而不得。",
+     "start": 3.125,
+     "dur": 0.768,
+     "rate": -14,
+     "pitch": -7,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 10,
+   "mood": "low",
+   "text": "而天堂最悲苦：神明看惯疾苦，世界只是一张碎裂的纸。",
+   "dur": 5.689,
+   "clauses": [
+    {
+     "text": "而天堂最悲苦：",
+     "start": 0.0,
+     "dur": 1.376,
+     "rate": -11,
+     "pitch": -5,
+     "clause_pause": 0.32
+    },
+    {
+     "text": "神明看惯疾苦，",
+     "start": 1.696,
+     "dur": 1.401,
+     "rate": -14,
+     "pitch": -7,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "世界只是一张碎裂的纸。",
+     "start": 3.337,
+     "dur": 1.952,
+     "rate": -14,
+     "pitch": -7,
+     "clause_pause": 0.4
+    }
+   ]
+  },
+  {
+   "line": 11,
+   "mood": "void",
+   "text": "二〇二二年三月六日，夜幕降临时。",
+   "dur": 3.966,
+   "clauses": [
+    {
+     "text": "二〇二二年三月六日，",
+     "start": 0.0,
+     "dur": 1.779,
+     "rate": -18,
+     "pitch": -9,
+     "clause_pause": 0.24
+    },
+    {
+     "text": "夜幕降临时。",
+     "start": 2.019,
+     "dur": 1.547,
+     "rate": -19,
+     "pitch": -11,
+     "clause_pause": 0.4
+    }
+   ]
+  }
+ ]
+}

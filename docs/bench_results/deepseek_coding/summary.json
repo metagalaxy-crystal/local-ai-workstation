@@ -1,0 +1,58 @@
+{
+  "label": "deepseek",
+  "endpoint": "127.0.0.1:8092",
+  "temperature": 0.3,
+  "max_tokens": 2000,
+  "score": "4/5",
+  "extract_fail": 0,
+  "total_sec": 401.1,
+  "time": "2026-10-20 20:59:41",
+  "results": [
+    {
+      "t": "t1",
+      "domain": "算法实现",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 12.6,
+      "completion_tokens": 330,
+      "tok_per_sec": 26.1
+    },
+    {
+      "t": "t2",
+      "domain": "类设计",
+      "ok": false,
+      "extract": "def_line",
+      "wall_sec": 160.9,
+      "completion_tokens": 2000,
+      "tok_per_sec": 12.4,
+      "error": "File \"C:\\Users\\junsheng\\AppData\\Local\\Temp\\tmpoof8whz_.py\", line 9\n    class LRUCache:\n                   ^\nIndentationError: unindent does not match any outer indentation level"
+    },
+    {
+      "t": "t3",
+      "domain": "调试纠错",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 34.1,
+      "completion_tokens": 700,
+      "tok_per_sec": 20.5
+    },
+    {
+      "t": "t4",
+      "domain": "解析转换",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 77.3,
+      "completion_tokens": 1321,
+      "tok_per_sec": 17.1
+    },
+    {
+      "t": "t5",
+      "domain": "动态规划",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 116.0,
+      "completion_tokens": 1713,
+      "tok_per_sec": 14.8
+    }
+  ]
+}

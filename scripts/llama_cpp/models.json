@@ -1,0 +1,74 @@
+{
+  "_readme": "llama.cpp 模型注册表。gguf / mmproj 为相对 MODEL_ROOT 的路径（正斜杠）。server_args 是推荐启动参数（不含 -m/-mm，由 start_server.py 拼装）；gen_args 是推荐采样参数。thinking 表示该模型是否支持思考模式（none/可选/支持）。",
+  "nanbeige": {
+    "name": "Nanbeige4.2-3B",
+    "task": "分镜草稿、批量改写、长文摘要、轻量 agent",
+    "desc": "3B 小模型，速度最快，开 32K 上下文；实测轻量档质量最稳（写作/摘要 4.5/5），工具调用 3/3，编程 4/5",
+    "gguf": "text/Nanbeige4.2-3B/Nanbeige4.2-3B-Q4_K_M.gguf",
+    "mmproj": null,
+    "thinking": "可选",
+    "server_args": ["-ngl", "99", "-c", "32768", "-t", "6"],
+    "gen_args": {"temperature": 0.7, "top_p": 0.9, "top_k": 40}
+  },
+  "lfm": {
+    "name": "LFM2.5-8B-A1B",
+    "task": "通用对话、分镜路由、轻量 agent（MoE 只激活 1B）",
+    "desc": "8B MoE，激活仅 1B；实测速度王（~222 tok/s），工具调用 3/3 最干净；长文写作易把思考链泄入正文，适合短输出与 agent 场景",
+    "gguf": "text/LFM2.5-8B-A1B/LFM2.5-8B-A1B-Q4_K_M.gguf",
+    "mmproj": null,
+    "thinking": "none",
+    "server_args": ["-ngl", "99", "-c", "16384", "-t", "6"],
+    "gen_args": {"temperature": 0.7, "top_p": 0.9, "top_k": 40}
+  },
+  "qwen36": {
+    "name": "Qwen3.6-35B-A3B",
+    "task": "质检、评测、图片理解、要求最高质量的生成",
+    "desc": "35B MoE（激活 3B），多模态 VLM；实测全能旗舰：写作/摘要/推理（10/10）/编程（5/5）/工具调用（3/3）全部第一；专家权重全留内存且常驻（--cpu-moe --load-mode none），实测 ~39 tok/s",
+    "gguf": "text/Qwen3.6-35B-A3B/Qwen3.6-35B-A3B-Q4_K_M.gguf",
+    "mmproj": "text/Qwen3.6-35B-A3B/mmproj-Qwen3.6-35B-A3B-BF16.gguf",
+    "thinking": "支持",
+    "server_args": ["-ngl", "99", "--cpu-moe", "--load-mode", "none", "-c", "16384", "-t", "24",
+                    "--jinja", "-rea", "on", "--reasoning-format", "deepseek"],
+    "gen_args": {"temperature": 0.7, "top_p": 0.8, "top_k": 20}
+  },
+  "minicpmv": {
+    "name": "MiniCPM-V-4.6",
+    "task": "看图说话、图片描述、OCR、图生文主力",
+    "desc": "0.5B 主模型 + 0.7B 投影：体积小、加载快，图生文首选；支持思考模式（文本能力弱，仅作视觉兜底）",
+    "gguf": "text/MiniCPM-V-4_6/MiniCPM-V-4.6-Q4_K_M.gguf",
+    "mmproj": "text/MiniCPM-V-4_6/mmproj-MiniCPM-V-4.6-Q8_0.gguf",
+    "thinking": "可选",
+    "server_args": ["-ngl", "99", "-c", "8192", "-t", "6", "--mmproj-offload"],
+    "gen_args": {"temperature": 0.7, "top_p": 0.8, "top_k": 20}
+  },
+  "qwen25vl": {
+    "name": "Qwen2.5-VL-7B-Instruct",
+    "task": "看图说话、图表/版面理解（备选）",
+    "desc": "7B 多模态备选：对图表、表格、复杂版面的理解比 MiniCPM-V 更细，速度快（~65 tok/s）；文本能力一般",
+    "gguf": "text/Qwen2.5-VL-7B/Qwen2.5-VL-7B-Instruct-Q4_K_M.gguf",
+    "mmproj": "text/Qwen2.5-VL-7B/mmproj-Qwen2.5-VL-7B-Instruct-Q8_0.gguf",
+    "thinking": "none",
+    "server_args": ["-ngl", "99", "-c", "8192", "-t", "6", "--mmproj-offload"],
+    "gen_args": {"temperature": 0.7, "top_p": 0.8, "top_k": 20}
+  },
+  "embed": {
+    "name": "Qwen3-Embedding-0.6B",
+    "role": "embed",
+    "task": "RAG 向量化服务（知识库/上下文记忆），默认 :8081",
+    "desc": "0.6B 嵌入模型，CPU 常驻零显存；role=embed 表示不是对话模型，不会出现在模型切换列表",
+    "gguf": "rag/Qwen3-Embedding-0.6B/Qwen3-Embedding-0.6B-Q8_0.gguf",
+    "mmproj": null,
+    "thinking": "none",
+    "server_args": ["--embedding", "-c", "8192", "-ngl", "0", "-t", "6"]
+  },
+  "rerank": {
+    "name": "Qwen3-Reranker-0.6B",
+    "role": "rerank",
+    "task": "RAG 精排服务（/rerank），默认 :8082",
+    "desc": "0.6B 重排模型，CPU 常驻零显存；role=rerank 表示不是对话模型，不会出现在模型切换列表",
+    "gguf": "rag/Qwen3-Reranker-0.6B/Qwen3-Reranker-0.6B-Q8_0.gguf",
+    "mmproj": null,
+    "thinking": "none",
+    "server_args": ["--reranking", "-c", "8192", "-ngl", "0", "-t", "6"]
+  }
+}

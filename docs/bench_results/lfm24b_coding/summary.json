@@ -1,0 +1,57 @@
+{
+  "label": "lfm24b",
+  "endpoint": "127.0.0.1:8097",
+  "temperature": 0.3,
+  "max_tokens": 2000,
+  "score": "5/5",
+  "extract_fail": 0,
+  "total_sec": 22.3,
+  "time": "2026-10-20 21:03:28",
+  "results": [
+    {
+      "t": "t1",
+      "domain": "算法实现",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.0,
+      "completion_tokens": 99,
+      "tok_per_sec": 24.9
+    },
+    {
+      "t": "t2",
+      "domain": "类设计",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 5.1,
+      "completion_tokens": 155,
+      "tok_per_sec": 30.5
+    },
+    {
+      "t": "t3",
+      "domain": "调试纠错",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.3,
+      "completion_tokens": 94,
+      "tok_per_sec": 22.1
+    },
+    {
+      "t": "t4",
+      "domain": "解析转换",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.1,
+      "completion_tokens": 116,
+      "tok_per_sec": 28.2
+    },
+    {
+      "t": "t5",
+      "domain": "动态规划",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.5,
+      "completion_tokens": 126,
+      "tok_per_sec": 28.1
+    }
+  ]
+}

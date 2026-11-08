@@ -1,0 +1,6 @@
+file 'D:/models/ComfyUI/output/story_video/wan22_shot_001_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/wan22_shot_002_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/wan22_shot_003_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/wan22_shot_004_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/wan22_shot_005_00001_.mp4'
+file 'D:/models/ComfyUI/output/story_video/wan22_shot_006_00001_.mp4'

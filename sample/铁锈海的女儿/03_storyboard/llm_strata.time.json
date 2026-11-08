@@ -1,0 +1,13 @@
+{
+  "total_wall_sec": 34.73,
+  "first_byte_sec": 34.73,
+  "tokens_used": 2276,
+  "prompt_tokens": 748,
+  "completion_tokens": 1528,
+  "finish_reason": "stop",
+  "content_source": "content",
+  "reasoning_tokens": 101,
+  "name": "strata",
+  "port": 8082,
+  "json_ok": true
+}

@@ -1,0 +1,4 @@
+def top_k_frequent(nums, k):
+    from collections import Counter
+    count = Counter(nums)
+    return sorted(count.keys(), key=lambda x: (-count[x], x))[:k]

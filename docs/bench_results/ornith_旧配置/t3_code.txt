@@ -1,0 +1,8 @@
+```python
+from collections import Counter
+
+def top_k_frequent(nums, k):
+    freq = Counter(nums)
+    result = sorted(freq.items(), key=lambda x: (-x[1], x[0]))
+    return [num for num, _ in result[:k]]
+```

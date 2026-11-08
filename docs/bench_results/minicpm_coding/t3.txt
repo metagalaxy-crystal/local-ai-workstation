@@ -1,0 +1,13 @@
+```python
+def binary_search(arr, target):
+    lo, hi = 0, len(arr) - 1
+    while lo < hi:
+        mid = (lo + hi) // 2
+        if arr[mid] < target:
+            lo = mid + 1
+        else:
+            hi = mid - 1
+    if lo == len(arr) - 1 and arr[lo] == target:
+        return lo
+    return -1
+```

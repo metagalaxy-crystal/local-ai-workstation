@@ -1,0 +1,32 @@
+The **HTTP 404 status code** means **"Not Found"**. It indicates that the server could not locate the resource (such as a webpage, file, API endpoint, or resource path) that the client requested.
+
+### Key Details:
+- **Purpose**: Used to signal that the requested URL path does not exist on the server.
+- **Common Causes**:
+  - Typo in the URL.
+  - Resource deleted or moved.
+  - Expired link or outdated documentation.
+  - Server misconfiguration or incorrect routing.
+- **Client/Developer Impact**:
+  - Users see a generic "404 Not Found" message (often with a link back to the homepage).
+  - Developers can use this code to handle missing resources gracefully (e.g., show a custom error page, log the issue, or trigger fallback logic).
+- **Distinction from Other Codes**:
+  - **403 Forbidden**: Access is denied (permission issues).
+  - **500 Internal Server Error**: Server-side failure (not a missing resource).
+  - **200 OK**: Resource successfully found.
+
+### Example:
+```http
+GET /non-existent-page.html HTTP/1.1
+HTTP/1.1 404 Not Found
+```
+The server responds with `404` because `/non-existent-page.html` has no corresponding file or route.
+
+### Best Practices:
+- **For Users**: Verify URLs, refresh the page, or contact support if the link was expected to work.
+- **For Developers**:
+  - Implement custom 404 pages for better user experience.
+  - Use server logs to identify broken links or missing assets.
+  - Ensure proper routing and deployment to avoid accidental 404s.
+
+In summary, **HTTP 404** is a standard signal that a requested resource cannot be accessed at the given location—critical for debugging, user feedback, and maintaining robust web systems. 🌐

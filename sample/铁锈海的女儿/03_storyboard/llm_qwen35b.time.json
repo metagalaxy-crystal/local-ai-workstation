@@ -1,0 +1,13 @@
+{
+  "total_wall_sec": 188.04,
+  "first_byte_sec": 188.04,
+  "tokens_used": 1857,
+  "prompt_tokens": 724,
+  "completion_tokens": 1133,
+  "finish_reason": "stop",
+  "content_source": "content",
+  "reasoning_tokens": 0,
+  "name": "qwen35b",
+  "port": 8093,
+  "json_ok": true
+}

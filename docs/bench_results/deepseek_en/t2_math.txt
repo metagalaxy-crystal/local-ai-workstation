@@ -1,0 +1,128 @@
+
+I have this problem: A farmer keeps chickens and rabbits. There are 35 heads and 94 legs in total. I need to find out how many chickens and how many rabbits there are. Let me think about this.
+
+Chickens have 2 legs each, and rabbits have 4 legs each. Also, each animal has one head, so the total number of heads should be equal to the total number of animals. Let C be the number of chickens and R be the number of rabbits.
+
+So, the total heads equation is: C + R = 35
+
+The total legs equation is: 2C + 4R = 94
+
+I need to solve for C and R.
+
+I can simplify the legs equation. Since both 2 and 4 are divisible by 2, I can divide the entire equation by 2.
+
+So, dividing 2C + 4R by 2: C + 2R = 47
+
+Now I have:
+
+C + R = 35
+
+C + 2R = 47
+
+I can subtract the first equation from the second to eliminate C.
+
+So, (C + 2R) - (C + R) = 47 - 35
+
+That simplifies to C + 2R - C - R = 12
+
+So, R = 12
+
+Now that I have R, I can plug it back into the first equation.
+
+C + R = 35
+
+C + 12 = 35
+
+So, C = 35 - 12 = 23
+
+Now, let me check with the legs.
+
+Chickens: 23 * 2 = 46 legs
+
+Rabbits: 12 * 4 = 48 legs
+
+Total legs: 46 + 48 = 94, which matches.
+
+And heads: 23 + 12 = 35, good.
+
+I could also think about it with the legs equation.
+
+If all 35 animals were chickens, then total legs would be 35 * 2 = 70
+
+But there are 94 legs, so there are 94 - 70 = 24 extra legs.
+
+Each rabbit has 2 more legs than a chicken (4 - 2 = 2), so the number of rabbits is 24 / 2 = 12
+
+Then chickens are 35 - 12 = 23
+
+Same answer.
+
+If all were rabbits, 35 * 4 = 140 legs, but there are 94, so shortage of 140 - 94 = 46 legs.
+
+Each chicken has 2 fewer legs than a rabbit, so number of chickens is 46 / 2 = 23, then rabbits are 35 - 23 = 12.
+
+Again, same thing.
+
+So, I think it's consistent.
+
+The problem says "show your calculation," so I should present it properly.
+
+Let me define the variables clearly.
+
+Let C be the number of chickens.
+
+Let R be the number of rabbits.
+
+Total heads: C + R = 35
+
+Total legs: 2C + 4R = 94
+
+Simplify legs equation: divide by 2, so C + 2R = 47
+
+Now, subtract the heads equation from this:
+
+(C + 2R) - (C + R) = 47 - 35
+
+C + 2R - C - R = 12
+
+R = 12
+
+Then C = 35 - R = 35 - 12 = 23
+
+I can use the system of equations.
+
+C + R = 35
+
+2C + 4R = 94
+
+From the first, R = 35 - C
+
+Plug into second: 2C + 4(35 - C) = 94
+
+2C + 140 - 4C = 94
+
+-2C + 140 = 94
+
+Now, subtract 140 from both sides:
+
+-2C = 94 - 140 = -46
+
+Divide both sides by -2:
+
+C = (-46)/(-2) = 23
+
+Then R = 35 - 23 = 12
+
+Same thing.
+
+I think it's correct.
+
+The problem is straightforward, no tricks or anything. Just a system of linear equations with two variables.
+
+I should make sure about the number of legs. Chickens have 2, rabbits have 4, yes.
+
+And heads, each one has one, so total heads equal total animals.
+
+I think that's standard.
+
+Sometimes people might think of other animals, but here it's only chickens and rabbits

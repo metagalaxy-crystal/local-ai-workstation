@@ -1,0 +1,68 @@
+{
+  "label": "minicpm",
+  "endpoint": "127.0.0.1:8095",
+  "extra": {},
+  "time": "2026-10-20 09:44:04",
+  "results": [
+    {
+      "test": "t0_probe",
+      "tok_per_sec_median": 255.5
+    },
+    {
+      "test": "t1_writing",
+      "wall_sec": 3.3,
+      "prompt_tokens": 34,
+      "completion_tokens": 900,
+      "tok_per_sec": 275.6
+    },
+    {
+      "test": "t2_math",
+      "wall_sec": 2.5,
+      "prompt_tokens": 45,
+      "completion_tokens": 694,
+      "tok_per_sec": 272.4,
+      "auto_correct": true
+    },
+    {
+      "test": "t3_code",
+      "wall_sec": 1.7,
+      "prompt_tokens": 56,
+      "completion_tokens": 449,
+      "tok_per_sec": 269.5,
+      "auto_correct": false,
+      "error": "ule>\n    assert top_k_frequent([1,1,1,2,2,3], 2) == [1,2]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\junsheng\\AppData\\Local\\Temp\\tmprmk6s8e4.py\", line 2, in top_k_frequent\n    count = Counter(nums)\n            ^^^^^^^\nNameError: name 'Counter' is not defined. Did you mean: 'count'?"
+    },
+    {
+      "test": "t4_summary",
+      "wall_sec": 1.7,
+      "prompt_tokens": 606,
+      "completion_tokens": 439,
+      "tok_per_sec": 260.1
+    },
+    {
+      "test": "t5_qa",
+      "correct": "2/3"
+    },
+    {
+      "test": "t6_vision",
+      "wall_sec": 1.6,
+      "prompt_tokens": 285,
+      "completion_tokens": 341,
+      "tok_per_sec": 213.4
+    },
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 0.7,
+      "prompt_tokens": 57,
+      "completion_tokens": 188,
+      "tok_per_sec": 256.6
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 0.8,
+      "prompt_tokens": 42,
+      "completion_tokens": 203,
+      "tok_per_sec": 257.5
+    }
+  ]
+}

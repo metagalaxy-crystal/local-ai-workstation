@@ -1,0 +1,16 @@
+{
+  "label": "qwen35b",
+  "endpoint": "127.0.0.1:8093",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "time": "2026-10-19 16:55:11",
+  "results": [
+    {
+      "test": "t0_probe",
+      "tok_per_sec_median": 31.4
+    }
+  ]
+}

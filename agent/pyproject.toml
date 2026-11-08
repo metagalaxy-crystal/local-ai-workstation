@@ -1,0 +1,20 @@
+[project]
+name = "local-agent"
+version = "0.1.0"
+description = "D:\\models 本地 Agent（P0 骨架：tool-call loop + 基础工具 + CLI）"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=3.0",
+    "requests>=2.31",
+    "psutil>=7.0",
+]
+
+[project.scripts]
+agent = "agent.cli:main"
+
+[tool.setuptools]
+packages = ["agent", "agent.tools", "agent.memory"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

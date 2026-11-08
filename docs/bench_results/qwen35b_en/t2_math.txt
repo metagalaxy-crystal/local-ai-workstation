@@ -1,0 +1,47 @@
+To solve this problem, we can use a system of linear equations.
+
+### Step 1: Define Variables
+Let $c$ be the number of chickens.
+Let $r$ be the number of rabbits.
+
+### Step 2: Set Up Equations
+We know two things:
+1.  **Heads:** Each chicken and each rabbit has one head. The total number of heads is 35.
+    $$c + r = 35$$  (Equation 1)
+
+2.  **Legs:** Chickens have 2 legs, and rabbits have 4 legs. The total number of legs is 94.
+    $$2c + 4r = 94$$ (Equation 2)
+
+### Step 3: Solve the System of Equations
+
+**Method: Substitution or Elimination**
+
+Let's use the **Elimination Method**.
+
+First, simplify Equation 2 by dividing the entire equation by 2:
+$$c + 2r = 47$$ (Equation 3)
+
+Now, subtract Equation 1 from Equation 3 to eliminate $c$:
+$$(c + 2r) - (c + r) = 47 - 35$$
+$$c - c + 2r - r = 12$$
+$$r = 12$$
+
+So, there are **12 rabbits**.
+
+Next, substitute the value of $r$ back into Equation 1 to find $c$:
+$$c + 12 = 35$$
+$$c = 35 - 12$$
+$$c = 23$$
+
+So, there are **23 chickens**.
+
+### Step 4: Verification
+Let's check if these numbers satisfy the original conditions:
+*   **Heads:** $23 \text{ (chickens)} + 12 \text{ (rabbits)} = 35$ heads. (Correct)
+*   **Legs:**
+    *   Chicken legs: $23 \times 2 = 46$
+    *   Rabbit legs: $12 \times 4 = 48$
+    *   Total legs: $46 + 48 = 94$ legs. (Correct)
+
+### Final Conclusion
+There are **23 chickens** and **12 rabbits**.

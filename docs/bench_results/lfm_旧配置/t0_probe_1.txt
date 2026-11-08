@@ -1,0 +1,10 @@
+
+The user asks: "在中文详细介绍丝绸之路上流通的主要商品与文化交流。" They want a detailed description in Chinese about the main goods and cultural exchanges that passed through the Silk Road. No extra formatting unless requested. So we should produce a thorough answer, likely a few paragraphs, maybe bullet points but no markdown unless asked. The instruction says no bold/italic unless asked. So plain text. Provide a detailed introduction. Possibly include sections: Overview, major goods (silk, spices, precious metals, ceramics, glass, paper, etc.), cultural exchanges (religion, art, technology, language, ideas). Also mention timeline, routes, impact. Ensure Chinese language. Provide a coherent narrative. No extra commentary. Let's produce a well-structured answer.
+
+We need to ensure we don't add any disclaimer. Provide answer directly.
+
+We'll produce something like:
+
+- 引言: 丝绸之路是古代连接中国与地中海世界的陆上贸易通道，始于汉武帝时期，持续约千年。
+
+- 主要商品: list categories: 中国出货: 丝绸、茶叶、瓷器、金

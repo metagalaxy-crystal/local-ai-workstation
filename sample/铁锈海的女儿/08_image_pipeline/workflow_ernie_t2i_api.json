@@ -1,0 +1,12 @@
+{
+  "_meta": {"positive": "3", "negative": "4", "sampler": "7", "latent": "6"},
+  "1": {"class_type": "UnetLoaderGGUF", "inputs": {"unet_name": "ernie-image-turbo-Q4_K_M.gguf"}},
+  "2": {"class_type": "CLIPLoader", "inputs": {"clip_name": "ministral-3-3b.safetensors", "type": "flux2"}},
+  "3": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 0], "text": "一张简约现代的信息图海报，标题文字为「铁锈海的女儿」，副标题「故事分镜设定」。海报分三栏，每栏各有一个扁平风格图标和短语：船帆（航海）、齿轮（蒸汽朋克）、少女剪影（主角）。配色为铁锈橙与深蓝，白底，版式整洁，中文字体清晰"}},
+  "4": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 0], "text": ""}},
+  "5": {"class_type": "VAELoader", "inputs": {"vae_name": "vae/flux2-vae.safetensors"}},
+  "6": {"class_type": "EmptySD3LatentImage", "inputs": {"width": 1024, "height": 1024, "batch_size": 1}},
+  "7": {"class_type": "KSampler", "inputs": {"model": ["1", 0], "positive": ["3", 0], "negative": ["4", 0], "latent_image": ["6", 0], "seed": 42, "steps": 8, "cfg": 1.0, "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0}},
+  "8": {"class_type": "VAEDecode", "inputs": {"samples": ["7", 0], "vae": ["5", 0]}},
+  "9": {"class_type": "SaveImage", "inputs": {"images": ["8", 0], "filename_prefix": "ernie_t2i"}}
+}

@@ -1,0 +1,56 @@
+We are to write a function top_k_frequent(nums, k) that returns a list of the top k most frequent numbers.
+ The function should return the numbers that appear most frequently, sorted by frequency descending and then by value ascending if frequencies are equal.
+
+ We can use a counter to count the frequency of each number, then sort the count dictionary by value (descending) and then by the key (ascending). Then we take the top k elements.
+
+ We don't need to write the full code, just the code for the function.
+
+ Let's think: nums is a list of integers. We need to count the frequency, then get the top k frequent elements.
+
+ We can use collections.Counter to count frequencies.
+
+ Then sort the items by frequency (descending) and by value (ascending). Then take the top k.
+
+ But note: the problem says "按频率从高到低排序（频率相同按数值升序）" which means sort by frequency descending, then by the number itself ascending (so for same frequency, smaller number comes first).
+
+ So we can do: sorted_items = sorted(count.items(), key=lambda item: (-item[1], item[0])) then top_k = [item[0] for item in top_k_items]
+
+ But we need to return the list of the top k frequent numbers.
+
+ Let's write the function.
+
+ We assume nums is a list of integers.
+
+ Code:
+
+ def top_k_frequent(nums, k):
+    from collections import Counter
+    cnt = Counter(nums)
+    items = sorted(cnt.items(), key=lambda item: (-item[1], item[0]))
+    return [item[0] for item in items[:k]]
+
+But note: the problem says "只输出函数代码，不要解释", so we just output the function code.
+
+ However, the function expects nums and k as inputs.
+
+ So the function should be:
+
+ def top_k_frequent(nums, k):
+    count = Counter(nums)
+    # sort by frequency descending and then by number ascending
+    sorted_items = sorted(count.items(), key=lambda x: (-x[1], x[0]))
+    return sorted_items[k-1]:k  # but sorted_items is a list of (count, number) so the top k are the last k elements.
+
+ Actually, sorted_items will be list of tuples (frequency, number), so we take the first k tuples.
+
+ But the problem says "返回整数列表中出现频率最高的 k 个数，按频率从高到低排序（频率相同按数值升序）" so the result is a list of k numbers, each being the number that appears most frequently, sorted as above.
+
+ So we can do:
+
+ return [num for freq, num in sorted_items[:k]]
+
+But note: the sorted_items will be sorted by frequency descending, then by num ascending.
+
+ So the list above is the top k numbers.
+
+ Let's check: if nums is [1,1,1,2,2,2,3,3,3,4,4,4,5], then count: 1:3,2:2,3:3,4:3,5:1. Then sorted by frequency descending, then by number ascending: we have (3,1), (3,2), (3,3), (4,1), (4,2), (4,3), 5:1,2:2,3:3,1:3. So the top k (say k=3) would be (3,1), (3,2), (3,3)? But according to the sorting key, for same frequency, we sort by num ascending, so (1,3), (2,2), (3,1), (3,2), (3,3), (4,1), (4,2), (4,3), 5:1. Actually, the sorted order: we sort by frequency descending, then by num ascending. So the elements with frequency 3: the numbers are 1,2,3,4. Then we sort among them by num ascending: so [1,2,3,4]. Then the top k: if k=3, we take the first three: (3,1), (3,2), (3,3

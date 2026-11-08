@@ -1,0 +1,15 @@
+{
+  "workflow": "workflow_ernie_t2i_api.json",
+  "prompt": "一张简约现代的信息图海报，标题文字为「铁锈海的女儿」，副标题「故事分镜设定」。海报分三栏，每栏各有一个扁平风格图标和短语：船帆（航海）、齿轮（蒸汽朋克）、少女剪影（主角）。配色为铁锈橙与深蓝，白底，版式整洁，中文字体清晰",
+  "negative": "",
+  "seed": 802929625,
+  "steps": 8,
+  "cfg": 1.0,
+  "width": 1024,
+  "height": 1024,
+  "elapsed_sec": 39.5,
+  "vram_peak_mb": 6689,
+  "images": [
+    "D:\\models\\铁锈海的女儿\\08_image_pipeline\\outputs\\ernie_t2i_802929625_ernie_t2i_00001_.png"
+  ]
+}

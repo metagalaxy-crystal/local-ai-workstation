@@ -1,0 +1,10 @@
+
+The user asks: "请用中文详细介绍丝绸之路上流通的主要商品与文化交流。" So we need to provide a detailed description in Chinese about the main goods and cultural exchanges along the Silk Road. No extra formatting unless requested. Provide a thorough answer. No disallowed content. Provide a detailed description. Possibly include timeline, categories of goods (silk, spices, precious metals, ceramics, glassware, paper, etc.) and cultural exchanges (religion, art, technology, ideas, languages, etc.). Should be in Chinese. No markdown unless asked. The instruction says avoid formatting like bold, italic, etc. So plain text. Provide a cohesive answer.
+
+We need to ensure we follow the instruction: "详细介绍" meaning thorough. Provide sections maybe but without markdown headings? Could use plain paragraphs and maybe numbered list but that's formatting? It's okay to use simple line breaks. Probably best to give a structured but plain text answer: first paragraph about the Silk Road, then main goods, then cultural exchanges, concluding with impact.
+
+Will produce a Chinese answer with details. No extra commentary. Provide thorough coverage.
+
+Let's craft:
+
+- Introduction: Silk Road was network of trade routes connecting East and

@@ -1,0 +1,26 @@
+{
+  "label": "deepseek",
+  "endpoint": "127.0.0.1:8092",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "time": "2026-10-19 16:33:27",
+  "results": [
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 12.4,
+      "prompt_tokens": 41,
+      "completion_tokens": 770,
+      "tok_per_sec": 62.0
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 10.6,
+      "prompt_tokens": 32,
+      "completion_tokens": 662,
+      "tok_per_sec": 62.4
+    }
+  ]
+}

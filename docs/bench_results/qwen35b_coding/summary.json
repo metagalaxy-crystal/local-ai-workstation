@@ -1,0 +1,57 @@
+{
+  "label": "qwen35b",
+  "endpoint": "127.0.0.1:8093",
+  "temperature": 0.3,
+  "max_tokens": 2000,
+  "score": "5/5",
+  "extract_fail": 0,
+  "total_sec": 29.4,
+  "time": "2026-10-20 21:00:44",
+  "results": [
+    {
+      "t": "t1",
+      "domain": "算法实现",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.1,
+      "completion_tokens": 106,
+      "tok_per_sec": 25.9
+    },
+    {
+      "t": "t2",
+      "domain": "类设计",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 11.1,
+      "completion_tokens": 398,
+      "tok_per_sec": 35.7
+    },
+    {
+      "t": "t3",
+      "domain": "调试纠错",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.1,
+      "completion_tokens": 94,
+      "tok_per_sec": 23.1
+    },
+    {
+      "t": "t4",
+      "domain": "解析转换",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 5.1,
+      "completion_tokens": 152,
+      "tok_per_sec": 29.6
+    },
+    {
+      "t": "t5",
+      "domain": "动态规划",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.5,
+      "completion_tokens": 121,
+      "tok_per_sec": 27.0
+    }
+  ]
+}

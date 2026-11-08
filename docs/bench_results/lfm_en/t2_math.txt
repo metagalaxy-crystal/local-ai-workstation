@@ -1,0 +1,41 @@
+
+Let  
+
+- \(c\) = number of chickens  
+- \(r\) = number of rabbits  
+
+Each chicken has 1 head and 2 legs; each rabbit has 1 head and 4 legs.
+
+**Equations from the information:**
+
+1. Heads: \(c + r = 35\)  
+2. Legs: \(2c + 4r = 94\)
+
+**Solve the system**
+
+From the first equation, \(c = 35 - r\).
+
+Substitute this into the second equation:
+
+\[
+2(35 - r) + 4r = 94 \\
+70 - 2r + 4r = 94 \\
+70 + 2r = 94 \\
+2r = 24 \\
+r = 12
+\]
+
+Now find \(c\):
+
+\[
+c = 35 - r = 35 - 12 = 23
+\]
+
+**Check**
+
+- Heads: \(23 + 12 = 35\) ✓  
+- Legs: \(2(23) + 4(12) = 46 + 48 = 94\) ✓  
+
+\[
+\boxed{23\text{ chickens and }12\text{ rabbits}}
+\]

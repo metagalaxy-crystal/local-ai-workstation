@@ -1,0 +1,6 @@
+```python
+from collections import Counter
+
+def top_k_frequent(nums, k):
+    return [num for num, freq in sorted(Counter(nums).items(), key=lambda x: (-x[1], x[0])), if freq >= 0 and freq > 0 and freq <= k]
+```

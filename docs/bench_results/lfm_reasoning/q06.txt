@@ -1,0 +1,11 @@
+
+def f(a=[]):
+    a.append(len(a))
+    return a
+print(f())
+print(f())
+print(f([7]))
+
+[0]
+[1]
+[1]

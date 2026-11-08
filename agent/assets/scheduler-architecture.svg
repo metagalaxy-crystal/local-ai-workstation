@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 545" width="1440" height="1090" font-family="PingFang SC, Microsoft YaHei, Segoe UI, system-ui, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 1 L7 4 L1 7 Z" fill="#52525B"/>
+    </marker>
+    <marker id="ahb" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 1 L7 4 L1 7 Z" fill="#0FDC78"/>
+    </marker>
+    <style>
+      .bd{fill:none;stroke:#52525B;stroke-width:1.2;stroke-dasharray:6 5;opacity:0.55}
+      .lbl{fill:#52525B;font-size:12px;font-weight:500}
+      .card{fill:#EFEFF2;stroke:rgba(23,23,23,0.12);stroke-width:1}
+      .card-title{fill:#171717;font-size:13px;font-weight:600}
+      .sched{fill:#E5FFF2;stroke:#0FDC78;stroke-width:1.8}
+      .sched-title{fill:#004D26;font-size:14px;font-weight:700}
+      .sched-sub{fill:#004D26;font-size:11px}
+      .chip-s{fill:#004D26} .chip-s-t{fill:#E5FFF2;font-size:13px;font-weight:600} .chip-s-s{fill:#85FABF;font-size:11px}
+      .chip-a{fill:#02743B} .chip-a-t{fill:#E5FFF2;font-size:13px;font-weight:600} .chip-a-s{fill:#85FABF;font-size:11px}
+      .chip-b{fill:#0FDC78} .chip-b-t{fill:#004D26;font-size:13px;font-weight:600} .chip-b-s{fill:#004D26;font-size:11px}
+      .chip-c{fill:#85FABF} .chip-c-t{fill:#004D26;font-size:13px;font-weight:600} .chip-c-s{fill:#004D26;font-size:11px}
+      .step-c{fill:#0FDC78} .step-c-t{fill:#004D26;font-size:11px;font-weight:600}
+      .step-comfy{fill:#02743B} .step-comfy-t{fill:#E5FFF2;font-size:11px;font-weight:600}
+      .step-cpu{fill:#80C1FF} .step-cpu-t{fill:#ffffff;font-size:11px;font-weight:600}
+      .step-a{fill:#004D26} .step-a-t{fill:#E5FFF2;font-size:11px;font-weight:600}
+      .node-lbl{fill:#52525B;font-size:11px}
+      .node-lbl-c{fill:#52525B;font-size:10px;text-anchor:middle}
+      .gpu-active{fill:#0FDC78} .gpu-active-t{fill:#004D26;font-size:12px;font-weight:600}
+      .cpu-active{fill:#80C1FF} .cpu-active-t{fill:#ffffff;font-size:11px;font-weight:600}
+      .note{fill:#52525B;font-size:11px}
+      .note-brand{fill:#0FDC78;font-size:11px;font-weight:600}
+      .warn{fill:#E8463A;font-size:11px;font-weight:600}
+      .conn{stroke:#52525B;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .conn-brand{stroke:#0FDC78;stroke-width:1.8;fill:none;stroke-dasharray:7 6}
+    </style>
+  </defs>
+
+  <!-- 模型分层 边界 -->
+  <rect x="40" y="20" width="640" height="92" rx="12" class="bd"/>
+  <text x="56" y="42" class="lbl">模型分层（按步骤复杂度选用）</text>
+
+  <rect x="64" y="56" width="140" height="42" rx="8" class="chip-s"/>
+  <text x="134" y="76" text-anchor="middle" class="chip-s-t">S · qwen36</text>
+  <text x="134" y="91" text-anchor="middle" class="chip-s-s">规划 / 复杂推理</text>
+
+  <rect x="222" y="56" width="140" height="42" rx="8" class="chip-a"/>
+  <text x="292" y="76" text-anchor="middle" class="chip-a-t">A · nemotron</text>
+  <text x="292" y="91" text-anchor="middle" class="chip-a-s">多模态 / 推理</text>
+
+  <rect x="380" y="56" width="140" height="42" rx="8" class="chip-b"/>
+  <text x="450" y="76" text-anchor="middle" class="chip-b-t">B · lfm</text>
+  <text x="450" y="91" text-anchor="middle" class="chip-b-s">通用执行 / 工具</text>
+
+  <rect x="538" y="56" width="140" height="42" rx="8" class="chip-c"/>
+  <text x="608" y="76" text-anchor="middle" class="chip-c-t">C · nanbeige</text>
+  <text x="608" y="91" text-anchor="middle" class="chip-c-s">草稿 / 摘要 / 轻量</text>
+
+  <!-- 多任务 DAG 边界 -->
+  <rect x="40" y="130" width="210" height="400" rx="12" class="bd"/>
+  <text x="56" y="152" class="lbl">多任务 DAG</text>
+
+  <!-- 任务 A -->
+  <rect x="55" y="162" width="180" height="200" rx="10" class="card"/>
+  <text x="67" y="182" class="card-title">任务 A</text>
+
+  <circle cx="78" cy="206" r="10" class="step-c"/>
+  <text x="78" y="210" text-anchor="middle" class="step-c-t">1</text>
+  <text x="96" y="210" class="node-lbl">生成大纲 (C)</text>
+
+  <path d="M78 216 V234" class="conn" marker-end="url(#ah)"/>
+
+  <circle cx="78" cy="246" r="10" class="step-comfy"/>
+  <text x="78" y="250" text-anchor="middle" class="step-comfy-t">2</text>
+  <text x="96" y="250" class="node-lbl">出图 (comfy)</text>
+
+  <path d="M70 256 Q60 266 56 276" class="conn" marker-end="url(#ah)"/>
+  <path d="M86 256 Q96 266 100 276" class="conn" marker-end="url(#ah)"/>
+
+  <circle cx="55" cy="288" r="10" class="step-cpu"/>
+  <text x="55" y="292" text-anchor="middle" class="step-cpu-t">3</text>
+  <text x="55" y="310" class="node-lbl-c">写文件</text>
+
+  <circle cx="101" cy="288" r="10" class="step-cpu"/>
+  <text x="101" y="292" text-anchor="middle" class="step-cpu-t">4</text>
+  <text x="101" y="310" class="node-lbl-c">写文件</text>
+
+  <text x="67" y="332" class="note">步骤 3、4 无依赖，可并行 (cpu)</text>
+  <text x="67" y="348" class="note">步骤 2 依赖 1，3/4 依赖 2</text>
+
+  <!-- 任务 B -->
+  <rect x="55" y="375" width="180" height="150" rx="10" class="card"/>
+  <text x="67" y="395" class="card-title">任务 B</text>
+
+  <circle cx="78" cy="419" r="10" class="step-c"/>
+  <text x="78" y="423" text-anchor="middle" class="step-c-t">1</text>
+  <text x="96" y="423" class="node-lbl">问答 (B)</text>
+
+  <path d="M78 429 V447" class="conn" marker-end="url(#ah)"/>
+
+  <circle cx="78" cy="459" r="10" class="step-a"/>
+  <text x="78" y="463" text-anchor="middle" class="step-a-t">2</text>
+  <text x="96" y="463" class="node-lbl">推理 (A)</text>
+
+  <text x="67" y="490" class="note">与任务 A 共享资源池</text>
+  <text x="67" y="506" class="note-brand">→ 当前：CPU 步骤并发跑</text>
+
+  <!-- 资源池 边界 -->
+  <rect x="470" y="130" width="210" height="400" rx="12" class="bd"/>
+  <text x="486" y="152" class="lbl">资源池</text>
+
+  <!-- GPU 主槽 -->
+  <rect x="485" y="162" width="180" height="200" rx="10" class="card"/>
+  <text x="497" y="182" class="card-title">GPU 主槽</text>
+  <text x="647" y="182" text-anchor="end" class="warn">互斥 · 独占 8GB</text>
+
+  <rect x="497" y="194" width="156" height="34" rx="6" class="gpu-active"/>
+  <text x="575" y="216" text-anchor="middle" class="gpu-active-t">A-步骤2 · 出图 comfy</text>
+
+  <text x="497" y="248" class="note">同一时刻只跑一个：</text>
+  <text x="497" y="264" class="note">LLM / ComfyUI / 语音 三选一</text>
+  <text x="497" y="288" class="note-brand">等待队列：B-步骤2 (推理A)</text>
+  <text x="497" y="304" class="note">同层步骤聚合，减少切换</text>
+  <text x="497" y="330" class="note">当前模型：nemotron (A 档)</text>
+  <text x="497" y="346" class="note">下次切换：qwen36 (S 档) 待规划</text>
+
+  <!-- CPU 池 -->
+  <rect x="485" y="375" width="180" height="150" rx="10" class="card"/>
+  <text x="497" y="395" class="card-title">CPU 池</text>
+  <text x="647" y="395" text-anchor="end" class="note-brand">并发 ×3</text>
+
+  <rect x="497" y="407" width="156" height="26" rx="6" class="cpu-active"/>
+  <text x="575" y="425" text-anchor="middle" class="cpu-active-t">A-步骤3 · 写文件</text>
+
+  <rect x="497" y="437" width="156" height="26" rx="6" class="cpu-active"/>
+  <text x="575" y="455" text-anchor="middle" class="cpu-active-t">A-步骤4 · 写文件</text>
+
+  <rect x="497" y="467" width="156" height="26" rx="6" class="cpu-active"/>
+  <text x="575" y="485" text-anchor="middle" class="cpu-active-t">B-步骤1 · 问答 (B) ⏳</text>
+
+  <text x="497" y="510" class="note">文件 / shell / embed / MCP</text>
+
+  <!-- 调度器 -->
+  <rect x="285" y="275" width="150" height="125" rx="12" class="sched"/>
+  <text x="360" y="300" text-anchor="middle" class="sched-title">资源感知调度器</text>
+  <text x="360" y="320" text-anchor="middle" class="sched-sub">DAG 就绪队列</text>
+  <text x="360" y="338" text-anchor="middle" class="sched-sub">按资源类型分发</text>
+  <text x="360" y="356" text-anchor="middle" class="sched-sub">同层模型聚合</text>
+  <text x="360" y="374" text-anchor="middle" class="sched-sub">流水线重叠</text>
+  <text x="360" y="392" text-anchor="middle" class="sched-sub">跨任务调度</text>
+
+  <!-- 连线 -->
+  <path d="M360 112 V275" class="conn-brand" marker-end="url(#ahb)"/>
+  <path d="M250 337 H285" class="conn" marker-end="url(#ah)"/>
+  <path d="M435 337 H470" class="conn" marker-end="url(#ah)"/>
+</svg>

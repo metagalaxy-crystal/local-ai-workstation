@@ -1,0 +1,38 @@
+[
+  {
+    "start": 10.754,
+    "end": 11.326,
+    "text": "姐姐。",
+    "speaker": "SPEAKER_01"
+  },
+  {
+    "start": 12.226,
+    "end": 12.606,
+    "text": "脚。",
+    "speaker": "SPEAKER_01"
+  },
+  {
+    "start": 13.122,
+    "end": 13.758,
+    "text": "啊啊。",
+    "speaker": "SPEAKER_00"
+  },
+  {
+    "start": 14.274,
+    "end": 14.654,
+    "text": "啊。",
+    "speaker": "SPEAKER_00"
+  },
+  {
+    "start": 25.186,
+    "end": 25.598,
+    "text": "天。",
+    "speaker": "SPEAKER_00"
+  },
+  {
+    "start": 25.986,
+    "end": 26.91,
+    "text": "玩得开心。",
+    "speaker": "SPEAKER_00"
+  }
+]

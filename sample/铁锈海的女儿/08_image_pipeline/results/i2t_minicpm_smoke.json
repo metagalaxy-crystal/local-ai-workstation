@@ -1,0 +1,9 @@
+{
+  "question": "请用中文简要描述这张画面的内容、色调和氛围（100字以内）。",
+  "image": "d:\\models\\ComfyUI\\output\\preview\\frame_0.png",
+  "answer": "一只橙色猫在阳光斑驳的绿草坪上漫步，背景为深绿植被。色调明亮，氛围宁静自然，充满生机与自由感。",
+  "elapsed_sec": 7.85,
+  "prompt_tokens": 359,
+  "completion_tokens": 136,
+  "tok_per_sec": 17.33
+}

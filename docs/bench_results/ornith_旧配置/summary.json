@@ -1,0 +1,22 @@
+{
+  "label": "ornith",
+  "endpoint": "127.0.0.1:8096",
+  "extra": {},
+  "time": "2026-10-19 16:32:34",
+  "results": [
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 21.5,
+      "prompt_tokens": 46,
+      "completion_tokens": 1200,
+      "tok_per_sec": 55.8
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 14.2,
+      "prompt_tokens": 38,
+      "completion_tokens": 800,
+      "tok_per_sec": 56.5
+    }
+  ]
+}

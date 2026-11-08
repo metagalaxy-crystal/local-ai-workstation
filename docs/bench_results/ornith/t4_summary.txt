@@ -1,0 +1,20 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Task: Read the provided article, write a summary (within 100 Chinese characters), and list 3 key points.
+    *   Input: An article about the Silk Road.
+    *   Output requirements: Summary (≤100 chars) + 3 Key Points.
+
+2.  **Analyze the Article:**
+    *   Paragraph 1: Definition of Silk Road (named after Li希霍芬), origin (Han Dynasty Zhang Qian), route (Chang'an to Rome), significance beyond trade.
+    *   Paragraph 2: Cultural exchange (technology, crops, religion, art). Tang Dynasty peak (Chang'an cosmopolitan).
+    *   Paragraph 3: Maritime Silk Road (Tang/Song onwards, ports, ceramics/tea, Quanzhou).
+    *   Paragraph 4: Decline after Ming (sea ban, politics, Ottoman). Legacy (Dunhuang, paper, porcelain). UNESCO World Heritage (2014).
+
+3.  **Draft Summary (≤100 Chinese characters):**
+    *   *Draft 1:* 丝绸之路是连接中国与欧亚各国的古代贸易文化通道。它以商品交换闻名，同时促进了造纸术、印刷术等技术西传和佛教等宗教东传。唐宋时期海上丝路也繁荣发展。明代后陆上丝路衰落，但其文化遗产至今仍被世人铭记。
+    *   *Count:* 98 characters (including punctuation). Let's check:
+        丝(1)绸(2)之(3)路(4)是(5)连(6)接(7)中(8)国(9)与(10)欧(11)亚(12)各(13)国(14)的(15)古(16)代(17)贸(18)易(19)文(20)化(21)通(22)道(23)。(24)它(25)以(26)商(27)品(28)交(29)换(30)闻(31)名(32)，(33)同(34)时(35)促(36)进(37)了(38)造(39)纸(40)术(41)、(42)印(43)刷(44)术(45)、(46)技(47)术(48)西(49)传(50)和(51)佛(52)教(53)等(54)宗(55)教(56)东(57)传(58)。(59)唐(60)宋(61)时(62)期(63)海(64)上(65)丝(66)路(67)也(68)繁(69)荣(70)发(71)展(72)。(73)明(74)代(75)后(76)陆(77)上(78)丝(79)路(80)衰(81)落(82)，(83)但(84)其(85)文(86)化(87)遗(88)产(89)至(90)今(91)仍(92)被(93)世(94)人(95)铭(96)记(97)。(98)
+    *   *Wait, counting is tricky.* Let's refine to ensure it's clearly under 100.
+    *   *Draft 2:* 丝绸之路是古代连接中国与欧亚各国的贸易文化通道。它促进了造纸术、印刷术等技术西传及佛教等宗教东传。唐宋时期陆上、海上丝路均繁荣发展。明代后陆上丝路衰落，但其文化遗产至今仍被世人铭记。
+    *   *Count:* 丝(1)绸

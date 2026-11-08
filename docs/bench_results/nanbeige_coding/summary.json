@@ -1,0 +1,58 @@
+{
+  "label": "nanbeige",
+  "endpoint": "127.0.0.1:8090",
+  "temperature": 0.3,
+  "max_tokens": 2000,
+  "score": "4/5",
+  "extract_fail": 0,
+  "total_sec": 30.0,
+  "time": "2026-10-20 20:52:20",
+  "results": [
+    {
+      "t": "t1",
+      "domain": "算法实现",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 5.4,
+      "completion_tokens": 153,
+      "tok_per_sec": 28.3
+    },
+    {
+      "t": "t2",
+      "domain": "类设计",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 6.8,
+      "completion_tokens": 177,
+      "tok_per_sec": 26.1
+    },
+    {
+      "t": "t3",
+      "domain": "调试纠错",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 10.6,
+      "completion_tokens": 348,
+      "tok_per_sec": 32.8
+    },
+    {
+      "t": "t4",
+      "domain": "解析转换",
+      "ok": false,
+      "extract": "code_block",
+      "wall_sec": 4.0,
+      "completion_tokens": 164,
+      "tok_per_sec": 40.7,
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\junsheng\\AppData\\Local\\Temp\\tmpb2w__y6w.py\", line 23, in <module>\n    assert roman_to_int('III') == 3\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError"
+    },
+    {
+      "t": "t5",
+      "domain": "动态规划",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 2.9,
+      "completion_tokens": 117,
+      "tok_per_sec": 39.7
+    }
+  ]
+}

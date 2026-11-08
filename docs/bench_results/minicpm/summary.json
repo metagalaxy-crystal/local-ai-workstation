@@ -1,0 +1,68 @@
+{
+  "label": "minicpm",
+  "endpoint": "127.0.0.1:8095",
+  "extra": {},
+  "time": "2026-10-19 17:09:42",
+  "results": [
+    {
+      "test": "t0_probe",
+      "tok_per_sec_median": 191.4
+    },
+    {
+      "test": "t1_writing",
+      "wall_sec": 1.5,
+      "prompt_tokens": 31,
+      "completion_tokens": 358,
+      "tok_per_sec": 237.6
+    },
+    {
+      "test": "t2_math",
+      "wall_sec": 3.0,
+      "prompt_tokens": 41,
+      "completion_tokens": 734,
+      "tok_per_sec": 242.2,
+      "auto_correct": true
+    },
+    {
+      "test": "t3_code",
+      "wall_sec": 2.2,
+      "prompt_tokens": 55,
+      "completion_tokens": 537,
+      "tok_per_sec": 242.0,
+      "auto_correct": false,
+      "error": "gdz.py\", line 6, in <module>\n    assert top_k_frequent([1,1,1,2,2,3], 2) == [1,2]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\junsheng\\AppData\\Local\\Temp\\tmp0gq1xgdz.py\", line 2, in top_k_frequent\n    count = Counter(nums)\n            ^^^^^^^\nNameError: name 'Counter' is not defined"
+    },
+    {
+      "test": "t4_summary",
+      "wall_sec": 1.8,
+      "prompt_tokens": 465,
+      "completion_tokens": 425,
+      "tok_per_sec": 238.6
+    },
+    {
+      "test": "t5_qa",
+      "correct": "3/3"
+    },
+    {
+      "test": "t6_vision",
+      "wall_sec": 1.9,
+      "prompt_tokens": 280,
+      "completion_tokens": 368,
+      "tok_per_sec": 194.3
+    },
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 0.8,
+      "prompt_tokens": 46,
+      "completion_tokens": 185,
+      "tok_per_sec": 229.7
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 0.8,
+      "prompt_tokens": 38,
+      "completion_tokens": 182,
+      "tok_per_sec": 228.6
+    }
+  ]
+}

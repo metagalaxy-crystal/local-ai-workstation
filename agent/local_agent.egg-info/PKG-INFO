@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: local-agent
+Version: 0.1.0
+Summary: D:\models 本地 Agent（P0 骨架：tool-call loop + 基础工具 + CLI）
+Requires-Python: >=3.12
+Requires-Dist: openai>=3.0
+Requires-Dist: requests>=2.31
+Requires-Dist: psutil>=7.0

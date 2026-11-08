@@ -1,0 +1,14 @@
+
+The user asks: "Read the following article, write a summary within 100 words, and list 3 key points." We must produce a summary ≤100 Chinese characters? The instruction: "用 100 字以内写一段摘要" - that's Chinese: "within 100 characters" maybe. Usually "100字以内" means up to 100 Chinese characters. So we need a summary of the article, up to 100 Chinese characters (or words?). Usually they'd accept up to 100 Chinese characters, not words. So we need to produce a concise summary in Chinese, no more than 100 characters. Then list 3 key points. We should not add extra commentary. Provide the summary, then list three bullet points. No extra formatting unless asked. The user didn't ask for bullet points, but they said "列出 3 个关键要点" which can be numbered list or bullet points. We can use simple dash lines.
+
+We need to ensure total characters (including summary and maybe key points) is within 100? The instruction: "用 100 字以内写一段摘要，再列出 3 个关键要点。" So summary ≤100 characters, then list 3 key points (maybe separate lines). The total may exceed 100 characters, but they only specify the summary part. So we can do that.
+
+We need to be concise: The article defines Silk Road, its naming, its significance, its decline, and its heritage. Summarize: "丝绸之路是古代连接中国与西亚、地中海的贸易与文化交流通道，因丝绸得名，陆上路线从长安经塔里木盆地至罗马，海上路线以广州、泉州等港口为节点，以陶瓷为主的出口。其文化影响包括中国四大四大技术（造纸、印刷、火药、指南针）传入西方，以及佛教、葡萄酒、艺术等传入中国。海上丝路在明代后衰落，但敦煌壁画、撒马尔罕造纸作坊、威尼斯瓷器等遗产被列入联合国教科文组织世界遗产。" That's about 115 characters? Let's count: Chinese characters count. Let's try to keep under 100 characters.
+
+We can shorten: "丝绸之路是古代中国与西亚、地中海的贸易文化交流通道，因丝绸得名，陆上线路从长安经塔里木盆地至罗马，海上线路以广州、泉州为节点，以陶瓷为主出口。其技术、宗教、艺术等深刻影响了欧亚文明，明代后衰落，但敦煌壁画、撒马尔罕造纸、威尼斯瓷器等遗产入UNESCO名录。" Let's count characters. Count manually: 
+
+"丝(1) 绸(2) 之(3) 路(4) 是(5) 古(6) 代(7) 中(8) 与(9) 西(10) 亚(11)、地(12) 中(13) 海(14) 的(15) 貿(16) 通(17) 化(18) 交(19) 通(20) 易(21) 通(22) 道(23)，" That's 23 characters.
+
+"因(24) 丝(25) 绸(26) 得(27) 名(28)，陆(29) 上(30) 线(31) 路(32) 从(33) 长(34) 安(35) 经(36) 塔(37)里(38)木(39)盆(40)地(41)至(42)罗(43)马(44)，" That's 21 more, total 44.
+
+"以(45) 舊(46)国(47)与(48)西(49)亚(50)、地(51)中(52)海(53)的(54)航

@@ -1,0 +1,39 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Target: HTTP 404 status code.
+    *   Question: What does it mean?
+    *   Intent: Provide a clear, concise explanation of the HTTP 404 status code.
+
+2.  **Retrieve Knowledge:**
+    *   What is HTTP 404? It's a standard HTTP status code.
+    *   What does it indicate? That the server cannot find the requested resource.
+    *   What is the official name? "Not Found".
+    *   Context: Used when a URL is entered, but the server doesn't have that file or page.
+    *   Common examples: Typo in URL, page deleted, moved without redirect.
+
+3.  **Draft the Response:**
+    *   Start with the direct answer: HTTP 404 means "Not Found".
+    *   Explain what it implies: The server couldn't locate the specific resource (page, file, image) requested by the user.
+    *   Mention common reasons: URL typo, page removed, server error.
+    *   Keep it simple and direct.
+
+4.  **Refine the Output (Mental Check):**
+    *   Is it accurate? Yes.
+    *   Is it concise? Yes.
+    *   Does it directly answer the user's question? Yes.
+
+5.  **Final Polish:** "HTTP 404 means 'Not Found'. It indicates that the server could not find the requested resource, such as a webpage or file." -> Good. I can add a bit more context about common causes.
+
+    *Revised:* "HTTP 404 means **Not Found**. It indicates that the server could not locate the specific resource (like a webpage, image, or file) that you requested. This often happens when a URL is typed incorrectly or a page has been removed."
+
+6.  **Final Output Generation:** (Matches the thought process)
+    *   State the code and meaning clearly.
+    *   Briefly explain the "why".
+
+    *Self-Correction/Verification:* The user asked a simple question. A direct answer is best. No need for excessive detail unless asked.
+
+    *Final Plan:*
+    1. State "Not Found".
+    2. Explain it means the server can't find the requested resource.
+    3

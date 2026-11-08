@@ -1,0 +1,36 @@
+
+We need to read article, then write a summary in no more than 100 words, followed by 3 key points. Must be concise, max 100 words for summary, then three key points (presumably bullet points). No extra commentary. No markdown unless asked. The user didn't ask for markdown, so we should avoid bold/italic. Provide plain text.
+
+We need to ensure summary <=100 words. Let's craft ~90 words.
+
+First, extract main points:
+
+- Definition: Silk Road network connecting China to Mediterranean, named by Ferdinand von Richthofen due to silk.
+
+- Overland route: Chang'an to Rome via Hexi Corridor, Pamir, etc.
+
+- Cultural/technological exchange: papermaking, printing, gunpowder, compass westward; grapes, alfalfa, etc., eastward; Tang dynasty peak with Sogdian merchants, etc.
+
+- Maritime Silk Road: ports Guangzhou, Quanzhou, Mingzhou; porcelain and tea exports; "Porcelain Road"; Ibn Battuta praised Quanzhou.
+
+- Decline after Ming due to maritime ban, Ottoman block; legacy persists (Mogao Caves, Samarkand workshops, Chinese porcelain in Venice); UNESCO inscription 2014.
+
+Now summarize: "The Silk Road was a historic network of overland and maritime routes linking China to the Mediterranean, named for Chinese silk. It facilitated the exchange of goods, technologies, and ideas—paper, gunpowder, and the compass moved west, while grapes, alfalfa, and Buddhism moved east—peaking in the Tang dynasty with bustling Sogdian communities. The maritime counterpart linked southeastern Chinese ports to Southeast Asia, India, the Arabian Peninsula, and East Africa, becoming known as the Porcelain Road. After the Ming decline, its legacy endures in sites like the Mogao Caves and the 2014 UNESCO inscription of the Chang’an–Tianshan Corridor."
+
+Count words: Let's count.
+
+"The(1) Silk2 Road3 was4 a5 historic6 network7 of8 overland9 and10 maritime11 routes12 linking13 China14 to15 the16 Mediterranean,17 named18 for19 Chinese20 silk.21 It22 facilitated23 the24 exchange25 of26 goods,27 technologies,28 and29 ideas—paper,30 gunpowder,31 and32 the33 compass34 moved35 west,36 while37 grapes,38 alfalfa,39 pomegranates,40 sesame41 and42 walnuts,43 together44 with45 Buddhism46 and47 other48 religions49 and50 with51 music,52 dance53 and54 painting,55 flowed56 eastward57 into58 the59 Central60 Plains61 and62 greatly63 enriched64 both65 the66 material67 and68 spiritual69 of70 the71 Han,72 Tang,73 and74 Song75 periods.76 The77 maritime78 counterpart79 linked80 southeastern81 Chinese82 ports83 to84 Southeast85 Asia,86 India,87 the88 Arabian89 Peninsula,90 and91 East92 Africa,93 becoming94 known95 as96 the97 Porcelain98 Road.99 After100 the101 Ming102 decline,103 its104 legacy105 endures106 in107 sites108 like109 the110 Mogao111 Caves112 and113 the114 2015115 UNESCO116 inscription117 of118 the119 Chang’an–Tianshan120 Corridor121."
+
+That's 121 words, exceeding 100. Need <=100 words. So we need to tighten.
+
+Let's aim for ~95 words.
+
+We can combine some sentences, reduce adjectives.
+
+Draft:
+
+"The Silk Road was a historic network linking China to the Mediterranean, named for Chinese silk. It enabled exchange of goods, technologies, and ideas—paper, gunpowder, compass moving west; grapes, alfalfa, Buddhism moving east—flourishing especially in the Tang dynasty with vibrant Sogdian communities. The maritime counterpart linked southeastern ports to Southeast Asia, India, the Arabian Peninsula, and East Africa, earning the nickname 'Porcelain Road.' After the Ming decline, its legacy survives in sites like the Mogao Caves and the 2014 UNESCO inscription of the Chang’an–Tianshan Corridor."
+
+Now count words.
+
+"The1 Silk2 Road3 was4 a5 historic6 network7 linking8

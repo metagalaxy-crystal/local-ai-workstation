@@ -1,0 +1,40 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Topic:** 《秋天的第一场雨》 (The First Rain of Autumn)
+    *   **Genre:** 散文 (Essay/Prose)
+    *   **Length:** Around 300 characters (字).
+    *   **Output:** Directly output the body text (直接输出正文).
+
+2.  **Drafting - Key Elements:**
+    *   Sensory details: Sound of rain, smell of soil, color of leaves, temperature change.
+    *   Emotion: Nostalgia, tranquility, transition of seasons.
+    *   Structure: Opening (setting the scene) -> Middle (the rain itself) -> Ending (reflection/feeling).
+
+3.  **Drafting - Content:**
+    *   *Opening:* Summer just left, the air changed.
+    *   *Body:* The rain came quietly. It washed away the heat. Leaves turned gold/red. The smell is different.
+    *   *Ending:* A feeling of comfort, welcoming autumn.
+
+4.  **Writing (Mental or Rough Notes):**
+    夏末的蝉鸣渐渐隐去，空气里多了一份清冽。清晨推开窗，风里裹着泥土的气息，我知道，秋天的第一场雨来了。
+    雨丝细密，像牛毛，轻轻落在脸上，凉丝丝的，不似春雨那般缠绵，倒带着几分爽朗。我撑伞走在路上，踩碎了脚边的积水，溅起的水花映着路边初黄的梧桐叶。
+    这场雨洗去了暑气，也洗亮了天。远山如墨，云朵低垂，整个世界安静了下来。桂花似乎也在这一场雨中酝酿着香气，等到雨停，满城都是甜意。
+    我爱这秋天的第一场雨，它不像冬雪那般冷冽，也不似春雨那般柔弱。它干脆、利落，像一位归来的故人，带着从容与笃定。在这个季节交替的时刻，它告诉我：该收心了。
+
+5.  **Review and Count:**
+    Let's check the character count of the draft above.
+    夏末的蝉鸣渐渐隐去，空气里多了一份清冽。清晨推开窗，风里裹着泥土的气息，我知道，秋天的第一场雨来了。(55)
+    雨丝细密，像牛毛，轻轻落在脸上，凉丝丝的，不似春雨那般缠绵，倒带着几分爽朗。我撑伞走在路上，踩碎了脚边的积水，溅起的水花映着路边初黄的梧桐叶。(83)
+    这场雨洗去了暑气，也洗亮了天。远山如墨，云朵低垂，整个世界安静了下来。桂花似乎也在这一场雨中酝酿着香气，等到雨停，满城都是甜意。(66)
+    我爱这秋天的第一场雨，它不像冬雪那般冷冽，也不似春雨那般柔弱。它干脆、利落，像一位归来的故人，带着从容与笃定。在这个季节交替的时刻，它告诉我：该收心了。(83)
+    Total approx: 287 characters. A bit short. I need to expand slightly to get closer to 300, but not too much so it doesn't exceed significantly. Let's aim for exactly around 300.
+
+    *Revised Draft:*
+    夏末的蝉鸣渐渐隐去，空气里多了一份难得的清冽。清晨推开窗，风里裹着泥土的气息，我知道，秋天的第一场雨来了。
+
+    雨丝细密，像牛毛，轻轻落在脸上，凉丝丝的，不似春雨那般缠绵，倒带着几分爽朗。我撑伞走在路上，踩碎了脚边的积水，溅起的水花映着路边初黄的梧桐叶，光影斑驳间，时光仿佛慢了下来。
+
+    这场雨洗去了暑气，也洗亮了天。远山如墨，云朵低垂，整个世界安静了下来。桂花似乎也在这一场雨中酝酿着香气，等到雨停，满城都是甜意。
+
+    我爱这秋天的第一场雨，它不像冬雪那般冷冽，也不似春雨那般柔弱。它干脆、利落，像一位归来的

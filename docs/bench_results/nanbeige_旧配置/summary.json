@@ -1,0 +1,26 @@
+{
+  "label": "nanbeige",
+  "endpoint": "127.0.0.1:8090",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "time": "2026-10-19 16:31:25",
+  "results": [
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 2.5,
+      "prompt_tokens": 72,
+      "completion_tokens": 148,
+      "tok_per_sec": 58.8
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 2.0,
+      "prompt_tokens": 65,
+      "completion_tokens": 126,
+      "tok_per_sec": 64.5
+    }
+  ]
+}

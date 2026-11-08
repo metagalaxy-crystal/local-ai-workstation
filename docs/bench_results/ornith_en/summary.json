@@ -1,0 +1,60 @@
+{
+  "label": "ornith",
+  "endpoint": "127.0.0.1:8096",
+  "extra": {},
+  "time": "2026-10-20 09:45:45",
+  "results": [
+    {
+      "test": "t0_probe",
+      "tok_per_sec_median": 72.7
+    },
+    {
+      "test": "t1_writing",
+      "wall_sec": 13.8,
+      "prompt_tokens": 34,
+      "completion_tokens": 900,
+      "tok_per_sec": 65.3
+    },
+    {
+      "test": "t2_math",
+      "wall_sec": 11.7,
+      "prompt_tokens": 45,
+      "completion_tokens": 1024,
+      "tok_per_sec": 87.8,
+      "auto_correct": true
+    },
+    {
+      "test": "t3_code",
+      "wall_sec": 2.3,
+      "prompt_tokens": 56,
+      "completion_tokens": 200,
+      "tok_per_sec": 88.3,
+      "auto_correct": true
+    },
+    {
+      "test": "t4_summary",
+      "wall_sec": 11.0,
+      "prompt_tokens": 606,
+      "completion_tokens": 900,
+      "tok_per_sec": 82.0
+    },
+    {
+      "test": "t5_qa",
+      "correct": "3/3"
+    },
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 17.9,
+      "prompt_tokens": 57,
+      "completion_tokens": 1200,
+      "tok_per_sec": 67.2
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 6.2,
+      "prompt_tokens": 42,
+      "completion_tokens": 461,
+      "tok_per_sec": 74.2
+    }
+  ]
+}

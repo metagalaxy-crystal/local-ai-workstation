@@ -1,0 +1,85 @@
+{
+  "style": "steampunk_realistic",
+  "characters": [
+    {
+      "name": "玛莲·艾德斯坦",
+      "age": 29,
+      "appearance": "灰蓝色发丝边缘带细微铁锈色，琥珀色瞳孔沉静深邃，身形清瘦利落；眼角有岁月细纹，左颊有旧伤疤痕（蒸汽朋克写实补全）",
+      "outfit": "深靛蓝皮革工装外套（黄铜护肩铆钉+齿轮纹样刺绣），丝绸内衬暗藏铜线编织，护目镜链项垂至锁骨，黄铜怀表链，麂皮防尘靴",
+      "tags": [
+        "nostalgic",
+        "observant",
+        "resolute"
+      ]
+    },
+    {
+      "name": "艾德斯坦父",
+      "age": 52,
+      "appearance": "花白鬓发散乱如枯草，深褐瞳色沉静，左肩有铆钉护臂与油污痕迹，身形宽肩稳健",
+      "outfit": "深棕棕工装外套（青铜扣具+蒸汽压力计挂带），护目镜推至额角，麂皮手套紧握带锈斧头挂饰，腰间黄铜怀表",
+      "tags": [
+        "protective",
+        "wise",
+        "steadfast"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "location": "灰炉镇外悬崖（记忆中的蓝海时期）",
+      "lighting": "晨光自海平线斜射，色温温暖琥珀光，阳光在海面碎成银箔反光，背景可见细小青铜齿轮雕塑",
+      "mood": [
+        "清新",
+        "希望",
+        "怀旧的宁静"
+      ]
+    },
+    {
+      "location": "灰炉镇外同一块悬崖（铁锈海现实）",
+      "lighting": "灰雾弥漫日光，色温冷蓝偏工业灰，锈红海水反射暗红 hues；远处冷蓝月光隐约透出",
+      "mood": [
+        "压抑",
+        "污染窒息",
+        "沧桑警醒"
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "description": "蒸汽朋克写实风：wide shot。29岁玛莲静立悬崖边缘，脚下锈红海水翻涌赤潮如腐烂毯子；她身着深蓝皮革工装，护目镜反射铁锈海暗红 hues。岩壁覆盖煤灰与油污，远处铜管滴水滴落。",
+      "camera_move": "static",
+      "duration": 6
+    },
+    {
+      "shot_id": "shot_002",
+      "description": "闪回镜头：pan_left 过渡。幼年玛莲（7岁）在相同悬崖奔跑，蓝海如玻璃般湛蓝，阳光碎成银片；她眯眼欢笑，父亲低沉声音（画外音）传来。背景青铜齿轮雕塑在暖光中泛微光。",
+      "camera_move": "pan_left",
+      "duration": 5
+    },
+    {
+      "shot_id": "shot_003",
+      "description": "特写：tilt_down 聚焦幼年玛莲面部。她仰头回答‘好看’，眼神纯净；父亲声音如隔厚布传来。画面色调转温暖琥珀，丝绸内衬的齿轮纹路隐约可见。",
+      "camera_move": "tilt_down",
+      "duration": 4
+    },
+    {
+      "shot_id": "shot_004",
+      "description": "回到现实：push_in 推近玛莲双眼。她凝视铁锈海，瞳孔中掠过蓝海记忆碎片；海风卷来鱼腥与铁锈硫磺气息，画面叠加细微油污雾气与蒸汽氤氲特效。",
+      "camera_move": "push_in",
+      "duration": 5
+    },
+    {
+      "shot_id": "shot_005",
+      "description": "tracking shot：玛莲沿悬崖缓行，foot on cracked rock with rust patterns. 镜头掠过黄铜怀表滴答声可视化光斑、带锈斧头挂饰摆动，工装丝绸与齿轮混搭细节清晰。",
+      "camera_move": "tracking",
+      "duration": 6
+    },
+    {
+      "shot_id": "shot_006",
+      "description": "全景 pull_out 拉远。玛莲背影融入锈红海天，冷蓝月光洒落岩壁煤灰；赤潮毯子延伸至天际，蒸汽朋克符号：铜管滴落油污、铆钉护臂特写。象征记忆与现实的撕裂与坚守。",
+      "camera_move": "pull_out",
+      "duration": 7
+    }
+  ]
+}

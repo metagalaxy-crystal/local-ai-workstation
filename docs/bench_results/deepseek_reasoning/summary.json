@@ -1,0 +1,92 @@
+{
+  "label": "deepseek",
+  "endpoint": "127.0.0.1:8092",
+  "temperature": 0.3,
+  "max_tokens": 1500,
+  "score": "5/10",
+  "total_sec": 840.8,
+  "time": "2026-10-20 13:51:11",
+  "results": [
+    {
+      "q": "q01",
+      "domain": "多步数学",
+      "ok": false,
+      "wall_sec": 90.8,
+      "completion_tokens": 1500,
+      "tok_per_sec": 16.5
+    },
+    {
+      "q": "q02",
+      "domain": "逻辑演绎",
+      "ok": true,
+      "wall_sec": 91.2,
+      "completion_tokens": 1500,
+      "tok_per_sec": 16.4
+    },
+    {
+      "q": "q03",
+      "domain": "排序链",
+      "ok": false,
+      "wall_sec": 91.8,
+      "completion_tokens": 1500,
+      "tok_per_sec": 16.3
+    },
+    {
+      "q": "q04",
+      "domain": "直觉陷阱",
+      "ok": true,
+      "wall_sec": 25.5,
+      "completion_tokens": 611,
+      "tok_per_sec": 24.0
+    },
+    {
+      "q": "q05",
+      "domain": "概率",
+      "ok": true,
+      "wall_sec": 88.8,
+      "completion_tokens": 1488,
+      "tok_per_sec": 16.8
+    },
+    {
+      "q": "q06",
+      "domain": "代码行为预测",
+      "ok": false,
+      "wall_sec": 90.6,
+      "completion_tokens": 1500,
+      "tok_per_sec": 16.6
+    },
+    {
+      "q": "q07",
+      "domain": "日期推算",
+      "ok": false,
+      "wall_sec": 90.6,
+      "completion_tokens": 1500,
+      "tok_per_sec": 16.6
+    },
+    {
+      "q": "q08",
+      "domain": "组合计数",
+      "ok": true,
+      "wall_sec": 89.9,
+      "completion_tokens": 1500,
+      "tok_per_sec": 16.7
+    },
+    {
+      "q": "q09",
+      "domain": "规划",
+      "ok": false,
+      "wall_sec": 91.1,
+      "completion_tokens": 1500,
+      "tok_per_sec": 16.5
+    },
+    {
+      "q": "q10",
+      "domain": "信息论称球",
+      "ok": true,
+      "wall_sec": 90.4,
+      "completion_tokens": 1500,
+      "tok_per_sec": 16.6
+    }
+  ],
+  "rejudged": true
+}

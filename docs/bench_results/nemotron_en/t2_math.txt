@@ -1,0 +1,72 @@
+Let’s solve this step‑by‑step.
+
+### 1. Define the variables  
+- Let **C** = number of chickens  
+- Let **R** = number of rabbits  
+
+### 2. Write the equations based on the information given  
+
+**Heads:**  
+Each animal has one head, so  
+
+\[
+C + R = 35 \qquad\text{(1)}
+\]
+
+**Legs:**  
+- A chicken has 2 legs.  
+- A rabbit has 4 legs.  
+
+Thus  
+
+\[
+2C + 4R = 94 \qquad\text{(2)}
+\]
+
+### 3. Solve the system of equations  
+
+From equation (1) we can express \(C\) in terms of \(R\):
+
+\[
+C = 35 - R
+\]
+
+Substitute this into equation (2):
+
+\[
+2(35 - R) + 4R = 94
+\]
+
+\[
+70 - 2R + 4R = 94
+\]
+
+\[
+70 + 2R = 94
+\]
+
+\[
+2R = 94 - 70 = 24
+\]
+
+\[
+R = \frac{24}{2} = 12
+\]
+
+Now find \(C\) using equation (1):
+
+\[
+C = 35 - R = 35 - 12 = 23
+\]
+
+### 4. Check the solution  
+
+- Heads: \(23 + 12 = 35\) ✔️  
+- Legs: \(2 \times 23 + 4 \times 12 = 46 + 48 = 94\) ✔️  
+
+### Answer  
+
+- **Chickens:** 23  
+- **Rabbits:** 12  
+
+These numbers satisfy both the head count and the leg count.

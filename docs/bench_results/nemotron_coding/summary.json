@@ -1,0 +1,57 @@
+{
+  "label": "nemotron",
+  "endpoint": "127.0.0.1:8098",
+  "temperature": 0.3,
+  "max_tokens": 2000,
+  "score": "5/5",
+  "extract_fail": 0,
+  "total_sec": 27.8,
+  "time": "2026-10-20 21:04:29",
+  "results": [
+    {
+      "t": "t1",
+      "domain": "算法实现",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.2,
+      "completion_tokens": 100,
+      "tok_per_sec": 23.8
+    },
+    {
+      "t": "t2",
+      "domain": "类设计",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 10.6,
+      "completion_tokens": 348,
+      "tok_per_sec": 32.8
+    },
+    {
+      "t": "t3",
+      "domain": "调试纠错",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.3,
+      "completion_tokens": 90,
+      "tok_per_sec": 21.0
+    },
+    {
+      "t": "t4",
+      "domain": "解析转换",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 4.5,
+      "completion_tokens": 120,
+      "tok_per_sec": 26.8
+    },
+    {
+      "t": "t5",
+      "domain": "动态规划",
+      "ok": true,
+      "extract": "code_block",
+      "wall_sec": 3.9,
+      "completion_tokens": 97,
+      "tok_per_sec": 24.9
+    }
+  ]
+}

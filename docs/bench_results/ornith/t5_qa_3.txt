@@ -1,0 +1,37 @@
+Here's a thinking process that leads to the answer:
+
+1.  **Analyze the Request:**
+    *   **Topic:** HTTP Protocol (Hypertext Transfer Protocol).
+    *   **Specific Question:** What does the 404 status code represent?
+    *   **Language:** Chinese.
+
+2.  **Recall/Retrieve Knowledge:**
+    *   HTTP status codes are categorized (1xx, 2xx, 3xx, 4xx, 5xx).
+    *   4xx codes indicate client errors.
+    *   404 specifically means "Not Found".
+    *   It means the server cannot find the requested resource (URL).
+
+3.  **Draft the Answer (Internal Monologue/Rough Draft):**
+    *   404 means the page doesn't exist.
+    *   Chinese: 404 状态码表示"未找到"或"资源不存在"。
+    *   It's a client error (4xx).
+    *   Common use: URL is wrong, server config is wrong, or the file is deleted.
+    *   I should explain the meaning, the category, and maybe give examples.
+
+4.  **Refine and Structure the Output (Chinese):**
+    *   *Direct Answer:* HTTP 404 状态码表示 **"未找到" (Not Found)**。
+    *   *Explanation:* 服务器无法找到客户端请求的特定资源（如网页、图片、文件等）。
+    *   *Category:* 属于 4xx 客户端错误类别。
+    *   *Common Causes:* URL 拼写错误、资源被删除、服务器配置问题。
+    *   *Example:* `http://www.example.com/nonexistent-page` -> 404.
+
+5.  **Final Polish (similar to the provided good response):**
+    *   Make it clear and concise.
+    *   Use bold text for key terms.
+
+6.  **Final Output Generation:** (Matches the standard explanation)
+    *   HTTP 404 状态码表示 **"未找到" (Not Found)**。
+    *   含义：服务器无法定位到客户端请求的资源。
+    *   常见原因：URL 错误、资源被删除等。
+
+7.  **Self-Correction/Edge Case:** Should I mention the official name? Yes, "Not Found

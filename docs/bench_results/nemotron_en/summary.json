@@ -1,0 +1,71 @@
+{
+  "label": "nemotron",
+  "endpoint": "127.0.0.1:8098",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "time": "2026-10-20 09:48:53",
+  "results": [
+    {
+      "test": "t0_probe",
+      "tok_per_sec_median": 36.6
+    },
+    {
+      "test": "t1_writing",
+      "wall_sec": 10.0,
+      "prompt_tokens": 40,
+      "completion_tokens": 339,
+      "tok_per_sec": 33.9
+    },
+    {
+      "test": "t2_math",
+      "wall_sec": 13.7,
+      "prompt_tokens": 51,
+      "completion_tokens": 414,
+      "tok_per_sec": 30.3,
+      "auto_correct": true
+    },
+    {
+      "test": "t3_code",
+      "wall_sec": 2.8,
+      "prompt_tokens": 63,
+      "completion_tokens": 57,
+      "tok_per_sec": 20.1,
+      "auto_correct": true
+    },
+    {
+      "test": "t4_summary",
+      "wall_sec": 9.5,
+      "prompt_tokens": 615,
+      "completion_tokens": 211,
+      "tok_per_sec": 22.3
+    },
+    {
+      "test": "t5_qa",
+      "correct": "2/3"
+    },
+    {
+      "test": "t6_vision",
+      "wall_sec": 14.6,
+      "prompt_tokens": 294,
+      "completion_tokens": 405,
+      "tok_per_sec": 27.7
+    },
+    {
+      "test": "t7a_microfiction",
+      "wall_sec": 5.7,
+      "prompt_tokens": 63,
+      "completion_tokens": 147,
+      "tok_per_sec": 26.0
+    },
+    {
+      "test": "t7b_naming",
+      "wall_sec": 2.9,
+      "prompt_tokens": 48,
+      "completion_tokens": 60,
+      "tok_per_sec": 20.4
+    }
+  ]
+}
