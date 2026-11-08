@@ -1,6 +1,6 @@
-{
+﻿{
   "label": "strata",
-  "endpoint": "10.203.239.162:8082",
+  "endpoint": "<strata-host>:8082",
   "extra": {
     "reasoning_effort": "low"
   },

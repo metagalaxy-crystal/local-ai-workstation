@@ -1,4 +1,4 @@
-# D:\models 本地 AI 工作站
+﻿# D:\models 本地 AI 工作站
 
 单卡 RTX 5060 Laptop（8GB VRAM / Blackwell sm_120）+ 32GB RAM 上的本地推理与生成环境。
 核心思路：**用内存换显存**——MoE 专家层卸载到 CPU、GGUF 量化、KV cache 量化，让 8GB 显存跑动 35B 级模型与视频/音乐/语音生成。
@@ -135,7 +135,7 @@ uv run python scripts/download_video_models.py         # 视频/音乐/语音模
 
 ## 七、云端 Strata 与文档索引
 
-- **云端调用**：`scripts\strata\strata_client.py`（对话/流式/多模态封装，双击 `run_chat.bat` 验证），端点 10.203.239.162:8082，部署/密钥/局域网文档在 `docs\strata\`
+- **云端调用**：`scripts\strata\strata_client.py`（对话/流式/多模态封装，双击 `run_chat.bat` 验证），端点 <strata-host>:8082，部署/密钥/局域网文档在 `docs\strata\`
 - **基准脚本**：`scripts\strata\bench\bench_*.py`（universal/coding/reasoning），结果写入 `docs\bench_results\`
 - **测试报告**（`docs\README.md` 有完整索引）：云端vs本地对比、推理能力、编程能力、英文基准、工具调用测试
 

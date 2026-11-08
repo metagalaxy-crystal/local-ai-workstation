@@ -1,4 +1,4 @@
-# 《铁锈海的女儿》模型链路实施记录
+﻿# 《铁锈海的女儿》模型链路实施记录
 
 > 本文档记录本案例调用 `d:\models\models\` 模型库的**具体实施方案**（脚本、命令、产物）。
 > 通用的任务-模型链路说明见模型库根目录 `d:\models\models\README.md` 第二部分。
@@ -11,7 +11,7 @@
 
 | 环节 | 模型 | 平台 | 本项目调用方 |
 |---|---|---|---|
-| ① 分镜脚本 | LFM2.5（路由 `lfm`）/ Nanbeige（路由 `nanbeige`）本地 llama-server；**云端 Strata（路由 `strata`，Qwen3.8-Flash-Next 176B，质量档首选）**；deepseek、qwen35b、trae_glm5 走在线 API | llama.cpp :8081；Strata `10.203.239.162:8082` | `03_storyboard\llm_runner.py`（strata 用法：`strata 8082 --host 10.203.239.162 --key <key> --effort low`，key 见 `d:\models\docs\strata\API密钥管理方案.md`）；`scripts\start_llm_server.py`、`start_llm_nanbeige.bat/.ps1`；一键 bat 在 `d:\models\scripts\run-*.bat`；对比实测 `06_compare\llm_bench.md` 第 6 节 |
+| ① 分镜脚本 | LFM2.5（路由 `lfm`）/ Nanbeige（路由 `nanbeige`）本地 llama-server；**云端 Strata（路由 `strata`，Qwen3.8-Flash-Next 176B，质量档首选）**；deepseek、qwen35b、trae_glm5 走在线 API | llama.cpp :8081；Strata `<strata-host>:8082` | `03_storyboard\llm_runner.py`（strata 用法：`strata 8082 --host <strata-host> --key <key> --effort low`，key 见 `d:\models\docs\strata\API密钥管理方案.md`）；`scripts\start_llm_server.py`、`start_llm_nanbeige.bat/.ps1`；一键 bat 在 `d:\models\scripts\run-*.bat`；对比实测 `06_compare\llm_bench.md` 第 6 节 |
 | ② 文生图 | Z-Image（主力）/ ERNIE（文字渲染）/ Anima（二次元） | ComfyUI | `08_image_pipeline\gen_image.py --workflow workflow_{zimage\|anima\|ernie}_t2i_api.json`；实测记录见 `02_design\design.md` 第 9 节 |
 | ③ 图生视频 | MiniMax-H3 int8 + Qwen3-VL-32B 编码器 + 双 VAE | ComfyUI（独占 ≈8GB） | `scripts\batch_submit.py --model minimax_h3 --unet_name "MiniMax-H3\diffusion_models\minimax_h3_fl2va_pruned_int8_convrot.safetensors" --prefix minimax_int8`、`scripts\submit_minimax_h3.py`；产物在 `05_minimax_h3\` |
 | ④ BGM 生成 | ACE-Step-1.5（qwen_1.7b 编码器） | ComfyUI | `scripts\submit_bgm.py` + `scripts\workflow_acestep_bgm_api.json`（API 中模型名用反斜杠且不带 music/ 前缀）；产物示例：`bgm_steampunk_00001.flac`（19s 蒸汽朋克） |

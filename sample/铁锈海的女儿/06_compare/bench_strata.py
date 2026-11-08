@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """云端 Strata 性能对比测试。
 
@@ -24,7 +24,7 @@ from llm_runner import SECTION_FILE, PROMPT_TEMPLATE, validate_json  # noqa: E40
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "03_storyboard"
 
-DEFAULT_HOST = "10.203.239.162"
+DEFAULT_HOST = os.environ.get("STRATA_HOST", "")  # 内网 Strata 地址由环境变量提供
 DEFAULT_PORT = 8082
 DEFAULT_KEY = os.environ.get("STRATA_API_KEY", "")  # 见 API密钥管理方案.md
 

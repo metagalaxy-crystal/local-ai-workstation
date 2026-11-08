@@ -1,4 +1,4 @@
-# Strata 云端模型调用方法
+﻿# Strata 云端模型调用方法
 
 云端 Strata 模型调用样例（按 scripts 目录"引擎+模型"两级约定存放）。调用封装从同目录 `bench\bench_universal.py` 提炼而来，纯标准库实现，无第三方依赖。
 
@@ -7,11 +7,13 @@
 | 项 | 值 |
 |---|---|
 | 协议 | OpenAI 兼容 `/v1/chat/completions`（vLLM 服务） |
-| 端点 | `http://10.203.239.162:8082/v1/chat/completions` |
+| 端点 | `http://<strata-host>:8082/v1/chat/completions` |
 | 鉴权 | `Authorization: Bearer <STRATA_API_KEY>`（从环境变量读取） |
 | 模型名 | 固定传 `"bench"`（服务端注册名，改名会 404） |
 | 推理强度 | `"reasoning_effort"`: `low`（默认，最快）/ `medium` / `high` |
 | 超时 | 建议 1800s（high 档长输出时较慢） |
+
+> 地址与密钥不入库：运行前设 `STRATA_HOST`（内网服务地址）与 `STRATA_API_KEY`（鉴权密钥）环境变量。
 
 ## 文件清单
 

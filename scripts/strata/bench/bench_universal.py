@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """云端 Strata / 本地模型 普适性能对比测试。
 
@@ -38,7 +38,7 @@ from pathlib import Path
 RESULTS_ROOT = Path(r"D:\models\docs\bench_results")
 
 PRESETS = {
-    "strata":   dict(host="10.203.239.162", port=8082,
+    "strata":   dict(host=os.environ.get("STRATA_HOST", ""), port=8082,
                      key=os.environ.get("STRATA_API_KEY", ""), effort="low"),
     "lfm":      dict(host="127.0.0.1", port=8091, key=None),
     "nanbeige": dict(host="127.0.0.1", port=8090, key=None, no_think=True),

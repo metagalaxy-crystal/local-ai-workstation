@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """统一 LLM 分镜调用器（OpenAI 兼容 API）。
 
@@ -7,7 +7,7 @@
   uv run python 03_storyboard/llm_runner.py lfm 8091
   uv run python 03_storyboard/llm_runner.py deepseek 8092
   uv run python 03_storyboard/llm_runner.py qwen35b 8093
-  uv run python 03_storyboard/llm_runner.py strata 8082 --host 10.203.239.162 --key <APIkey> --effort low   # 云端 Strata（质量档首选）
+  uv run python 03_storyboard/llm_runner.py strata 8082 --host <strata-host> --key <APIkey> --effort low   # 云端 Strata（质量档首选）
 
 输出:
   03_storyboard/llm_<name>.json      # 原始响应

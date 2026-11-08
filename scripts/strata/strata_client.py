@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Strata 云端模型调用封装（从 bench_universal.py 提炼，可独立复用）。
 
-协议: OpenAI 兼容 /v1/chat/completions（vLLM 服务，内网 10.203.239.162:8082）
+协议: OpenAI 兼容 /v1/chat/completions（vLLM 服务，内网 <strata-host>:8082）
 依赖: 仅 Python 标准库，无第三方包
 
 能力:
@@ -20,7 +20,7 @@ import time
 import urllib.request
 from pathlib import Path
 
-HOST = "10.203.239.162"
+HOST = os.environ.get("STRATA_HOST", "")  # 内网 Strata 地址，运行时通过 STRATA_HOST 提供
 PORT = 8082
 KEY = os.environ.get("STRATA_API_KEY", "")
 MODEL = "bench"            # 服务端注册的模型名，固定传 bench

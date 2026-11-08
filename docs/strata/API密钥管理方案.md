@@ -1,4 +1,4 @@
-# Strata API 密钥管理手册（现行有效）
+﻿# Strata API 密钥管理手册（现行有效）
 
 > 生效日期：2026-10-19 ｜ 状态：已实施并验证通过
 > 本文档是 API key 使用与管理的权威参考。架构：用户 → API 网关（8082，验证 key + 记录用量）→ Strata（8081，仅本机）。
@@ -24,18 +24,18 @@ key 文件：`E:\strata\gateway-keys.json`
 ### 接入地址
 
 ```text
-地址：http://10.203.239.162:8082   （或浏览器直接打开网页聊天）
+地址：http://<strata-host>:8082   （或浏览器直接打开网页聊天）
 密钥：找管理员领取（每人一个）
 ```
 
 ### 浏览器聊天（最简单）
 
-打开 http://10.203.239.162:8082 ，页面要求鉴权时填入自己的 key。对话、图片识别均可用。
+打开 http://<strata-host>:8082 ，页面要求鉴权时填入自己的 key。对话、图片识别均可用。
 
 ### curl
 
 ```bash
-curl http://10.203.239.162:8082/v1/chat/completions \
+curl http://<strata-host>:8082/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer 你的key" \
   -d '{"model":"strata","messages":[{"role":"user","content":"你好"}],"max_tokens":64}'
@@ -45,7 +45,7 @@ curl http://10.203.239.162:8082/v1/chat/completions \
 
 ```python
 from openai import OpenAI
-client = OpenAI(base_url="http://10.203.239.162:8082/v1", api_key="你的key")
+client = OpenAI(base_url="http://<strata-host>:8082/v1", api_key="你的key")
 resp = client.chat.completions.create(
     model="strata",
     messages=[{"role": "user", "content": "你好"}],
@@ -57,7 +57,7 @@ print(resp.choices[0].message.content)
 ### Cursor / Trae 等 IDE
 
 ```text
-Base URL: http://10.203.239.162:8082/v1
+Base URL: http://<strata-host>:8082/v1
 API Key:  你的key
 Model:    strata
 ```
@@ -65,7 +65,7 @@ Model:    strata
 ### Claude Code（Anthropic 兼容）
 
 ```powershell
-$env:ANTHROPIC_BASE_URL  = "http://10.203.239.162:8082"
+$env:ANTHROPIC_BASE_URL  = "http://<strata-host>:8082"
 $env:ANTHROPIC_AUTH_TOKEN = "你的key"
 $env:ANTHROPIC_MODEL     = "claude-sonnet-4-20250514"  # 名字随意，服务端忽略
 ```
